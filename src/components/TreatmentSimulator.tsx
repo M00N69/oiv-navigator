@@ -228,7 +228,7 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
         actions={
           <button
             onClick={handlePrint}
-            className="px-4 py-2 text-xs font-semibold text-white bg-[#1C1917] hover:bg-[#332F2C] rounded-lg transition-colors flex items-center gap-2 cursor-pointer shrink-0"
+            className="px-4 py-2 text-xs font-semibold text-white bg-ink hover:bg-ink-soft rounded-lg transition-colors flex items-center gap-2 cursor-pointer shrink-0"
           >
             <Printer className="w-4 h-4" />
             <span>Imprimer la fiche de traitement</span>
@@ -240,21 +240,21 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
         {/* Left Column: Form Controls (7 cols) */}
-        <div className="lg:col-span-7 bg-white border border-[#E7E2DA] rounded-xl p-6 shadow-xs space-y-6">
+        <div className="lg:col-span-7 bg-white border border-line rounded-xl p-6 shadow-xs space-y-6">
           
-          <h2 className="text-base font-bold font-editorial text-[#1C1917] border-b border-[#F2EEE9] pb-3">
+          <h2 className="text-base font-bold font-editorial text-ink border-b border-line-soft pb-3">
             Paramètres de l'Intervention Œnologique
           </h2>
 
           {/* 1. Substance Selection */}
           <div className="space-y-1.5">
-            <label className="block text-xs font-semibold uppercase tracking-wider text-[#78716C]">
+            <label className="block text-xs font-semibold uppercase tracking-wider text-muted">
               Substance ou Pratique Œnologique
             </label>
             <select
               value={selectedSubstanceKey}
               onChange={(e) => handleSelectSubstance(e.target.value)}
-              className="w-full p-2.5 bg-[#FAF8F5] border border-[#E7E2DA] rounded-lg text-sm text-[#1C1917] font-medium focus:outline-none focus:border-[#6B1728]"
+              className="w-full p-2.5 bg-surface-muted border border-line rounded-lg text-sm text-ink font-medium focus:outline-none focus:border-brand"
             >
               {SUBSTANCE_RULES.map((sub) => (
                 <option key={sub.key} value={sub.key}>
@@ -266,7 +266,7 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
 
           {/* 2. Matrice Selection */}
           <div className="space-y-1.5">
-            <label className="block text-xs font-semibold uppercase tracking-wider text-[#78716C]">
+            <label className="block text-xs font-semibold uppercase tracking-wider text-muted">
               Matrice / Produit à traiter
             </label>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
@@ -280,10 +280,10 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
                     onClick={() => setMatrix(m)}
                     className={`px-3 py-2 rounded-lg text-xs font-medium transition-all text-center cursor-pointer border ${
                       isSelected
-                        ? 'bg-[#6B1728] text-white border-[#6B1728] shadow-xs'
+                        ? 'bg-brand text-white border-brand shadow-xs'
                         : isWarning
                         ? 'bg-rose-50/60 text-rose-800 border-rose-200 hover:bg-rose-100/60'
-                        : 'bg-[#FAF8F5] text-[#44403C] border-[#E7E2DA] hover:bg-[#F3EFEA]'
+                        : 'bg-surface-muted text-ink-soft border-line hover:bg-surface-hover'
                     }`}
                   >
                     {m}
@@ -304,7 +304,7 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
             
             {/* Volume in hL */}
             <div className="space-y-1.5">
-              <label className="block text-xs font-semibold uppercase tracking-wider text-[#78716C]">
+              <label className="block text-xs font-semibold uppercase tracking-wider text-muted">
                 Volume du lot (en Hectolitres)
               </label>
               <div className="relative">
@@ -314,9 +314,9 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
                   max={5000}
                   value={volumeHl}
                   onChange={(e) => setVolumeHl(Math.max(1, parseFloat(e.target.value) || 0))}
-                  className="w-full p-2.5 pr-12 bg-white border border-[#E7E2DA] rounded-lg text-base font-bold font-mono text-[#1C1917] focus:outline-none focus:border-[#6B1728]"
+                  className="w-full p-2.5 pr-12 bg-white border border-line rounded-lg text-base font-bold font-mono text-ink focus:outline-none focus:border-brand"
                 />
-                <span className="absolute right-3 top-3 text-xs font-mono font-semibold text-[#78716C]">
+                <span className="absolute right-3 top-3 text-xs font-mono font-semibold text-muted">
                   hL
                 </span>
               </div>
@@ -326,7 +326,7 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
                     key={v}
                     type="button"
                     onClick={() => setVolumeHl(v)}
-                    className="px-2 py-0.5 bg-[#FAF8F5] border border-[#E7E2DA] rounded text-[11px] font-mono text-[#57534E] hover:bg-[#F3EFEA]"
+                    className="px-2 py-0.5 bg-surface-muted border border-line rounded text-[11px] font-mono text-muted hover:bg-surface-hover"
                   >
                     {v} hL
                   </button>
@@ -337,13 +337,13 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
             {/* Dose in mg/L */}
             <div className="space-y-1.5">
               <div className="flex items-center justify-between">
-                <label className="block text-xs font-semibold uppercase tracking-wider text-[#78716C]">
+                <label className="block text-xs font-semibold uppercase tracking-wider text-muted">
                   Dose prévue (en mg/L)
                 </label>
                 <button
                   type="button"
                   onClick={() => setDoseMgL(selectedRule.maxDoseMgL)}
-                  className="text-[10px] text-[#6B1728] hover:underline font-semibold"
+                  className="text-[11px] text-brand hover:underline font-semibold"
                 >
                   Plafond max ({selectedRule.maxDoseMgL} mg/L)
                 </button>
@@ -358,15 +358,15 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
                   className={`w-full p-2.5 pr-14 bg-white border rounded-lg text-base font-bold font-mono focus:outline-none ${
                     isDoseExceeded 
                       ? 'border-rose-400 text-rose-900 bg-rose-50/20 focus:border-rose-600' 
-                      : 'border-[#E7E2DA] text-[#1C1917] focus:border-[#6B1728]'
+                      : 'border-line text-ink focus:border-brand'
                   }`}
                 />
-                <span className="absolute right-3 top-3 text-xs font-mono font-semibold text-[#78716C]">
+                <span className="absolute right-3 top-3 text-xs font-mono font-semibold text-muted">
                   mg/L
                 </span>
               </div>
-              <div className="text-[11px] text-[#78716C] flex items-center justify-between pt-1">
-                <span>Équivalent : <strong className="font-mono text-[#1C1917]">{doseInGPerHl} g/hL</strong></span>
+              <div className="text-[11px] text-muted flex items-center justify-between pt-1">
+                <span>Équivalent : <strong className="font-mono text-ink">{doseInGPerHl} g/hL</strong></span>
                 <span className="font-mono">Max : {selectedRule.maxDoseMgL} mg/L</span>
               </div>
             </div>
@@ -374,36 +374,36 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
           </div>
 
           {/* 4. Cellar Log Metadata (Cuve, Lot, Opérateur) */}
-          <div className="pt-3 border-t border-[#F2EEE9] space-y-2">
-            <span className="block text-xs font-semibold uppercase tracking-wider text-[#78716C]">
+          <div className="pt-3 border-t border-line-soft space-y-2">
+            <span className="block text-xs font-semibold uppercase tracking-wider text-muted">
               Traçabilité de Chai (pour le registre légal)
             </span>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div>
-                <label className="block text-[11px] text-[#78716C] mb-1">N° de Cuve</label>
+                <label className="block text-[11px] text-muted mb-1">N° de Cuve</label>
                 <input
                   type="text"
                   value={tankNumber}
                   onChange={(e) => setTankNumber(e.target.value)}
-                  className="w-full p-2 text-xs bg-[#FAF8F5] border border-[#E7E2DA] rounded text-[#1C1917]"
+                  className="w-full p-2 text-xs bg-surface-muted border border-line rounded text-ink"
                 />
               </div>
               <div>
-                <label className="block text-[11px] text-[#78716C] mb-1">N° de Lot / Vin</label>
+                <label className="block text-[11px] text-muted mb-1">N° de Lot / Vin</label>
                 <input
                   type="text"
                   value={lotNumber}
                   onChange={(e) => setLotNumber(e.target.value)}
-                  className="w-full p-2 text-xs bg-[#FAF8F5] border border-[#E7E2DA] rounded text-[#1C1917]"
+                  className="w-full p-2 text-xs bg-surface-muted border border-line rounded text-ink"
                 />
               </div>
               <div>
-                <label className="block text-[11px] text-[#78716C] mb-1">Opérateur / Responsable</label>
+                <label className="block text-[11px] text-muted mb-1">Opérateur / Responsable</label>
                 <input
                   type="text"
                   value={operator}
                   onChange={(e) => setOperator(e.target.value)}
-                  className="w-full p-2 text-xs bg-[#FAF8F5] border border-[#E7E2DA] rounded text-[#1C1917]"
+                  className="w-full p-2 text-xs bg-surface-muted border border-line rounded text-ink"
                 />
               </div>
             </div>
@@ -415,26 +415,26 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
         <div className="lg:col-span-5 space-y-6">
           
           {/* Main Calculation Card */}
-          <div className="bg-white border-2 border-[#6B1728]/30 rounded-xl p-6 shadow-xs space-y-5">
+          <div className="bg-white border-2 border-brand/30 rounded-xl p-6 shadow-xs space-y-5">
             
-            <div className="flex items-center justify-between pb-3 border-b border-[#F2EEE9]">
-              <span className="text-xs uppercase font-semibold text-[#6B1728] tracking-wider">
+            <div className="flex items-center justify-between pb-3 border-b border-line-soft">
+              <span className="text-xs uppercase font-semibold text-brand tracking-wider">
                 Résultat & Quantités à peser
               </span>
-              <span className="font-mono text-xs text-[#78716C]">
+              <span className="font-mono text-xs text-muted">
                 {new Date().toLocaleDateString('fr-FR')}
               </span>
             </div>
 
             {/* Mass to weigh display */}
-            <div className="p-4 bg-[#FAF8F5] border border-[#E8DEC8] rounded-xl text-center space-y-1">
-              <span className="text-xs text-[#78716C] block uppercase tracking-wider font-semibold">
+            <div className="p-4 bg-surface-muted border border-line-warm rounded-xl text-center space-y-1">
+              <span className="text-xs text-muted block uppercase tracking-wider font-semibold">
                 Quantité Totale de Produit Recommandée
               </span>
-              <div className="font-mono text-3xl sm:text-4xl font-extrabold text-[#1C1917] tracking-tight">
+              <div className="font-mono text-3xl sm:text-4xl font-extrabold text-ink tracking-tight">
                 {totalMassGrams >= 1000 ? `${totalMassKg} kg` : `${totalMassGrams} g`}
               </div>
-              <span className="text-xs font-mono text-[#57534E] block">
+              <span className="text-xs font-mono text-muted block">
                 ({totalMassGrams} grammes pour {volumeHl} hL à {doseInGPerHl} g/hL)
               </span>
             </div>
@@ -478,12 +478,12 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
 
             {/* Incompatibilities & Critical Warnings */}
             {selectedRule.criticalIncompatibilities && selectedRule.criticalIncompatibilities.length > 0 && (
-              <div className="space-y-1.5 pt-2 border-t border-[#F2EEE9]">
+              <div className="space-y-1.5 pt-2 border-t border-line-soft">
                 <span className="text-xs font-bold text-amber-900 flex items-center gap-1">
                   <AlertTriangle className="w-3.5 h-3.5 text-amber-600" />
                   Précautions & Incompatibilités Physico-Chimiques :
                 </span>
-                <ul className="text-xs text-[#57534E] space-y-1 list-disc list-inside">
+                <ul className="text-xs text-muted space-y-1 list-disc list-inside">
                   {selectedRule.criticalIncompatibilities.map((inc, i) => (
                     <li key={i} className="leading-relaxed">{inc}</li>
                   ))}
@@ -492,9 +492,9 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
             )}
 
             {/* Protocol Tips */}
-            <div className="p-3 bg-[#FAF8F5] rounded-lg border border-[#E7E2DA] text-xs space-y-1">
-              <strong className="text-[#1C1917] block">Conseil de mise en œuvre de chai :</strong>
-              <ul className="space-y-0.5 text-[#57534E]">
+            <div className="p-3 bg-surface-muted rounded-lg border border-line text-xs space-y-1">
+              <strong className="text-ink block">Conseil de mise en œuvre de chai :</strong>
+              <ul className="space-y-0.5 text-muted">
                 {selectedRule.preparationTips.map((tip, i) => (
                   <li key={i}>· {tip}</li>
                 ))}
@@ -507,7 +507,7 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
                 <button
                   type="button"
                   onClick={() => onSelectDoc(associatedDoc)}
-                  className="text-xs font-semibold text-[#6B1728] hover:underline inline-flex items-center gap-1 cursor-pointer"
+                  className="text-xs font-semibold text-brand hover:underline inline-flex items-center gap-1 cursor-pointer"
                 >
                   <span>Consulter la fiche OIV complète ({associatedDoc.officialReference})</span>
                   <ChevronRight className="w-3.5 h-3.5" />

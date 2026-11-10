@@ -1,30 +1,96 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens — single source of truth for the palette and the type scale.
+ * Any new colour must be added here, never hardcoded in a component.
+ */
+@theme {
+  --color-brand: #6B1728;
+  --color-brand-dark: #50101C;
+  --color-gold: #D4AF37;
+
+  --color-surface: #FBF9F5;
+  --color-surface-muted: #FAF8F5;
+  --color-surface-hover: #F3EFEA;
+  --color-line: #E7E2DA;
+  --color-line-soft: #F2EEE9;
+  --color-line-warm: #E8DEC8;
+  --color-line-warm-soft: #EBE6DF;
+
+  --color-ink: #1C1917;
+  --color-ink-soft: #44403C;
+  --color-muted: #57534E;
+  --color-subtle: #A8A29E;
+  --color-separator: #D6D3D1;
+
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+}
+
 @layer base {
   :root {
-    --font-serif: 'Cormorant Garamond', Georgia, serif;
-    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', monospace;
+    color-scheme: light;
   }
 
   body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
     font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
   }
 
   h1, h2, h3, .font-editorial {
     font-family: var(--font-serif);
   }
+
+  /* One visible focus ring everywhere: never remove it without a replacement. */
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-brand) 18%, transparent);
+  }
+}
+
+/* Printed-only blocks are invisible on screen. */
+.print-only {
+  display: none;
 }
 
 @media print {
-  header, nav, .no-print {
+  @page {
+    margin: 16mm;
+  }
+
+  header,
+  nav,
+  footer,
+  aside,
+  .no-print {
     display: none !important;
   }
+
   .print-only {
     display: block !important;
   }
+
   body {
     background-color: white !important;
     color: black !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  /* Long URLs stay readable on paper without breaking the layout. */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #44403c;
+    word-break: break-all;
   }
 }

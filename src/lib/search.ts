@@ -1,6 +1,6 @@
 import { OivDocument, FilterState } from '../types/oiv';
 
-const HIGHLIGHT_CLASS = 'bg-amber-100 text-[#1C1917] px-0.5 rounded font-semibold';
+const HIGHLIGHT_CLASS = 'bg-amber-100 text-ink px-0.5 rounded font-semibold';
 
 const HTML_ESCAPES: Record<string, string> = {
   '&': '&amp;',

@@ -80,7 +80,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
               <button
                 type="button"
                 onClick={onOpenSimulator}
-                className="px-3 py-1.5 text-xs font-semibold text-[#6B1728] bg-[#6B1728]/10 hover:bg-[#6B1728] hover:text-white rounded-lg transition-colors inline-flex items-center gap-1.5 cursor-pointer"
+                className="px-3 py-1.5 text-xs font-semibold text-brand bg-brand/10 hover:bg-brand hover:text-white rounded-lg transition-colors inline-flex items-center gap-1.5 cursor-pointer"
               >
                 <Calculator className="w-3.5 h-3.5" />
                 <span>Simulateur de chai & doses</span>
@@ -90,7 +90,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
               <button
                 type="button"
                 onClick={onOpenSolver}
-                className="px-3 py-1.5 text-xs font-semibold text-[#44403C] bg-[#FAF8F5] hover:bg-[#F3EFEA] border border-[#E7E2DA] rounded-lg transition-colors inline-flex items-center gap-1.5 cursor-pointer"
+                className="px-3 py-1.5 text-xs font-semibold text-ink-soft bg-surface-muted hover:bg-surface-hover border border-line rounded-lg transition-colors inline-flex items-center gap-1.5 cursor-pointer"
               >
                 <Sparkles className="w-3.5 h-3.5 text-amber-700" />
                 <span>Guide par objectif œnologique</span>
@@ -117,8 +117,8 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
             onClick={() => onChangeFilters({ ...filters, family: 'all' })}
             className={`px-3 py-1.5 rounded-lg font-medium transition-colors cursor-pointer whitespace-nowrap flex items-center gap-1.5 ${
               filters.family === 'all'
-                ? 'bg-[#1C1917] text-white shadow-xs'
-                : 'bg-white hover:bg-[#F3EFEA] text-[#57534E] border border-[#E7E2DA]'
+                ? 'bg-ink text-white shadow-xs'
+                : 'bg-white hover:bg-surface-hover text-muted border border-line'
             }`}
           >
             <span>Toutes les familles</span>
@@ -131,8 +131,8 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
               onClick={() => onChangeFilters({ ...filters, family: fam.id as OivFamily })}
               className={`px-3 py-1.5 rounded-lg font-medium transition-colors cursor-pointer whitespace-nowrap flex items-center gap-1.5 ${
                 filters.family === fam.id
-                  ? 'bg-[#6B1728] text-white shadow-xs'
-                  : 'bg-white hover:bg-[#F3EFEA] text-[#57534E] border border-[#E7E2DA]'
+                  ? 'bg-brand text-white shadow-xs'
+                  : 'bg-white hover:bg-surface-hover text-muted border border-line'
               }`}
             >
               <span>{fam.label}</span>
@@ -144,21 +144,21 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
 
       {/* 3. Flagship Resolution Banner (OIV-OENO 738-2025) - Compact & Elegant */}
       {featuredDoc && filters.searchQuery === '' && filters.family === 'all' && (
-        <div className="bg-[#FAF8F5] border border-[#E8DEC8] rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xs">
+        <div className="bg-surface-muted border border-line-warm rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xs">
           <div className="space-y-1 max-w-3xl">
             <div className="flex items-center gap-2 text-xs">
-              <span className="font-bold text-[#6B1728] flex items-center gap-1 font-mono">
+              <span className="font-bold text-brand flex items-center gap-1 font-mono">
                 <Sparkles className="w-3.5 h-3.5" />
                 {featuredDoc.officialReference}
               </span>
-              <span className="text-[#D6D3D1]">·</span>
-              <span className="text-[#57534E] font-medium">{featuredDoc.title}</span>
-              <span className="text-[#D6D3D1]">·</span>
-              <span className="text-amber-900 bg-amber-100/70 text-[10px] px-1.5 py-0.2 rounded font-medium">
+              <span className="text-separator">·</span>
+              <span className="text-muted font-medium">{featuredDoc.title}</span>
+              <span className="text-separator">·</span>
+              <span className="text-amber-900 bg-amber-100/70 text-[11px] px-1.5 py-0.2 rounded font-medium">
                 Plafond : {featuredDoc.limitsAndDoses}
               </span>
             </div>
-            <p className="text-xs text-[#78716C] line-clamp-1">
+            <p className="text-xs text-muted line-clamp-1">
               Extension officielle aux moûts pour le contrôle microbiologique précoce. Articulation UE : Encadrement spécifique au Règlement (UE) 2019/934.
             </p>
           </div>
@@ -169,7 +169,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
                 href={featuredDoc.pdfUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-2.5 py-1 text-xs font-medium text-[#57534E] hover:text-[#1C1917] bg-white border border-[#E7E2DA] rounded hover:bg-[#F3EFEA] transition-colors inline-flex items-center gap-1"
+                className="px-2.5 py-1 text-xs font-medium text-muted hover:text-ink bg-white border border-line rounded hover:bg-surface-hover transition-colors inline-flex items-center gap-1"
                 title="Télécharger le PDF officiel"
               >
                 <FileText className="w-3 h-3" />
@@ -178,7 +178,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
             )}
             <button
               onClick={() => onSelectDoc(featuredDoc)}
-              className="px-3 py-1 text-xs font-semibold text-white bg-[#6B1728] hover:bg-[#50101C] rounded transition-colors inline-flex items-center gap-1 cursor-pointer"
+              className="px-3 py-1 text-xs font-semibold text-white bg-brand hover:bg-brand-dark rounded transition-colors inline-flex items-center gap-1 cursor-pointer"
             >
               <span>Consulter la fiche</span>
               <ArrowRight className="w-3 h-3" />
@@ -201,9 +201,9 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
           />
 
           {/* Compact Official Sources Card in Sidebar */}
-          <div className="bg-white border border-[#E7E2DA] rounded-lg p-4 shadow-xs space-y-3">
-            <div className="flex items-center gap-2 text-xs font-bold text-[#1C1917] uppercase tracking-wider border-b border-[#F2EEE9] pb-2">
-              <Scale className="w-3.5 h-3.5 text-[#6B1728]" />
+          <div className="bg-white border border-line rounded-lg p-4 shadow-xs space-y-3">
+            <div className="flex items-center gap-2 text-xs font-bold text-ink uppercase tracking-wider border-b border-line-soft pb-2">
+              <Scale className="w-3.5 h-3.5 text-brand" />
               <span>Dépôts Légaux Directs</span>
             </div>
             <div className="space-y-2 text-xs">
@@ -211,7 +211,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
                 href="https://www.oiv.int/fr/ce-que-nous-faisons/normes?items_per_page=25&search_title_body=&type%5Bresolutions%5D=resolutions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between text-[#57534E] hover:text-[#6B1728] p-1.5 rounded hover:bg-[#FAF8F5] transition-colors"
+                className="flex items-center justify-between text-muted hover:text-brand p-1.5 rounded hover:bg-surface-muted transition-colors"
               >
                 <span>OIV — Résolutions (PDFs)</span>
                 <ExternalLink className="w-3 h-3 shrink-0" />
@@ -220,7 +220,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
                 href="https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between text-[#57534E] hover:text-[#6B1728] p-1.5 rounded hover:bg-[#FAF8F5] transition-colors"
+                className="flex items-center justify-between text-muted hover:text-brand p-1.5 rounded hover:bg-surface-muted transition-colors"
               >
                 <span>OIV — Code des pratiques</span>
                 <ExternalLink className="w-3 h-3 shrink-0" />
@@ -229,7 +229,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
                 href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A02019R0934-20241128"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between text-[#57534E] hover:text-[#6B1728] p-1.5 rounded hover:bg-[#FAF8F5] transition-colors"
+                className="flex items-center justify-between text-muted hover:text-brand p-1.5 rounded hover:bg-surface-muted transition-colors"
               >
                 <span>EUR-Lex — Règlement 2019/934</span>
                 <ExternalLink className="w-3 h-3 shrink-0" />
@@ -238,7 +238,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
                 href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A52025XC01829"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between text-[#57534E] hover:text-[#6B1728] p-1.5 rounded hover:bg-[#FAF8F5] transition-colors"
+                className="flex items-center justify-between text-muted hover:text-brand p-1.5 rounded hover:bg-surface-muted transition-colors"
               >
                 <span>JOUE — Publication C/2025/1829</span>
                 <ExternalLink className="w-3 h-3 shrink-0" />
@@ -250,8 +250,8 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
         {/* Right Column: Search Stream & Document Cards */}
         <div className="lg:col-span-3 space-y-4">
           {/* Stream Bar: Count & active state */}
-          <div className="flex items-center justify-between text-xs text-[#78716C] px-1 pb-1">
-            <span className="font-semibold text-[#1C1917]">
+          <div className="flex items-center justify-between text-xs text-muted px-1 pb-1">
+            <span className="font-semibold text-ink">
               {totalMatches} référence(s) affichée(s)
             </span>
             {(filters.searchQuery || filters.family !== 'all' || filters.domain !== 'all' || filters.category !== 'all' || filters.euStatus !== 'all' || filters.onlyRecent) && (
@@ -266,7 +266,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
                   status: 'all',
                   onlyRecent: false
                 })}
-                className="text-[#6B1728] hover:underline font-medium cursor-pointer"
+                className="text-brand hover:underline font-medium cursor-pointer"
               >
                 Effacer tous les filtres
               </button>
@@ -275,8 +275,8 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
 
           {/* Cards Stream */}
           {filteredDocuments.length === 0 ? (
-            <div className="bg-white border border-[#E7E2DA] rounded-xl p-10 text-center text-[#78716C] space-y-3">
-              <p className="text-base font-semibold text-[#1C1917]">
+            <div className="bg-white border border-line rounded-xl p-10 text-center text-muted space-y-3">
+              <p className="text-base font-semibold text-ink">
                 Aucun document ne correspond à cette sélection.
               </p>
               <p className="text-xs max-w-md mx-auto">
@@ -293,7 +293,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
                   status: 'all',
                   onlyRecent: false
                 })}
-                className="px-4 py-2 text-xs font-semibold text-[#6B1728] border border-[#6B1728]/30 rounded-lg hover:bg-[#6B1728]/10 cursor-pointer"
+                className="px-4 py-2 text-xs font-semibold text-brand border border-brand/30 rounded-lg hover:bg-brand/10 cursor-pointer"
               >
                 Réinitialiser les filtres
               </button>

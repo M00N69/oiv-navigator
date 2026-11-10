@@ -97,14 +97,14 @@ export const VeilleUpdatesView: React.FC<VeilleUpdatesViewProps> = ({
           <div className="flex flex-wrap items-center gap-3">
             <button
               onClick={handleExportCorpus}
-              className="px-3.5 py-2 text-xs font-semibold text-[#1C1917] bg-[#FAF8F5] border border-[#E7E2DA] hover:bg-[#F3EFEA] rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer"
+              className="px-3.5 py-2 text-xs font-semibold text-ink bg-surface-muted border border-line hover:bg-surface-hover rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer"
               title="Exporter l'ensemble de la base documentaire en JSON"
             >
-              <Download className="w-3.5 h-3.5 text-[#6B1728]" />
+              <Download className="w-3.5 h-3.5 text-brand" />
               <span>Sauvegarder JSON</span>
             </button>
 
-            <label className="px-3.5 py-2 text-xs font-semibold text-white bg-[#6B1728] hover:bg-[#50101C] rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[#6B1728]">
+            <label className="px-3.5 py-2 text-xs font-semibold text-white bg-brand hover:bg-brand-dark rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-brand">
               <Upload className="w-3.5 h-3.5" />
               <span>Importer une résolution</span>
               <input
@@ -137,18 +137,18 @@ export const VeilleUpdatesView: React.FC<VeilleUpdatesViewProps> = ({
       )}
 
       {/* Official Repositories Hub with Direct Clickable Links */}
-      <div className="bg-white border border-[#E7E2DA] rounded-xl p-6 shadow-xs space-y-4">
-        <div className="flex items-center justify-between gap-4 flex-wrap pb-3 border-b border-[#F2EEE9]">
+      <div className="bg-white border border-line rounded-xl p-6 shadow-xs space-y-4">
+        <div className="flex items-center justify-between gap-4 flex-wrap pb-3 border-b border-line-soft">
           <div>
-            <h2 className="text-base font-bold font-editorial text-[#1C1917] flex items-center gap-2">
-              <Scale className="w-4 h-4 text-[#6B1728]" />
+            <h2 className="text-base font-bold font-editorial text-ink flex items-center gap-2">
+              <Scale className="w-4 h-4 text-brand" />
               <span>Dépôts Légaux Surveillés (Accès Directs)</span>
             </h2>
-            <p className="text-xs text-[#78716C]">
+            <p className="text-xs text-muted">
               Cliquez directement sur un dépôt officiel pour récupérer la toute dernière édition en vigueur.
             </p>
           </div>
-          <span className="text-[11px] font-mono font-medium text-[#57534E]">
+          <span className="text-[11px] font-mono font-medium text-muted">
             Corpus v{CORPUS_META.version} · {CORPUS_META.updatedAtLabel}
           </span>
         </div>
@@ -157,28 +157,28 @@ export const VeilleUpdatesView: React.FC<VeilleUpdatesViewProps> = ({
           {OFFICIAL_LIVE_SOURCES.map((src) => (
             <div
               key={src.id}
-              className="p-4 bg-[#FAF8F5] border border-[#E7E2DA] rounded-lg flex flex-col justify-between hover:border-[#6B1728] transition-all"
+              className="p-4 bg-surface-muted border border-line rounded-lg flex flex-col justify-between hover:border-brand transition-all"
             >
               <div className="space-y-1.5">
-                <div className="flex items-center justify-between text-[11px] font-mono text-[#78716C]">
-                  <span className="font-semibold text-[#6B1728]">{src.organization}</span>
+                <div className="flex items-center justify-between text-[11px] font-mono text-muted">
+                  <span className="font-semibold text-brand">{src.organization}</span>
                   <span>{src.celexOrCode}</span>
                 </div>
-                <h3 className="text-sm font-bold text-[#1C1917]">
+                <h3 className="text-sm font-bold text-ink">
                   {src.name}
                 </h3>
-                <p className="text-xs text-[#57534E] leading-relaxed">
+                <p className="text-xs text-muted leading-relaxed">
                   {src.description}
                 </p>
               </div>
 
-              <div className="pt-3 mt-3 border-t border-[#EBE6DF] flex items-center justify-between text-xs">
-                <span className="text-[11px] text-[#78716C]">{src.updateFrequency}</span>
+              <div className="pt-3 mt-3 border-t border-line-warm-soft flex items-center justify-between text-xs">
+                <span className="text-[11px] text-muted">{src.updateFrequency}</span>
                 <a
                   href={src.directUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-[#6B1728] hover:underline inline-flex items-center gap-1"
+                  className="font-semibold text-brand hover:underline inline-flex items-center gap-1"
                 >
                   <span>Récupérer la version officielle</span>
                   <ExternalLink className="w-3 h-3" />
@@ -191,7 +191,7 @@ export const VeilleUpdatesView: React.FC<VeilleUpdatesViewProps> = ({
 
       {/* Chronological Timeline */}
       <div className="space-y-4">
-        <h2 className="text-base font-bold font-editorial text-[#1C1917]">
+        <h2 className="text-base font-bold font-editorial text-ink">
           Chronologie des publications
         </h2>
 
@@ -199,20 +199,20 @@ export const VeilleUpdatesView: React.FC<VeilleUpdatesViewProps> = ({
           {sortedDocs.map((doc) => (
             <div
               key={doc.id}
-              className="bg-white border border-[#E7E2DA] hover:border-[#6B1728]/40 rounded-xl p-5 shadow-xs transition-all flex items-start justify-between gap-4"
+              className="bg-white border border-line hover:border-brand/40 rounded-xl p-5 shadow-xs transition-all flex items-start justify-between gap-4"
             >
               <div className="space-y-2">
-                <div className="flex items-center gap-2.5 text-xs text-[#78716C] flex-wrap">
-                  <span className="font-mono font-bold text-[#6B1728]">
+                <div className="flex items-center gap-2.5 text-xs text-muted flex-wrap">
+                  <span className="font-mono font-bold text-brand">
                     {doc.officialReference}
                   </span>
-                  <span aria-hidden="true" className="text-[#D6D3D1]">·</span>
+                  <span aria-hidden="true" className="text-separator">·</span>
                   <span>{doc.domain}</span>
-                  <span aria-hidden="true" className="text-[#D6D3D1]">·</span>
+                  <span aria-hidden="true" className="text-separator">·</span>
                   <span className="font-mono tabular-nums">{doc.adoptionDate}</span>
                   {doc.isRecentPublication && (
                     <>
-                      <span aria-hidden="true" className="text-[#D6D3D1]">·</span>
+                      <span aria-hidden="true" className="text-separator">·</span>
                       <span className="text-emerald-700 font-semibold">Dernière session OIV</span>
                     </>
                   )}
@@ -220,17 +220,17 @@ export const VeilleUpdatesView: React.FC<VeilleUpdatesViewProps> = ({
 
                 <h3 
                   onClick={() => onSelectDoc(doc)}
-                  className="text-base font-bold font-editorial text-[#1C1917] hover:text-[#6B1728] transition-colors cursor-pointer"
+                  className="text-base font-bold font-editorial text-ink hover:text-brand transition-colors cursor-pointer"
                 >
                   {doc.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-[#57534E] leading-relaxed max-w-3xl">
+                <p className="text-xs sm:text-sm text-muted leading-relaxed max-w-3xl">
                   {doc.summary}
                 </p>
 
                 {doc.limitsAndDoses && (
-                  <div className="text-xs text-[#44403C] font-mono">
+                  <div className="text-xs text-ink-soft font-mono">
                     <strong className="font-sans font-semibold">Conditions : </strong>
                     {doc.limitsAndDoses}
                   </div>
@@ -239,7 +239,7 @@ export const VeilleUpdatesView: React.FC<VeilleUpdatesViewProps> = ({
 
               <button
                 onClick={() => onSelectDoc(doc)}
-                className="px-3 py-1.5 text-xs font-semibold text-[#6B1728] hover:bg-[#6B1728]/10 rounded-lg transition-colors shrink-0 flex items-center gap-1 cursor-pointer self-center"
+                className="px-3 py-1.5 text-xs font-semibold text-brand hover:bg-brand/10 rounded-lg transition-colors shrink-0 flex items-center gap-1 cursor-pointer self-center"
               >
                 <span>Fiche</span>
                 <ArrowRight className="w-3.5 h-3.5" />

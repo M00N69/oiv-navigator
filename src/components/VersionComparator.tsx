@@ -37,15 +37,15 @@ export const VersionComparator: React.FC<VersionComparatorProps> = ({
       />
 
         {/* Document Selector */}
-        <div className="flex flex-wrap items-center gap-4 border-b border-[#E7E2DA] pb-4">
-          <label htmlFor="comparator-doc" className="text-xs font-semibold text-[#57534E]">
+        <div className="flex flex-wrap items-center gap-4 border-b border-line pb-4">
+          <label htmlFor="comparator-doc" className="text-xs font-semibold text-muted">
             Sélectionner une référence OIV à comparer :
           </label>
           <select
             id="comparator-doc"
             value={selectedDocId}
             onChange={(e) => setSelectedDocId(e.target.value)}
-            className="rounded-lg border border-[#E7E2DA] bg-[#FAF8F5] p-2 text-xs font-medium text-[#1C1917] focus:border-[#6B1728] focus:outline-none sm:text-sm"
+            className="rounded-lg border border-line bg-surface-muted p-2 text-xs font-medium text-ink focus:border-brand focus:outline-none sm:text-sm"
           >
             {multiVersionDocs.map(doc => (
               <option key={doc.id} value={doc.id}>
@@ -56,9 +56,9 @@ export const VersionComparator: React.FC<VersionComparatorProps> = ({
         </div>
 
       {/* Summary of changes highlight banner */}
-      <div className="p-4 bg-[#FAF8F5] border border-[#E8DEC8] rounded-xl text-xs sm:text-sm text-[#44403C] space-y-1">
-        <div className="font-bold text-[#6B1728] font-editorial text-base flex items-center gap-1.5">
-          <Sparkles className="w-4 h-4 text-[#6B1728]" />
+      <div className="p-4 bg-surface-muted border border-line-warm rounded-xl text-xs sm:text-sm text-ink-soft space-y-1">
+        <div className="font-bold text-brand font-editorial text-base flex items-center gap-1.5">
+          <Sparkles className="w-4 h-4 text-brand" />
           <span>Synthèse des modifications : {currentDoc.officialReference}</span>
         </div>
         <p className="leading-relaxed">
@@ -70,17 +70,17 @@ export const VersionComparator: React.FC<VersionComparatorProps> = ({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         
         {/* Column 1: Version Actuelle (Version A) */}
-        <div className="bg-white border-2 border-[#6B1728]/30 rounded-xl p-5 sm:p-6 shadow-xs space-y-4">
-          <div className="flex items-center justify-between pb-3 border-b border-[#F2EEE9]">
+        <div className="bg-white border-2 border-brand/30 rounded-xl p-5 sm:p-6 shadow-xs space-y-4">
+          <div className="flex items-center justify-between pb-3 border-b border-line-soft">
             <div>
-              <span className="text-[11px] uppercase font-semibold text-[#6B1728] tracking-wider block">
+              <span className="text-[11px] uppercase font-semibold text-brand tracking-wider block">
                 Version Récente / En Vigueur
               </span>
-              <h2 className="text-base sm:text-lg font-bold font-editorial text-[#1C1917]">
+              <h2 className="text-base sm:text-lg font-bold font-editorial text-ink">
                 {versionA.versionLabel}
               </h2>
             </div>
-            <span className="font-mono text-xs font-bold text-[#1C1917] bg-[#FAF8F5] px-2.5 py-1 rounded border border-[#E7E2DA]">
+            <span className="font-mono text-xs font-bold text-ink bg-surface-muted px-2.5 py-1 rounded border border-line">
               {versionA.adoptionYear}
             </span>
           </div>
@@ -95,12 +95,12 @@ export const VersionComparator: React.FC<VersionComparatorProps> = ({
 
           {/* Prescriptions */}
           <div className="space-y-2">
-            <span className="text-xs font-semibold text-[#57534E] uppercase tracking-wider block">
+            <span className="text-xs font-semibold text-muted uppercase tracking-wider block">
               Prescriptions & Règles applicables
             </span>
-            <ul className="space-y-1.5 text-xs text-[#44403C]">
+            <ul className="space-y-1.5 text-xs text-ink-soft">
               {versionA.prescriptions.map((p, idx) => (
-                <li key={idx} className="flex items-start gap-2 bg-[#FBF9F5] p-2 rounded">
+                <li key={idx} className="flex items-start gap-2 bg-surface p-2 rounded">
                   <span className="text-emerald-700 font-bold shrink-0">+</span>
                   <span className="leading-relaxed">{p}</span>
                 </li>
@@ -109,44 +109,44 @@ export const VersionComparator: React.FC<VersionComparatorProps> = ({
           </div>
 
           {/* Extracted text quote */}
-          <div className="pt-2 text-xs text-[#78716C] italic border-t border-[#F2EEE9]">
+          <div className="pt-2 text-xs text-muted italic border-t border-line-soft">
             « {versionA.extractedText} »
           </div>
         </div>
 
         {/* Column 2: Version Antérieure (Version B) */}
-        <div className="bg-white border border-[#E7E2DA] rounded-xl p-5 sm:p-6 shadow-xs space-y-4 opacity-95">
-          <div className="flex items-center justify-between pb-3 border-b border-[#F2EEE9]">
+        <div className="bg-white border border-line rounded-xl p-5 sm:p-6 shadow-xs space-y-4 opacity-95">
+          <div className="flex items-center justify-between pb-3 border-b border-line-soft">
             <div>
-              <span className="text-[11px] uppercase font-semibold text-[#78716C] tracking-wider block">
+              <span className="text-[11px] uppercase font-semibold text-muted tracking-wider block">
                 Version Antérieure
               </span>
-              <h2 className="text-base sm:text-lg font-bold font-editorial text-[#1C1917]">
+              <h2 className="text-base sm:text-lg font-bold font-editorial text-ink">
                 {versionB.versionLabel}
               </h2>
             </div>
-            <span className="font-mono text-xs font-bold text-[#78716C] bg-[#FAF8F5] px-2.5 py-1 rounded border border-[#E7E2DA]">
+            <span className="font-mono text-xs font-bold text-muted bg-surface-muted px-2.5 py-1 rounded border border-line">
               {versionB.adoptionYear}
             </span>
           </div>
 
           {/* Doses et limites antérieures */}
-          <div className="p-3 bg-[#FAF8F5] border border-[#E7E2DA] rounded-lg text-xs space-y-1">
-            <span className="font-semibold text-[#57534E] block">Plafond antérieur :</span>
-            <span className="font-mono text-sm font-bold text-[#57534E] tabular-nums">
+          <div className="p-3 bg-surface-muted border border-line rounded-lg text-xs space-y-1">
+            <span className="font-semibold text-muted block">Plafond antérieur :</span>
+            <span className="font-mono text-sm font-bold text-muted tabular-nums">
               {versionB.limitsAndDoses}
             </span>
           </div>
 
           {/* Prescriptions antérieures */}
           <div className="space-y-2">
-            <span className="text-xs font-semibold text-[#57534E] uppercase tracking-wider block">
+            <span className="text-xs font-semibold text-muted uppercase tracking-wider block">
               Prescriptions d'origine
             </span>
-            <ul className="space-y-1.5 text-xs text-[#57534E]">
+            <ul className="space-y-1.5 text-xs text-muted">
               {versionB.prescriptions.map((p, idx) => (
-                <li key={idx} className="flex items-start gap-2 bg-[#FAF8F5] p-2 rounded">
-                  <span className="text-[#A8A29E] font-bold shrink-0">·</span>
+                <li key={idx} className="flex items-start gap-2 bg-surface-muted p-2 rounded">
+                  <span className="text-subtle font-bold shrink-0">·</span>
                   <span className="leading-relaxed">{p}</span>
                 </li>
               ))}
@@ -154,7 +154,7 @@ export const VersionComparator: React.FC<VersionComparatorProps> = ({
           </div>
 
           {/* Extracted text quote */}
-          <div className="pt-2 text-xs text-[#A8A29E] italic border-t border-[#F2EEE9]">
+          <div className="pt-2 text-xs text-subtle italic border-t border-line-soft">
             « {versionB.extractedText} »
           </div>
         </div>
@@ -165,7 +165,7 @@ export const VersionComparator: React.FC<VersionComparatorProps> = ({
       <div className="flex justify-end pt-2">
         <button
           onClick={() => onSelectDoc(currentDoc)}
-          className="px-4 py-2 text-xs font-semibold text-[#6B1728] bg-white border border-[#6B1728]/30 hover:bg-[#6B1728] hover:text-white rounded-lg transition-colors cursor-pointer"
+          className="px-4 py-2 text-xs font-semibold text-brand bg-white border border-brand/30 hover:bg-brand hover:text-white rounded-lg transition-colors cursor-pointer"
         >
           Ouvrir la fiche complète de {currentDoc.officialReference}
         </button>

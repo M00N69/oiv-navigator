@@ -59,8 +59,8 @@ export const ProblemSolverView: React.FC<ProblemSolverViewProps> = ({
               onClick={() => setSelectedCategory(cat)}
               className={`px-3 py-1.5 rounded-lg font-medium transition-colors cursor-pointer whitespace-nowrap ${
                 selectedCategory === cat
-                  ? 'bg-[#6B1728] text-white shadow-xs'
-                  : 'bg-[#FAF8F5] hover:bg-[#F3EFEA] text-[#57534E] border border-[#E7E2DA]'
+                  ? 'bg-brand text-white shadow-xs'
+                  : 'bg-surface-muted hover:bg-surface-hover text-muted border border-line'
               }`}
             >
               {cat === 'all' ? 'Toutes les problématiques' : cat}
@@ -77,32 +77,32 @@ export const ProblemSolverView: React.FC<ProblemSolverViewProps> = ({
           return (
             <div
               key={prob.id}
-              className="bg-white border border-[#E7E2DA] hover:border-[#6B1728]/50 rounded-xl p-6 shadow-xs transition-all flex flex-col justify-between space-y-5 group"
+              className="bg-white border border-line hover:border-brand/50 rounded-xl p-6 shadow-xs transition-all flex flex-col justify-between space-y-5 group"
             >
               <div className="space-y-3">
                 {/* Category & Badge */}
-                <div className="flex items-center justify-between text-xs text-[#78716C]">
-                  <span className="font-mono font-semibold uppercase tracking-wider text-[#6B1728]">
+                <div className="flex items-center justify-between text-xs text-muted">
+                  <span className="font-mono font-semibold uppercase tracking-wider text-brand">
                     {prob.category}
                   </span>
-                  <span className="text-[11px] bg-[#FAF8F5] px-2 py-0.5 rounded border border-[#E7E2DA]">
+                  <span className="text-[11px] bg-surface-muted px-2 py-0.5 rounded border border-line">
                     {prob.recommendedDocIds.length} fiche(s) OIV liée(s)
                   </span>
                 </div>
 
                 {/* Title */}
-                <h2 className="text-lg sm:text-xl font-bold font-editorial text-[#1C1917] group-hover:text-[#6B1728] transition-colors leading-snug">
+                <h2 className="text-lg sm:text-xl font-bold font-editorial text-ink group-hover:text-brand transition-colors leading-snug">
                   {prob.title}
                 </h2>
 
                 {/* Problem Summary */}
-                <p className="text-xs sm:text-sm text-[#57534E] leading-relaxed">
+                <p className="text-xs sm:text-sm text-muted leading-relaxed">
                   {prob.problemSummary}
                 </p>
 
                 {/* Key Technical Advice */}
-                <div className="p-3 bg-[#FAF8F5] border border-[#EBE6DF] rounded-lg text-xs text-[#44403C] space-y-1">
-                  <strong className="text-[#1C1917] block">Solution & Pratique OIV :</strong>
+                <div className="p-3 bg-surface-muted border border-line-warm-soft rounded-lg text-xs text-ink-soft space-y-1">
+                  <strong className="text-ink block">Solution & Pratique OIV :</strong>
                   <p className="leading-relaxed">{prob.keyAdvice}</p>
                 </div>
 
@@ -116,7 +116,7 @@ export const ProblemSolverView: React.FC<ProblemSolverViewProps> = ({
 
                 {/* Recommended OIV documents links */}
                 <div className="space-y-1.5 pt-2">
-                  <span className="text-[11px] font-semibold uppercase tracking-wider text-[#78716C] block">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-muted block">
                     Fiches officielles correspondantes :
                   </span>
                   <div className="space-y-1">
@@ -125,15 +125,15 @@ export const ProblemSolverView: React.FC<ProblemSolverViewProps> = ({
                         key={doc.id}
                         type="button"
                         onClick={() => onSelectDoc(doc)}
-                        className="w-full text-left p-2 rounded bg-white hover:bg-[#FAF8F5] border border-[#E7E2DA] hover:border-[#6B1728] text-xs flex items-center justify-between transition-colors cursor-pointer"
+                        className="w-full text-left p-2 rounded bg-white hover:bg-surface-muted border border-line hover:border-brand text-xs flex items-center justify-between transition-colors cursor-pointer"
                       >
                         <div className="truncate pr-2">
-                          <span className="font-mono font-bold text-[#6B1728] mr-2">
+                          <span className="font-mono font-bold text-brand mr-2">
                             {doc.officialReference}
                           </span>
-                          <span className="text-[#1C1917]">{doc.title}</span>
+                          <span className="text-ink">{doc.title}</span>
                         </div>
-                        <ChevronRight className="w-3.5 h-3.5 text-[#78716C] shrink-0" />
+                        <ChevronRight className="w-3.5 h-3.5 text-muted shrink-0" />
                       </button>
                     ))}
                   </div>
@@ -141,14 +141,14 @@ export const ProblemSolverView: React.FC<ProblemSolverViewProps> = ({
               </div>
 
               {/* Bottom Action: Open in Simulator */}
-              <div className="pt-3 border-t border-[#F2EEE9] flex items-center justify-between">
-                <span className="text-xs text-[#78716C]">
+              <div className="pt-3 border-t border-line-soft flex items-center justify-between">
+                <span className="text-xs text-muted">
                   Calculer pour ma cuve :
                 </span>
                 <button
                   type="button"
                   onClick={() => onOpenSimulatorWith(substanceKey)}
-                  className="px-3.5 py-1.5 text-xs font-semibold text-[#6B1728] bg-[#6B1728]/10 hover:bg-[#6B1728] hover:text-white rounded-lg transition-colors inline-flex items-center gap-1.5 cursor-pointer"
+                  className="px-3.5 py-1.5 text-xs font-semibold text-brand bg-brand/10 hover:bg-brand hover:text-white rounded-lg transition-colors inline-flex items-center gap-1.5 cursor-pointer"
                 >
                   <Calculator className="w-3.5 h-3.5" />
                   <span>Simuler le traitement</span>

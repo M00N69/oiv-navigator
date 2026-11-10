@@ -46,10 +46,10 @@ export const Logo: React.FC<LogoProps> = ({ size = 36, withWordmark = false, cla
       {emblem}
       <span className="flex flex-col leading-none text-left">
         <span className="font-editorial tracking-tight">
-          <span className="text-xl font-bold text-[#1C1917]">OIV</span>{' '}
-          <span className="text-xl font-light text-[#6B1728]">Navigator</span>
+          <span className="text-xl font-bold text-ink">OIV</span>{' '}
+          <span className="text-xl font-light text-brand">Navigator</span>
         </span>
-        <span className="mt-1 text-[11px] font-medium tracking-wide text-[#57534E]">
+        <span className="mt-1 text-[11px] font-medium tracking-wide text-muted">
           Veille &amp; pratiques œnologiques
         </span>
       </span>

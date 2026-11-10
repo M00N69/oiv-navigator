@@ -118,7 +118,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FBF9F5] text-[#1C1917] flex flex-col font-sans">
+    <div className="min-h-screen bg-surface text-ink flex flex-col font-sans">
       {/* Top Bar Navigation */}
       <Header
         currentTab={selectedDoc ? 'detail' : currentTab}
@@ -228,11 +228,11 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-[#E7E2DA] bg-[#FAF8F5] py-8 text-xs text-[#78716C] no-print">
+      <footer className="border-t border-line bg-surface-muted py-8 text-xs text-muted no-print">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 md:grid-cols-[1.5fr_1fr_1fr]">
             <div className="space-y-1.5">
-              <div className="font-editorial text-sm font-semibold text-[#1C1917]">
+              <div className="font-editorial text-sm font-semibold text-ink">
                 OIV Navigator · Système Documentaire &amp; Réglementaire Œnologique
               </div>
               <p className="max-w-sm leading-relaxed">
@@ -242,22 +242,22 @@ export default function App() {
             </div>
 
             <nav aria-label="Navigation de pied de page" className="flex flex-wrap gap-x-6 gap-y-2 md:flex-col">
-              <button onClick={() => handleTabChange('home')} className="text-left hover:text-[#1C1917] cursor-pointer">
+              <button onClick={() => handleTabChange('home')} className="text-left hover:text-ink cursor-pointer">
                 Corpus
               </button>
-              <button onClick={() => handleTabChange('simulator')} className="text-left font-semibold hover:text-[#6B1728] cursor-pointer">
+              <button onClick={() => handleTabChange('simulator')} className="text-left font-semibold hover:text-brand cursor-pointer">
                 Simulateur de chai
               </button>
-              <button onClick={() => handleTabChange('solver')} className="text-left font-semibold hover:text-[#6B1728] cursor-pointer">
+              <button onClick={() => handleTabChange('solver')} className="text-left font-semibold hover:text-brand cursor-pointer">
                 Guide par objectif
               </button>
-              <button onClick={() => handleTabChange('regulatory')} className="text-left hover:text-[#1C1917] cursor-pointer">
+              <button onClick={() => handleTabChange('regulatory')} className="text-left hover:text-ink cursor-pointer">
                 Règlements UE
               </button>
-              <button onClick={() => handleTabChange('guide')} className="text-left font-semibold hover:text-[#6B1728] cursor-pointer">
+              <button onClick={() => handleTabChange('guide')} className="text-left font-semibold hover:text-brand cursor-pointer">
                 Guide explicatif
               </button>
-              <button onClick={() => handleTabChange('dossier')} className="text-left hover:text-[#1C1917] cursor-pointer">
+              <button onClick={() => handleTabChange('dossier')} className="text-left hover:text-ink cursor-pointer">
                 Registre &amp; export
               </button>
             </nav>
@@ -267,7 +267,7 @@ export default function App() {
                 href="https://www.oiv.int"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#6B1728] underline"
+                className="hover:text-brand underline"
               >
                 Portail officiel OIV.int
               </a>
@@ -275,7 +275,7 @@ export default function App() {
                 href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32019R0934"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#6B1728] underline"
+                className="hover:text-brand underline"
               >
                 Règlement (UE) 2019/934
               </a>

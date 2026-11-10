@@ -52,7 +52,7 @@ export const DocumentCard: React.FC<DocumentCardProps> = ({
       );
     }
     return (
-      <div className="text-xs text-[#78716C]">
+      <div className="text-xs text-muted">
         <span>Méthode / Non soumis à autorisation UE</span>
       </div>
     );
@@ -60,20 +60,20 @@ export const DocumentCard: React.FC<DocumentCardProps> = ({
 
   return (
     <div 
-      className="bg-white border border-[#E7E2DA] hover:border-[#6B1728]/40 rounded-lg p-5 sm:p-6 transition-all shadow-xs hover:shadow-md flex flex-col justify-between group"
+      className="bg-white border border-line hover:border-brand/40 rounded-lg p-5 sm:p-6 transition-all shadow-xs hover:shadow-md flex flex-col justify-between group"
     >
       <div>
         {/* Unboxed Metadata Header (NO PILLS) */}
-        <div className="flex items-center justify-between gap-4 text-xs text-[#78716C] mb-2.5">
+        <div className="flex items-center justify-between gap-4 text-xs text-muted mb-2.5">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="font-mono font-semibold text-[#6B1728] tracking-tight">
+            <span className="font-mono font-semibold text-brand tracking-tight">
               {document.officialReference}
             </span>
-            <span aria-hidden="true" className="text-[#D6D3D1]">·</span>
+            <span aria-hidden="true" className="text-separator">·</span>
             <span>{document.domain}</span>
-            <span aria-hidden="true" className="text-[#D6D3D1]">·</span>
+            <span aria-hidden="true" className="text-separator">·</span>
             <span>{document.category}</span>
-            <span aria-hidden="true" className="text-[#D6D3D1]">·</span>
+            <span aria-hidden="true" className="text-separator">·</span>
             <span className="font-mono tabular-nums">{document.adoptionYear}</span>
           </div>
 
@@ -86,8 +86,8 @@ export const DocumentCard: React.FC<DocumentCardProps> = ({
               }}
               className={`p-1.5 rounded transition-colors ${
                 isBookmarked 
-                  ? 'text-[#6B1728] bg-[#6B1728]/10' 
-                  : 'text-[#A8A29E] hover:text-[#1C1917] hover:bg-[#F3EFEA]'
+                  ? 'text-brand bg-brand/10' 
+                  : 'text-subtle hover:text-ink hover:bg-surface-hover'
               }`}
               title={isBookmarked ? 'Retirer des favoris' : 'Ajouter aux favoris'}
             >
@@ -100,8 +100,8 @@ export const DocumentCard: React.FC<DocumentCardProps> = ({
               }}
               className={`p-1.5 rounded transition-colors ${
                 isInDossier 
-                  ? 'text-[#6B1728] bg-[#6B1728]/10' 
-                  : 'text-[#A8A29E] hover:text-[#1C1917] hover:bg-[#F3EFEA]'
+                  ? 'text-brand bg-brand/10' 
+                  : 'text-subtle hover:text-ink hover:bg-surface-hover'
               }`}
               title={isInDossier ? 'Retirer du dossier technique' : 'Ajouter au dossier technique'}
             >
@@ -113,34 +113,34 @@ export const DocumentCard: React.FC<DocumentCardProps> = ({
         {/* Title */}
         <h3 
           onClick={() => onSelect(document)}
-          className="text-lg sm:text-xl font-bold font-editorial text-[#1C1917] group-hover:text-[#6B1728] transition-colors cursor-pointer leading-snug mb-2.5"
+          className="text-lg sm:text-xl font-bold font-editorial text-ink group-hover:text-brand transition-colors cursor-pointer leading-snug mb-2.5"
           dangerouslySetInnerHTML={{ __html: highlightText(document.title, searchQuery) }}
         />
 
         {/* Summary */}
         <p 
-          className="text-xs sm:text-sm text-[#57534E] leading-relaxed line-clamp-2 mb-4"
+          className="text-xs sm:text-sm text-muted leading-relaxed line-clamp-2 mb-4"
           dangerouslySetInnerHTML={{ __html: highlightText(document.summary, searchQuery) }}
         />
 
         {/* Limits & Doses strip */}
         {document.limitsAndDoses && (
-          <div className="mb-3 py-2 px-3 bg-[#FAF8F5] border border-[#EBE6DF] rounded text-xs text-[#44403C]">
-            <span className="font-semibold text-[#1C1917]">Plafond & Conditions : </span>
+          <div className="mb-3 py-2 px-3 bg-surface-muted border border-line-warm-soft rounded text-xs text-ink-soft">
+            <span className="font-semibold text-ink">Plafond & Conditions : </span>
             <span className="font-mono tabular-nums">{document.limitsAndDoses}</span>
           </div>
         )}
 
         {/* Direct official links strip */}
-        <div className="mb-3 flex items-center gap-3 text-[11px] text-[#78716C] flex-wrap">
-          <span className="font-medium text-[#57534E]">Liens directs officiels :</span>
+        <div className="mb-3 flex items-center gap-3 text-[11px] text-muted flex-wrap">
+          <span className="font-medium text-muted">Liens directs officiels :</span>
           {document.pdfUrl && (
             <a
               href={document.pdfUrl}
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="inline-flex items-center gap-1 text-[#6B1728] hover:underline font-semibold bg-[#6B1728]/5 px-2 py-0.5 rounded"
+              className="inline-flex items-center gap-1 text-brand hover:underline font-semibold bg-brand/5 px-2 py-0.5 rounded"
               title="Télécharger directement la version officielle PDF"
             >
               <span>PDF Officiel</span>
@@ -152,7 +152,7 @@ export const DocumentCard: React.FC<DocumentCardProps> = ({
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
-            className="inline-flex items-center gap-1 text-[#57534E] hover:text-[#1C1917] hover:underline"
+            className="inline-flex items-center gap-1 text-muted hover:text-ink hover:underline"
             title="Consulter la fiche source sur OIV.int"
           >
             <span>Portail OIV.int</span>
@@ -163,7 +163,7 @@ export const DocumentCard: React.FC<DocumentCardProps> = ({
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
-            className="inline-flex items-center gap-1 text-[#57534E] hover:text-[#1C1917] hover:underline"
+            className="inline-flex items-center gap-1 text-muted hover:text-ink hover:underline"
             title="Consulter le texte réglementaire consolidé sur EUR-Lex"
           >
             <span>Règlement UE</span>
@@ -173,7 +173,7 @@ export const DocumentCard: React.FC<DocumentCardProps> = ({
       </div>
 
       {/* Footer Strip: Regulatory Status + Action Buttons */}
-      <div className="pt-3.5 border-t border-[#F2EEE9] flex items-center justify-between gap-4 flex-wrap">
+      <div className="pt-3.5 border-t border-line-soft flex items-center justify-between gap-4 flex-wrap">
         <div>
           {renderEuStatusBadge()}
         </div>
@@ -182,7 +182,7 @@ export const DocumentCard: React.FC<DocumentCardProps> = ({
           {document.versions.length > 1 && (
             <button
               onClick={() => onCompareWith(document)}
-              className="text-xs text-[#57534E] hover:text-[#6B1728] font-medium flex items-center gap-1 hover:underline cursor-pointer"
+              className="text-xs text-muted hover:text-brand font-medium flex items-center gap-1 hover:underline cursor-pointer"
               title="Comparer avec la version antérieure"
             >
               <GitCompare className="w-3.5 h-3.5" />
@@ -192,7 +192,7 @@ export const DocumentCard: React.FC<DocumentCardProps> = ({
 
           <button
             onClick={() => onSelect(document)}
-            className="px-3.5 py-1.5 text-xs font-semibold text-[#6B1728] bg-[#6B1728]/5 hover:bg-[#6B1728] hover:text-white rounded transition-colors flex items-center gap-1 cursor-pointer"
+            className="px-3.5 py-1.5 text-xs font-semibold text-brand bg-brand/5 hover:bg-brand hover:text-white rounded transition-colors flex items-center gap-1 cursor-pointer"
           >
             <span>Consulter la fiche</span>
             <ChevronRight className="w-3.5 h-3.5" />

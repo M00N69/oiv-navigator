@@ -40,19 +40,19 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
     filters.onlyRecent;
 
   return (
-    <aside className="w-full bg-white border border-[#E7E2DA] rounded-lg p-5 shadow-xs lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
+    <aside className="w-full bg-white border border-line rounded-lg p-5 shadow-xs lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
       {/* Header */}
-      <div className="flex items-center justify-between pb-3.5 mb-4 border-b border-[#E7E2DA]">
+      <div className="flex items-center justify-between pb-3.5 mb-4 border-b border-line">
         <div className="flex items-center gap-2">
-          <Filter className="w-4 h-4 text-[#6B1728]" />
-          <h2 className="text-sm font-bold tracking-tight text-[#1C1917] uppercase">
+          <Filter className="w-4 h-4 text-brand" />
+          <h2 className="text-sm font-bold tracking-tight text-ink uppercase">
             Filtres documentaires
           </h2>
         </div>
         {hasActiveFilters && (
           <button
             onClick={resetFilters}
-            className="text-xs text-[#78716C] hover:text-[#6B1728] flex items-center gap-1 cursor-pointer font-medium"
+            className="text-xs text-muted hover:text-brand flex items-center gap-1 cursor-pointer font-medium"
           >
             <RotateCcw className="w-3 h-3" />
             <span>Réinitialiser</span>
@@ -61,19 +61,19 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
       </div>
 
       {/* Result count */}
-      <div className="text-xs text-[#57534E] mb-5">
-        <span className="font-mono font-bold text-[#1C1917]">{totalResultsCount}</span> document(s) trouvé(s) sur <span className="font-mono">{totalCorpusCount}</span>
+      <div className="text-xs text-muted mb-5">
+        <span className="font-mono font-bold text-ink">{totalResultsCount}</span> document(s) trouvé(s) sur <span className="font-mono">{totalCorpusCount}</span>
       </div>
 
       <div className="space-y-6">
         {/* Switch: Récent uniquement */}
         <div className="pt-1">
-          <label className="flex items-center gap-2.5 text-xs font-medium text-[#1C1917] cursor-pointer">
+          <label className="flex items-center gap-2.5 text-xs font-medium text-ink cursor-pointer">
             <input
               type="checkbox"
               checked={filters.onlyRecent}
               onChange={(e) => onChangeFilters({ ...filters, onlyRecent: e.target.checked })}
-              className="w-4 h-4 rounded border-[#D6D3D1] text-[#6B1728] focus:ring-[#6B1728] accent-[#6B1728]"
+              className="w-4 h-4 rounded border-separator text-brand focus:ring-brand accent-brand"
             />
             <span>Nouvelles résolutions uniquement (2024–2026)</span>
           </label>
@@ -81,7 +81,7 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
 
         {/* 1. Famille documentaire */}
         <div>
-          <label className="block text-xs font-semibold uppercase tracking-wider text-[#78716C] mb-2 flex items-center gap-1.5">
+          <label className="block text-xs font-semibold uppercase tracking-wider text-muted mb-2 flex items-center gap-1.5">
             <Layers className="w-3.5 h-3.5" />
             <span>Famille documentaire OIV</span>
           </label>
@@ -98,8 +98,8 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
                 onClick={() => onChangeFilters({ ...filters, family: fam.id as any })}
                 className={`w-full text-left px-2.5 py-1.5 rounded text-xs transition-colors flex items-center justify-between cursor-pointer ${
                   filters.family === fam.id
-                    ? 'bg-[#6B1728]/10 text-[#6B1728] font-semibold'
-                    : 'text-[#44403C] hover:bg-[#F3EFEA]'
+                    ? 'bg-brand/10 text-brand font-semibold'
+                    : 'text-ink-soft hover:bg-surface-hover'
                 }`}
               >
                 <span>{fam.label}</span>
@@ -111,7 +111,7 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
 
         {/* 2. Statut Réglementaire UE (2019/934) */}
         <div>
-          <label className="block text-xs font-semibold uppercase tracking-wider text-[#78716C] mb-2 flex items-center gap-1.5">
+          <label className="block text-xs font-semibold uppercase tracking-wider text-muted mb-2 flex items-center gap-1.5">
             <ShieldCheck className="w-3.5 h-3.5" />
             <span>Statut Union Européenne</span>
           </label>
@@ -128,8 +128,8 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
                 onClick={() => onChangeFilters({ ...filters, euStatus: st.id as any })}
                 className={`w-full text-left px-2.5 py-1.5 rounded text-xs transition-colors flex items-center justify-between cursor-pointer ${
                   filters.euStatus === st.id
-                    ? 'bg-[#6B1728]/10 text-[#6B1728] font-semibold'
-                    : 'text-[#44403C] hover:bg-[#F3EFEA]'
+                    ? 'bg-brand/10 text-brand font-semibold'
+                    : 'text-ink-soft hover:bg-surface-hover'
                 }`}
               >
                 <span>{st.label}</span>
@@ -141,7 +141,7 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
 
         {/* 3. Catégorie matrice */}
         <div>
-          <label className="block text-xs font-semibold uppercase tracking-wider text-[#78716C] mb-2">
+          <label className="block text-xs font-semibold uppercase tracking-wider text-muted mb-2">
             Matrice / Étape
           </label>
           <div className="grid grid-cols-2 gap-1.5">
@@ -151,8 +151,8 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
                 onClick={() => onChangeFilters({ ...filters, category: cat })}
                 className={`px-2 py-1.5 rounded text-xs text-center transition-colors cursor-pointer ${
                   filters.category === cat
-                    ? 'bg-[#1C1917] text-white font-medium'
-                    : 'bg-[#F9F7F4] hover:bg-[#EBE6DF] text-[#44403C]'
+                    ? 'bg-ink text-white font-medium'
+                    : 'bg-surface-muted hover:bg-line-warm-soft text-ink-soft'
                 }`}
               >
                 {cat === 'all' ? 'Toutes' : cat}
@@ -164,13 +164,13 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
         {/* 4. Domaine technique */}
         {availableDomains.length > 0 && (
           <div>
-            <label className="block text-xs font-semibold uppercase tracking-wider text-[#78716C] mb-2">
+            <label className="block text-xs font-semibold uppercase tracking-wider text-muted mb-2">
               Domaine technique
             </label>
             <select
               value={filters.domain}
               onChange={(e) => onChangeFilters({ ...filters, domain: e.target.value })}
-              className="w-full text-xs p-2 bg-white border border-[#E7E2DA] rounded text-[#1C1917] focus:outline-none focus:border-[#6B1728]"
+              className="w-full text-xs p-2 bg-white border border-line rounded text-ink focus:outline-none focus:border-brand"
             >
               <option value="all">Tous les domaines</option>
               {availableDomains.map((d) => (
@@ -184,12 +184,12 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
 
         {/* 5. Année d'adoption */}
         <div>
-          <div className="flex items-center justify-between text-xs text-[#78716C] mb-1.5">
+          <div className="flex items-center justify-between text-xs text-muted mb-1.5">
             <span className="font-semibold uppercase tracking-wider flex items-center gap-1">
               <Calendar className="w-3 h-3" />
               Période
             </span>
-            <span className="font-mono tabular-nums text-[#1C1917]">
+            <span className="font-mono tabular-nums text-ink">
               {filters.yearRange[0]} — {filters.yearRange[1]}
             </span>
           </div>
@@ -202,9 +202,9 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
               ...filters,
               yearRange: [parseInt(e.target.value), filters.yearRange[1]]
             })}
-            className="w-full accent-[#6B1728] cursor-pointer"
+            className="w-full accent-brand cursor-pointer"
           />
-          <div className="flex justify-between text-[10px] text-[#A8A29E] font-mono mt-1">
+          <div className="flex justify-between text-[11px] text-subtle font-mono mt-1">
             <span>2005</span>
             <span>2015</span>
             <span>2026</span>
