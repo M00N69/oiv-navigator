@@ -40,7 +40,7 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
     filters.onlyRecent;
 
   return (
-    <aside className="w-full bg-white border border-[#E7E2DA] rounded-lg p-5 shadow-xs">
+    <aside className="w-full bg-white border border-[#E7E2DA] rounded-lg p-5 shadow-xs lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
       {/* Header */}
       <div className="flex items-center justify-between pb-3.5 mb-4 border-b border-[#E7E2DA]">
         <div className="flex items-center gap-2">

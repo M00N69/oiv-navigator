@@ -7,6 +7,8 @@ import {
   Calculator, 
   ChevronRight
 } from 'lucide-react';
+import { PageContainer } from './PageContainer';
+import { PageHeader } from './PageHeader';
 
 interface ProblemSolverViewProps {
   documents: OivDocument[];
@@ -40,26 +42,18 @@ export const ProblemSolverView: React.FC<ProblemSolverViewProps> = ({
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 space-y-8">
+    <PageContainer className="space-y-8">
       {/* Header */}
-      <div className="bg-white border border-[#E7E2DA] rounded-xl p-6 sm:p-8 shadow-xs">
-        <div className="flex items-start gap-4">
-          <div className="p-2.5 bg-[#6B1728]/10 text-[#6B1728] rounded-xl shrink-0 mt-1">
-            <Sparkles className="w-6 h-6 text-[#6B1728]" />
-          </div>
-          <div className="space-y-2">
-            <h1 className="text-2xl sm:text-3xl font-bold font-editorial text-[#1C1917]">
-              Guide par Problématique & Objectif Œnologique
-            </h1>
-            <p className="text-sm text-[#57534E] leading-relaxed max-w-3xl">
-              Trouvez immédiatement les pratiques OIV autorisées et leurs conditions d'emploi selon votre objectif de vinification, sans avoir besoin de connaître à l'avance les numéros de résolutions.
-            </p>
-          </div>
-        </div>
+      <PageHeader
+        icon={Sparkles}
+        eyebrow="Guide par objectif"
+        title="Problématique & objectif œnologique"
+        description="Trouvez immédiatement les pratiques OIV autorisées et leurs conditions d'emploi selon votre objectif de vinification, sans avoir besoin de connaître à l'avance les numéros de résolutions."
+      />
 
-        {/* Category Pills Bar */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pt-6 border-t border-[#F2EEE9] mt-6 text-xs">
-          {categories.map((cat) => (
+      {/* Category Pills Bar */}
+      <div className="flex flex-wrap items-center gap-1.5 text-xs">
+        {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
@@ -72,7 +66,6 @@ export const ProblemSolverView: React.FC<ProblemSolverViewProps> = ({
               {cat === 'all' ? 'Toutes les problématiques' : cat}
             </button>
           ))}
-        </div>
       </div>
 
       {/* Problems Grid */}
@@ -166,6 +159,6 @@ export const ProblemSolverView: React.FC<ProblemSolverViewProps> = ({
           );
         })}
       </div>
-    </div>
+    </PageContainer>
   );
 };

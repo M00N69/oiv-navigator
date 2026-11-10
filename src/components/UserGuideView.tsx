@@ -12,6 +12,8 @@ import {
   ChevronDown,
   ChevronUp
 } from 'lucide-react';
+import { PageContainer } from './PageContainer';
+import { PageHeader } from './PageHeader';
 
 interface UserGuideViewProps {
   onNavigateTab: (tab: string) => void;
@@ -44,33 +46,19 @@ export const UserGuideView: React.FC<UserGuideViewProps> = ({ onNavigateTab }) =
   ];
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-10">
+    <PageContainer className="space-y-10">
       
-      {/* Header */}
-      <div className="bg-white border border-[#E7E2DA] rounded-xl p-6 sm:p-8 shadow-xs">
-        <div className="flex items-start gap-4">
-          <div className="p-2.5 bg-[#6B1728]/10 text-[#6B1728] rounded-xl shrink-0 mt-1">
-            <BookOpen className="w-6 h-6 text-[#6B1728]" />
-          </div>
-          <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <span className="text-xs uppercase font-mono font-semibold tracking-wider text-[#6B1728]">
-                Documentation & Pédagogie Réglementaire
-              </span>
-              <span className="text-[#D6D3D1]">·</span>
-              <span className="text-xs text-emerald-800 font-medium">
-                Guide de référence 2026
-              </span>
-            </div>
-            <h1 className="text-2xl sm:text-3xl font-bold font-editorial text-[#1C1917]">
-              Guide Explicatif : Méthodologie de Veille & Validité Juridique
-            </h1>
-            <p className="text-sm text-[#57534E] leading-relaxed max-w-3xl">
-              Comprendre le cycle de vie d'une résolution OIV, vérifier si un texte est toujours en vigueur et maîtriser l'articulation obligatoire avec les règlements de l'Union européenne.
-            </p>
-          </div>
-        </div>
-      </div>
+      <PageHeader
+        icon={BookOpen}
+        eyebrow="Documentation & pédagogie réglementaire"
+        title="Guide explicatif : méthodologie de veille & validité juridique"
+        description="Comprendre le cycle de vie d'une résolution OIV, vérifier si un texte est toujours en vigueur et maîtriser l'articulation obligatoire avec les règlements de l'Union européenne."
+        actions={
+          <span className="rounded-full border border-[#E7E2DA] bg-[#FAF8F5] px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-[#57534E]">
+            Guide de référence 2026
+          </span>
+        }
+      />
 
       {/* Section 1 : La Méthode de Contrôle de Validité en 3 Étapes */}
       <div className="space-y-4">
@@ -281,6 +269,6 @@ export const UserGuideView: React.FC<UserGuideViewProps> = ({ onNavigateTab }) =
         </div>
       </div>
 
-    </div>
+    </PageContainer>
   );
 };

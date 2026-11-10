@@ -14,6 +14,7 @@ import {
   FileText,
   Calculator
 } from 'lucide-react';
+import { PageContainer } from './PageContainer';
 
 interface HomeExplorerProps {
   documents: OivDocument[];
@@ -65,7 +66,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
   const featuredDoc = documents.find(d => d.id === 'oiv-oeno-738-2025');
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+    <PageContainer className="space-y-6">
       
       {/* 1. Header Structure: Title + Freshness Status Strip + Pro Shortcuts */}
       <div className="bg-white border border-[#E7E2DA] rounded-xl p-5 sm:p-6 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -347,6 +348,6 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
 
       </div>
 
-    </div>
+    </PageContainer>
   );
 };

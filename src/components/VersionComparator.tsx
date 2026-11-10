@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { OivDocument } from '../types/oiv';
 import { GitCompare, Sparkles } from 'lucide-react';
+import { PageContainer } from './PageContainer';
+import { PageHeader } from './PageHeader';
 
 interface VersionComparatorProps {
   documents: OivDocument[];
@@ -26,32 +28,24 @@ export const VersionComparator: React.FC<VersionComparatorProps> = ({
   const versionB = currentDoc.versions[1] || currentDoc.versions[0]; // Older
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 space-y-6">
-      {/* Header */}
-      <div className="bg-white border border-[#E7E2DA] rounded-xl p-6 shadow-xs">
-        <div className="flex items-center gap-3 mb-2">
-          <div className="p-2 bg-[#6B1728]/10 text-[#6B1728] rounded-lg">
-            <GitCompare className="w-5 h-5 text-[#6B1728]" />
-          </div>
-          <div>
-            <h1 className="text-xl sm:text-2xl font-bold font-editorial text-[#1C1917]">
-              Comparateur d'Évolution & Diff de Versions
-            </h1>
-            <p className="text-xs sm:text-sm text-[#78716C]">
-              Analysez les variations de prescriptions, les modifications de doses limites et les extensions de champ d'application.
-            </p>
-          </div>
-        </div>
+    <PageContainer className="space-y-6">
+      <PageHeader
+        icon={GitCompare}
+        eyebrow="Analyse de versions"
+        title="Comparateur d'évolution & diff de versions"
+        description="Analysez les variations de prescriptions, les modifications de doses limites et les extensions de champ d'application."
+      />
 
         {/* Document Selector */}
-        <div className="mt-4 pt-4 border-t border-[#F2EEE9] flex items-center gap-4 flex-wrap">
-          <label className="text-xs font-semibold text-[#57534E]">
+        <div className="flex flex-wrap items-center gap-4 border-b border-[#E7E2DA] pb-4">
+          <label htmlFor="comparator-doc" className="text-xs font-semibold text-[#57534E]">
             Sélectionner une référence OIV à comparer :
           </label>
           <select
+            id="comparator-doc"
             value={selectedDocId}
             onChange={(e) => setSelectedDocId(e.target.value)}
-            className="text-xs sm:text-sm p-2 bg-[#FAF8F5] border border-[#E7E2DA] rounded-lg text-[#1C1917] font-medium focus:outline-none focus:border-[#6B1728]"
+            className="rounded-lg border border-[#E7E2DA] bg-[#FAF8F5] p-2 text-xs font-medium text-[#1C1917] focus:border-[#6B1728] focus:outline-none sm:text-sm"
           >
             {multiVersionDocs.map(doc => (
               <option key={doc.id} value={doc.id}>
@@ -60,7 +54,6 @@ export const VersionComparator: React.FC<VersionComparatorProps> = ({
             ))}
           </select>
         </div>
-      </div>
 
       {/* Summary of changes highlight banner */}
       <div className="p-4 bg-[#FAF8F5] border border-[#E8DEC8] rounded-xl text-xs sm:text-sm text-[#44403C] space-y-1">
@@ -177,6 +170,6 @@ export const VersionComparator: React.FC<VersionComparatorProps> = ({
           Ouvrir la fiche complète de {currentDoc.officialReference}
         </button>
       </div>
-    </div>
+    </PageContainer>
   );
 };

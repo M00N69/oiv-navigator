@@ -229,61 +229,57 @@ export default function App() {
 
       {/* Footer */}
       <footer className="border-t border-[#E7E2DA] bg-[#FAF8F5] py-8 text-xs text-[#78716C] no-print">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="space-y-1 text-center sm:text-left">
-            <div className="font-semibold text-[#1C1917] font-editorial text-sm">
-              OIV Navigator · Système Documentaire & Réglementaire Œnologique
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-8 md:grid-cols-[1.5fr_1fr_1fr]">
+            <div className="space-y-1.5">
+              <div className="font-editorial text-sm font-semibold text-[#1C1917]">
+                OIV Navigator · Système Documentaire &amp; Réglementaire Œnologique
+              </div>
+              <p className="max-w-sm leading-relaxed">
+                Outil public de recherche et d'interrogation du corpus OIV et des règlements
+                européens (UE 2019/934).
+              </p>
             </div>
-            <p>
-              Outil public de recherche et d'interrogation du corpus OIV et des règlements européens (UE 2019/934).
-            </p>
-          </div>
 
-          <div className="flex items-center gap-6 text-xs font-medium">
-            <button
-              onClick={() => handleTabChange('home')}
-              className="hover:text-[#1C1917] cursor-pointer"
-            >
-              Corpus
-            </button>
-            <button
-              onClick={() => handleTabChange('simulator')}
-              className="hover:text-[#6B1728] font-semibold cursor-pointer"
-            >
-              Simulateur de Chai
-            </button>
-            <button
-              onClick={() => handleTabChange('solver')}
-              className="hover:text-[#6B1728] font-semibold cursor-pointer"
-            >
-              Guide par Objectif
-            </button>
-            <button
-              onClick={() => handleTabChange('regulatory')}
-              className="hover:text-[#1C1917] cursor-pointer"
-            >
-              Règlements UE
-            </button>
-            <button
-              onClick={() => handleTabChange('guide')}
-              className="hover:text-[#6B1728] font-semibold cursor-pointer"
-            >
-              Guide Explicatif
-            </button>
-            <button
-              onClick={() => handleTabChange('dossier')}
-              className="hover:text-[#1C1917] cursor-pointer"
-            >
-              Registre & Export
-            </button>
-            <a
-              href="https://www.oiv.int"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#6B1728] underline"
-            >
-              Portail Officiel OIV.int
-            </a>
+            <nav aria-label="Navigation de pied de page" className="flex flex-wrap gap-x-6 gap-y-2 md:flex-col">
+              <button onClick={() => handleTabChange('home')} className="text-left hover:text-[#1C1917] cursor-pointer">
+                Corpus
+              </button>
+              <button onClick={() => handleTabChange('simulator')} className="text-left font-semibold hover:text-[#6B1728] cursor-pointer">
+                Simulateur de chai
+              </button>
+              <button onClick={() => handleTabChange('solver')} className="text-left font-semibold hover:text-[#6B1728] cursor-pointer">
+                Guide par objectif
+              </button>
+              <button onClick={() => handleTabChange('regulatory')} className="text-left hover:text-[#1C1917] cursor-pointer">
+                Règlements UE
+              </button>
+              <button onClick={() => handleTabChange('guide')} className="text-left font-semibold hover:text-[#6B1728] cursor-pointer">
+                Guide explicatif
+              </button>
+              <button onClick={() => handleTabChange('dossier')} className="text-left hover:text-[#1C1917] cursor-pointer">
+                Registre &amp; export
+              </button>
+            </nav>
+
+            <div className="flex flex-wrap gap-x-6 gap-y-2 md:flex-col">
+              <a
+                href="https://www.oiv.int"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#6B1728] underline"
+              >
+                Portail officiel OIV.int
+              </a>
+              <a
+                href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32019R0934"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#6B1728] underline"
+              >
+                Règlement (UE) 2019/934
+              </a>
+            </div>
           </div>
         </div>
       </footer>

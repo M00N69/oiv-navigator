@@ -3,6 +3,8 @@ import { OivDocument } from '../types/oiv';
 import { OFFICIAL_LIVE_SOURCES } from '../data/oivCorpus';
 import { normalizeDocument } from '../lib/documentSchema';
 import { BookOpen, Download, Upload, CheckCircle2, AlertCircle, ArrowRight, ExternalLink, Scale } from 'lucide-react';
+import { PageContainer } from './PageContainer';
+import { PageHeader } from './PageHeader';
 
 interface VeilleUpdatesViewProps {
   documents: OivDocument[];
@@ -84,45 +86,37 @@ export const VeilleUpdatesView: React.FC<VeilleUpdatesViewProps> = ({
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-8">
+    <PageContainer className="space-y-8">
       {/* Header */}
-      <div className="bg-white border border-[#E7E2DA] rounded-xl p-6 sm:p-8 shadow-xs flex items-start justify-between gap-6 flex-wrap">
-        <div className="space-y-2 max-w-2xl">
-          <div className="flex items-center gap-2 text-xs font-semibold text-[#6B1728] uppercase tracking-wider">
-            <BookOpen className="w-4 h-4" />
-            <span>Journal de Veille & Dépôts Légaux</span>
+      <PageHeader
+        icon={BookOpen}
+        eyebrow="Journal de veille & dépôts légaux"
+        title="Veille active & téléchargement des dernières versions"
+        description="L'application référence les dernières publications officielles de l'OIV et les actes délégués de l'Union européenne. Utilisez les accès directs pour consulter et télécharger les textes originaux à la source."
+        actions={
+          <div className="flex flex-wrap items-center gap-3">
+            <button
+              onClick={handleExportCorpus}
+              className="px-3.5 py-2 text-xs font-semibold text-[#1C1917] bg-[#FAF8F5] border border-[#E7E2DA] hover:bg-[#F3EFEA] rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer"
+              title="Exporter l'ensemble de la base documentaire en JSON"
+            >
+              <Download className="w-3.5 h-3.5 text-[#6B1728]" />
+              <span>Sauvegarder JSON</span>
+            </button>
+
+            <label className="px-3.5 py-2 text-xs font-semibold text-white bg-[#6B1728] hover:bg-[#50101C] rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[#6B1728]">
+              <Upload className="w-3.5 h-3.5" />
+              <span>Importer une résolution</span>
+              <input
+                type="file"
+                accept=".json"
+                onChange={handleImportFile}
+                className="sr-only"
+              />
+            </label>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-bold font-editorial text-[#1C1917]">
-            Veille Active & Téléchargement des Dernières Versions
-          </h1>
-          <p className="text-sm text-[#57534E] leading-relaxed">
-            L'application référence les dernières publications officielles de l'OIV et les actes délégués de l'Union européenne. Utilisez les accès directs pour consulter et télécharger les textes originaux à la source.
-          </p>
-        </div>
-
-        {/* Offline Backup & Import Controls */}
-        <div className="flex items-center gap-3">
-          <button
-            onClick={handleExportCorpus}
-            className="px-3.5 py-2 text-xs font-semibold text-[#1C1917] bg-[#FAF8F5] border border-[#E7E2DA] hover:bg-[#F3EFEA] rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer"
-            title="Exporter l'ensemble de la base documentaire en JSON"
-          >
-            <Download className="w-3.5 h-3.5 text-[#6B1728]" />
-            <span>Sauvegarder JSON</span>
-          </button>
-
-          <label className="px-3.5 py-2 text-xs font-semibold text-white bg-[#6B1728] hover:bg-[#50101C] rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer">
-            <Upload className="w-3.5 h-3.5" />
-            <span>Importer une résolution</span>
-            <input
-              type="file"
-              accept=".json"
-              onChange={handleImportFile}
-              className="hidden"
-            />
-          </label>
-        </div>
-      </div>
+        }
+      />
 
       {importStatus && (
         <div
@@ -254,6 +248,6 @@ export const VeilleUpdatesView: React.FC<VeilleUpdatesViewProps> = ({
           ))}
         </div>
       </div>
-    </div>
+    </PageContainer>
   );
 };

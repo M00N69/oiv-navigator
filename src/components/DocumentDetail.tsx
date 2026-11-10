@@ -18,6 +18,7 @@ import {
   BookOpen,
   ShieldCheck
 } from 'lucide-react';
+import { PageContainer } from './PageContainer';
 
 interface DocumentDetailProps {
   document: OivDocument;
@@ -60,7 +61,7 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-8">
+    <PageContainer className="space-y-8">
       {/* Top action rail */}
       <div className="flex items-center justify-between gap-4 pb-4 border-b border-[#E7E2DA] no-print">
         <button
@@ -491,6 +492,6 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
           </button>
         </div>
       </div>
-    </div>
+    </PageContainer>
   );
 };

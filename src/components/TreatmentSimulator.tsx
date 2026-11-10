@@ -8,6 +8,8 @@ import {
   Printer, 
   ChevronRight
 } from 'lucide-react';
+import { PageContainer } from './PageContainer';
+import { PageHeader } from './PageHeader';
 
 interface SubstanceRule {
   key: string;
@@ -214,31 +216,25 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 space-y-8">
+    <PageContainer className="space-y-8">
       
       {/* Header */}
-      <div className="bg-white border border-[#E7E2DA] rounded-xl p-6 shadow-xs flex items-start justify-between gap-4 flex-wrap no-print">
-        <div className="space-y-1.5 max-w-2xl">
-          <div className="flex items-center gap-2 text-xs font-semibold text-[#6B1728] uppercase tracking-wider">
-            <Calculator className="w-4 h-4" />
-            <span>Outil Professionnel de Chai</span>
-          </div>
-          <h1 className="text-2xl sm:text-3xl font-bold font-editorial text-[#1C1917]">
-            Simulateur & Contrôleur de Conformité de Traitement
-          </h1>
-          <p className="text-xs sm:text-sm text-[#57534E] leading-relaxed">
-            Calculez les masses exactes à incorporer, vérifiez les plafonds réglementaires OIV et UE (Règlement 2019/934), et détectez les incompatibilités physico-chimiques avant intervention.
-          </p>
-        </div>
-
-        <button
-          onClick={handlePrint}
-          className="px-4 py-2 text-xs font-semibold text-white bg-[#1C1917] hover:bg-[#332F2C] rounded-lg transition-colors flex items-center gap-2 cursor-pointer shrink-0"
-        >
-          <Printer className="w-4 h-4" />
-          <span>Imprimer la Fiche de Traitement</span>
-        </button>
-      </div>
+      <PageHeader
+        className="no-print"
+        icon={Calculator}
+        eyebrow="Outil professionnel de chai"
+        title="Simulateur & contrôleur de conformité de traitement"
+        description="Calculez les masses exactes à incorporer, vérifiez les plafonds réglementaires OIV et UE (Règlement 2019/934), et détectez les incompatibilités physico-chimiques avant intervention."
+        actions={
+          <button
+            onClick={handlePrint}
+            className="px-4 py-2 text-xs font-semibold text-white bg-[#1C1917] hover:bg-[#332F2C] rounded-lg transition-colors flex items-center gap-2 cursor-pointer shrink-0"
+          >
+            <Printer className="w-4 h-4" />
+            <span>Imprimer la fiche de traitement</span>
+          </button>
+        }
+      />
 
       {/* Main Interactive Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -585,6 +581,6 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
         </div>
       </div>
 
-    </div>
+    </PageContainer>
   );
 };

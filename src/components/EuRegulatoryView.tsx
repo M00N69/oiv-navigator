@@ -2,6 +2,8 @@ import React from 'react';
 import { EU_LEGAL_REFERENCES } from '../data/oivCorpus';
 import { OivDocument } from '../types/oiv';
 import { Scale, ExternalLink, AlertTriangle, CheckCircle2 } from 'lucide-react';
+import { PageContainer } from './PageContainer';
+import { PageHeader } from './PageHeader';
 
 interface EuRegulatoryViewProps {
   documents: OivDocument[];
@@ -13,25 +15,16 @@ export const EuRegulatoryView: React.FC<EuRegulatoryViewProps> = ({
   onSelectDoc
 }) => {
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 space-y-8">
-      {/* Hero Banner */}
-      <div className="bg-white border border-[#E7E2DA] rounded-xl p-6 sm:p-8 shadow-xs">
-        <div className="flex items-start gap-4">
-          <div className="p-2.5 bg-[#6B1728]/10 text-[#6B1728] rounded-xl shrink-0 mt-1">
-            <Scale className="w-6 h-6 text-[#6B1728]" />
-          </div>
-          <div className="space-y-2">
-            <h1 className="text-2xl sm:text-3xl font-bold font-editorial text-[#1C1917]">
-              Cadre Réglementaire Européen & Primauté Juridique
-            </h1>
-            <p className="text-sm text-[#57534E] leading-relaxed max-w-3xl">
-              Comprendre l'articulation entre les résolutions de l'Organisation internationale de la vigne et du vin (OIV) et les règlements d'application de l'Union européenne.
-            </p>
-          </div>
-        </div>
+    <PageContainer className="space-y-8">
+      <PageHeader
+        icon={Scale}
+        eyebrow="Cadre juridique"
+        title="Cadre réglementaire européen & primauté juridique"
+        description="Comprendre l'articulation entre les résolutions de l'Organisation internationale de la vigne et du vin (OIV) et les règlements d'application de l'Union européenne."
+      />
 
         {/* Golden Rule of Precedence Box */}
-        <div className="mt-6 p-4 sm:p-5 bg-[#FAF8F5] border border-[#E8DEC8] rounded-lg text-xs sm:text-sm text-[#44403C] space-y-2">
+        <div className="p-4 sm:p-5 bg-[#FAF8F5] border border-[#E8DEC8] rounded-lg text-xs sm:text-sm text-[#44403C] space-y-2">
           <div className="flex items-center gap-2 font-bold text-[#6B1728] font-editorial text-base">
             <AlertTriangle className="w-4 h-4 text-[#6B1728]" />
             <span>Règle Fondamentale de Primauté Juridique (JOUE C/2025/1829)</span>
@@ -43,7 +36,6 @@ export const EuRegulatoryView: React.FC<EuRegulatoryViewProps> = ({
             Seules les pratiques œnologiques expressément reprises dans les annexes du <strong>Règlement délégué (UE) 2019/934</strong> (modifié par le Règlement UE 2024/3085) sont légalement licites dans les États membres. En cas de divergence ou de condition plus restrictive, <strong>le droit de l'Union européenne prévaut systématiquement.</strong>
           </p>
         </div>
-      </div>
 
       {/* Official EU Legal Sources List */}
       <div className="space-y-4">
@@ -158,6 +150,6 @@ export const EuRegulatoryView: React.FC<EuRegulatoryViewProps> = ({
           </table>
         </div>
       </div>
-    </div>
+    </PageContainer>
   );
 };

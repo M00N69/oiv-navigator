@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { OivDocument, DossierItem, UserNote } from '../types/oiv';
 import { FileText, Printer, Trash2 } from 'lucide-react';
+import { PageContainer } from './PageContainer';
 
 interface DossierExportViewProps {
   dossierItems: DossierItem[];
@@ -32,7 +33,7 @@ export const DossierExportView: React.FC<DossierExportViewProps> = ({
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-8">
+    <PageContainer className="space-y-8">
       {/* Configuration & Action Header */}
       <div className="bg-white border border-[#E7E2DA] rounded-xl p-6 shadow-xs flex items-center justify-between gap-4 flex-wrap no-print">
         <div>
@@ -186,6 +187,6 @@ export const DossierExportView: React.FC<DossierExportViewProps> = ({
         )}
 
       </div>
-    </div>
+    </PageContainer>
   );
 };
