@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Header } from './components/Header';
 import { HomeExplorer } from './components/HomeExplorer';
 import { DocumentDetail } from './components/DocumentDetail';
@@ -22,6 +22,7 @@ import {
   saveCustomDocument 
 } from './lib/storage';
 import { filterAndSearchDocuments } from './lib/search';
+import { parseHash, routeToHash } from './lib/router';
 
 export default function App() {
   // Navigation
@@ -60,6 +61,32 @@ export default function App() {
   const { results: filteredDocuments, totalMatches } = useMemo(() => {
     return filterAndSearchDocuments(allDocs, filters);
   }, [allDocs, filters]);
+
+  // Hash routing: shareable URLs, browser back/forward, reload keeps the view
+  useEffect(() => {
+    const applyHash = () => {
+      const route = parseHash(window.location.hash);
+      if (route.docId) {
+        const doc = allDocs.find(d => d.id === route.docId) ?? null;
+        setSelectedDoc(doc);
+        if (!doc) setCurrentTab('home');
+      } else {
+        setSelectedDoc(null);
+        setCurrentTab(route.tab);
+      }
+    };
+    applyHash();
+    window.addEventListener('hashchange', applyHash);
+    return () => window.removeEventListener('hashchange', applyHash);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const target = routeToHash(currentTab, selectedDoc?.id);
+    if (window.location.hash !== target && !(target === '#/' && !window.location.hash)) {
+      window.history.pushState(null, '', target);
+    }
+  }, [currentTab, selectedDoc]);
 
   // Actions
   const handleToggleBookmark = (docId: string) => {
@@ -119,6 +146,16 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-surface text-ink flex flex-col font-sans">
+      <a
+        href="#main"
+        onClick={e => {
+          e.preventDefault();
+          document.getElementById('main')?.focus();
+        }}
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-brand focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white no-print"
+      >
+        Aller au contenu
+      </a>
       {/* Top Bar Navigation */}
       <Header
         currentTab={selectedDoc ? 'detail' : currentTab}
@@ -128,7 +165,7 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 pb-16">
+      <main id="main" tabIndex={-1} className="flex-1 pb-16 focus:outline-none">
         {selectedDoc ? (
           <DocumentDetail
             document={selectedDoc}

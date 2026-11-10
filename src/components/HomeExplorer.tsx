@@ -251,7 +251,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
         <div className="lg:col-span-3 space-y-4">
           {/* Stream Bar: Count & active state */}
           <div className="flex items-center justify-between text-xs text-muted px-1 pb-1">
-            <span className="font-semibold text-ink">
+            <span role="status" aria-live="polite" className="font-semibold text-ink">
               {totalMatches} référence(s) affichée(s)
             </span>
             {(filters.searchQuery || filters.family !== 'all' || filters.domain !== 'all' || filters.category !== 'all' || filters.euStatus !== 'all' || filters.onlyRecent) && (
