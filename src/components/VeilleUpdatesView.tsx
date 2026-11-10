@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { OivDocument } from '../types/oiv';
-import { OFFICIAL_LIVE_SOURCES } from '../data/oivCorpus';
+import { OFFICIAL_LIVE_SOURCES, CORPUS_META } from '../data/oivCorpus';
 import { normalizeDocument } from '../lib/documentSchema';
 import { BookOpen, Download, Upload, CheckCircle2, AlertCircle, ArrowRight, ExternalLink, Scale } from 'lucide-react';
 import { PageContainer } from './PageContainer';
@@ -148,8 +148,8 @@ export const VeilleUpdatesView: React.FC<VeilleUpdatesViewProps> = ({
               Cliquez directement sur un dépôt officiel pour récupérer la toute dernière édition en vigueur.
             </p>
           </div>
-          <span className="text-xs font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded">
-            Synchronisation continue
+          <span className="text-[11px] font-mono font-medium text-[#57534E]">
+            Corpus v{CORPUS_META.version} · {CORPUS_META.updatedAtLabel}
           </span>
         </div>
 

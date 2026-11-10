@@ -25,5 +25,8 @@ jobs:
       - name: Type check
         run: npm run lint
 
+      - name: Corpus check
+        run: npm run corpus:check
+
       - name: Build
         run: npm run build

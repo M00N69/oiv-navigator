@@ -64,7 +64,8 @@ Aucune variable d'environnement n'est nécessaire.
 | `npm run dev` | Serveur de développement Vite (port 3000, accessible sur le réseau local). |
 | `npm run build` | Build de production dans `dist/`. |
 | `npm run preview` | Sert le build local pour vérification. |
-| `npm run lint` | Vérification TypeScript stricte (`tsc --noEmit`). |
+| `npm run lint` | Vérification TypeScript stricte de l'application (`tsc --noEmit`) et des scripts (`tsconfig.scripts.json`). |
+| `npm run corpus:check` | Valide le corpus (schéma, doublons, dates, familles, sources) — exécuté en CI. |
 
 ## Structure du projet
 
@@ -96,11 +97,24 @@ Aucune variable d'environnement n'est nécessaire.
 
 Le corpus est embarqué dans `src/data/oivCorpus.ts` sous forme d'un tableau typé `OivDocument` (référence officielle, famille, domaine, dates, prescriptions, doses, mapping UE, versions, documents liés).
 
+**Il n'existe aucune synchronisation automatique.** Le corpus est mis à jour manuellement, version par version, et cette version est affichée dans l'interface (`CORPUS_META` : `version`, `updatedAt`, `source`). Une release de données = un commit qui modifie `src/data/oivCorpus.ts` **et** `CORPUS_META`.
+
 Pour ajouter ou mettre à jour une fiche :
 
 1. Ajouter un objet au tableau `OIV_CORPUS` en respectant `src/types/oiv.ts`.
 2. Renseigner `euRegulation` avec la référence précise (annexe, partie, tableau) et, le cas échéant, les divergences OIV / UE.
-3. Vérifier le rendu avec `npm run dev` puis `npm run lint && npm run build`.
+3. Mettre à jour `CORPUS_META` (`version` au format `AAAA.N`, `updatedAt`, `updatedAtLabel`, `source`).
+4. Lancer `npm run corpus:check` puis `npm run lint && npm run build`.
+
+`npm run corpus:check` (`scripts/check-corpus.ts`) est exécuté en CI et refuse la publication si :
+
+- un document ne survit pas au schéma de `src/lib/documentSchema.ts` (versions ou prescriptions perdues, statut UE inconnu) ;
+- un identifiant ou une référence officielle est dupliqué ;
+- une date est invalide, postérieure à `CORPUS_META.updatedAt` ou dans le futur ;
+- plusieurs versions sont marquées « en vigueur » ;
+- une URL de source officielle n'est pas en `https`.
+
+Il signale aussi en avertissement les compteurs de familles incohérents et les relations documentaires sans cible interne. Les compteurs affichés dans l'interface sont de toute façon recalculés à partir du corpus.
 
 Des fiches peuvent aussi être importées à l'exécution (onglet **Veille** → « Importer une résolution »). Chaque entrée est validée et normalisée par `src/lib/documentSchema.ts` : une entrée invalide est ignorée avec un message explicite, jamais persistée en l'état.
 
@@ -131,13 +145,13 @@ Le fichier `netlify.toml` est déjà configuré (build `npm run build`, publicat
 - **Outil d'aide à la décision, non un texte officiel.** Les fiches sont une synthèse documentaire : en cas de divergence, seuls les textes publiés par l'OIV et au Journal officiel de l'Union européenne font foi. Le droit de l'Union européenne prime sur les recommandations de l'OIV.
 - **Corpus de démonstration.** Le corpus embarqué couvre un échantillon de pratiques, méthodes et normes ; plusieurs familles documentaires (Codex, résolutions annuelles, spiritueux) sont encore vides et doivent être alimentées avant un usage professionnel généralisé.
 - **Vérification éditoriale requise.** Les statuts UE (annexes du règlement 2019/934, actualisations) doivent être revérifiés contre les versions en vigueur avant toute diffusion à des tiers.
-- **Indicateur de synchronisation décoratif.** L'horodatage affiché dans l'explorateur est cosmétique : l'application n'effectue aucun appel réseau.
+- **Mise à jour manuelle.** L'application n'effectue aucun appel réseau : la date affichée est celle de la version du corpus (`CORPUS_META`), pas une synchronisation en direct. Les liens « Voir sur OIV.int » et « Vérifier sur EUR-Lex » ouvrent les sources officielles à jour.
 - **Données locales.** Favoris, notes et fiches importées sont stockés dans le navigateur ; vider les données du site les efface définitivement (utiliser l'export JSON pour les sauvegarder).
 
 ## Contribution
 
 1. Créer une branche (`git checkout -b feat/ma-contribution`).
-2. Vérifier `npm run lint` et `npm run build` avant de committer.
+2. Vérifier `npm run lint`, `npm run corpus:check` et `npm run build` avant de committer.
 3. Ouvrir une pull request en décrivant les fiches ajoutées ou les sources utilisées.
 
 Pour toute correction de contenu réglementaire, merci de citer la référence officielle exacte (OIV et/ou JOUE) dans la description de la pull request.

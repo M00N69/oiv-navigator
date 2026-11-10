@@ -159,9 +159,9 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
           </div>
 
           <div className="flex items-center gap-2.5 flex-wrap">
-            <span className="text-[11px] text-emerald-800 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-medium flex items-center gap-1">
-              <CheckCircle2 className="w-3 h-3 text-emerald-600" />
-              <span>Texte à jour & vérifié (Session {document.adoptionYear})</span>
+            <span className="flex items-center gap-1 rounded border border-[#E7E2DA] bg-[#FAF8F5] px-2 py-0.5 text-[11px] font-medium text-[#57534E]">
+              <CheckCircle2 className="w-3 h-3 text-[#6B1728]" />
+              <span>Session d'adoption {document.adoptionYear}</span>
             </span>
 
             {document.pdfUrl && (
@@ -212,8 +212,8 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
               Contrôle de Validité & Historique des Mises à Jour
             </h2>
           </div>
-          <span className="text-xs font-mono text-emerald-800 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-medium">
-            Dépôts OIV & UE vérifiés à jour
+          <span className="text-[11px] font-mono text-[#57534E] bg-[#FAF8F5] border border-[#E7E2DA] px-2 py-0.5 rounded font-medium">
+            Dernière vérification éditoriale : {document.lastCheckedDate}
           </span>
         </div>
 

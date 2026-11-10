@@ -632,11 +632,29 @@ export const OIV_CORPUS: OivDocument[] = [
   }
 ];
 
+/**
+ * Metadata of the corpus shipped with the application.
+ *
+ * There is NO automatic synchronisation: the corpus is updated by hand, one
+ * version at a time. Bump `version` and `updatedAt` in the same commit as the
+ * data change, then run `npm run corpus:check`.
+ */
+export const CORPUS_META = {
+  version: '2026.1',
+  updatedAt: '2026-11-10',
+  updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  }).format(new Date('2026-11-10')),
+  source: 'OIV (oiv.int) et EUR-Lex — Règlement délégué (UE) 2019/934'
+} as const;
+
 export const FAMILIES_META: { id: string; label: string; count: number; desc: string }[] = [
   {
     id: 'pratiques',
     label: 'Code des pratiques œnologiques',
-    count: 7,
+    count: 8,
     desc: 'Traitements, procédés de vinification, autorisations pour moûts et vins.'
   },
   {
@@ -660,13 +678,13 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'resolutions',
     label: 'Résolutions Assemblée Générale',
-    count: 9,
+    count: 0,
     desc: 'Actes officiels adoptés annuellement par les États membres de l\'OIV.'
   },
   {
     id: 'techniques',
     label: 'Documents & Rapports techniques',
-    count: 2,
+    count: 0,
     desc: 'Guides d\'experts, bilans annuels et synthèses de commissions scientifiques.'
   }
 ];
@@ -780,9 +798,9 @@ export const OFFICIAL_LIVE_SOURCES: import('../types/oiv').OfficialSourceRepo[] 
     id: 'eurlex-live-query',
     name: 'EUR-Lex — Recherche en direct : Nouveaux actes législatifs viticoles',
     organization: 'Union Européenne (EUR-Lex)',
-    description: 'Requête dynamique en temps réel sur EUR-Lex filtrant les nouveaux règlements délégués et d\'exécution relatifs aux pratiques œnologiques.',
+    description: 'Requête EUR-Lex pré-remplie pour retrouver les règlements délégués et d\'exécution relatifs aux pratiques œnologiques.',
     directUrl: 'https://eur-lex.europa.eu/search.html?scope=EURLEX&text=pratiques+oenologiques&lang=fr&type=quick',
-    updateFrequency: 'Temps réel (flux direct EUR-Lex)',
+    updateFrequency: 'Actualisation au fil de l\'eau sur EUR-Lex',
     lastVerifiedDate: 'Novembre 2026',
     isLiveMonitoring: true,
     celexOrCode: 'EURLEX-LIVE'

@@ -5,8 +5,10 @@
 **Nom du produit :** OIV Navigator  
 **Nature :** Application web publique de veille documentaire, de recherche et d'interrogation du corpus OIV  
 **Périmètre :** Corpus documentaire complet de l'OIV  
-**Mises à jour :** Automatiques  
+**Mises à jour :** Manuelles et versionnées  
 **Accès :** Public, sans authentification pour les utilisateurs
+
+> **Statut d'implémentation (v1.0).** L'application livrée est **entièrement statique** : aucun serveur, aucune base de données, aucun appel réseau au chargement. Le corpus est un fichier versionné (`src/data/oivCorpus.ts` + `CORPUS_META`), mis à jour **manuellement**, contrôlé par `npm run corpus:check` en CI. Les sections décrivant une collecte, une extraction ou une publication automatiques (F05, section 7 « API », section 10) décrivent une **cible non implémentée** : elles sont conservées comme cahier des charges d'une version serveur future et ne doivent pas être présentées comme des fonctionnalités actives.
 
 ---
 
@@ -34,7 +36,7 @@ L'utilisateur doit pouvoir :
 
 1. **Source officielle prioritaire** : toute information doit être reliée à son document d'origine.
 2. **Traçabilité intégrale** : chaque document et chaque version sont conservés.
-3. **Actualisation automatique** : les nouvelles publications sont détectées et intégrées sans intervention manuelle dans le processus nominal.
+3. **Actualisation versionnée et traçable** : chaque mise à jour du corpus est explicite, datée, contrôlée et réversible (mise à jour manuelle en v1.0 ; collecte automatique traitée comme cible non implémentée, voir F05).
 4. **Recherche simple** : l'utilisateur ne doit pas avoir besoin de connaître l'organisation du corpus pour trouver une information.
 5. **Transparence réglementaire** : distinction explicite entre une référence OIV, une disposition réglementaire européenne et une interprétation documentaire.
 6. **Réponses vérifiables** : les réponses générées doivent présenter leurs références et les extraits justificatifs.
@@ -238,9 +240,24 @@ Chaque réponse doit séparer clairement :
 
 Les réponses doivent être accompagnées d'un avertissement précisant qu'elles constituent une aide documentaire et ne remplacent pas la consultation du texte officiel applicable.
 
-## F05 — Mise à jour automatique
+## F05 — Mise à jour versionnée du corpus (v1.0)
 
-Le système doit exécuter automatiquement les opérations suivantes :
+**Implémenté en v1.0.** Il n'y a pas de collecte automatique : le corpus est un fichier versionné, mis à jour par un commit dédié.
+
+Procédure réelle :
+
+1. Vérifier la publication sur les sources primaires (OIV.int, EUR-Lex / JOUE).
+2. Éditer `src/data/oivCorpus.ts` (fiche, version, mapping UE, `lastCheckedDate`).
+3. Mettre à jour `CORPUS_META` (`version` au format `AAAA.N`, `updatedAt`, `updatedAtLabel`, `source`).
+4. Lancer `npm run corpus:check` : schéma (`normalizeDocument`), unicité des identifiants et références, cohérence des dates, compteurs de familles, sources `https`.
+5. Lancer `npm run lint && npm run build`, puis publier le commit : la version affichée dans l'interface change immédiatement.
+6. En cas d'erreur détectée après publication, revenir au commit précédent (rollback par Git).
+
+Garanties : aucune donnée historique n'est écrasée (Git), la version du corpus est affichée à l'utilisateur, et un corpus incohérent ne peut pas être publié puisque `corpus:check` tourne en CI.
+
+> **Cible non implémentée (version serveur future).** Collecte planifiée des sources, extraction OCR, indexation et publication automatique après contrôles, file d'anomalies, journal des opérations, administration. À ne pas présenter comme disponible.
+
+Ancienne spécification conservée comme cahier des charges de cette cible :
 
 1. Interroger les sources officielles.
 2. Détecter les nouveaux documents.
@@ -553,7 +570,7 @@ Les routes suivantes constituent une proposition d'interface technique.
 | `GET /api/documents/:id/relations` | Documents associés |
 | `GET /api/search?q=` | Recherche documentaire |
 | `POST /api/ask` | Interrogation en langage naturel |
-| `GET /api/updates` | Dernières mises à jour publiques |
+| `GET /api/updates` | Dernières mises à jour publiques — **non implémenté en v1.0** : la version du corpus est exposée par `CORPUS_META` |
 | `GET /api/categories` | Familles et domaines |
 | `GET /api/health` | État technique du service |
 
@@ -651,6 +668,8 @@ La fiche devra présenter :
 Cet exemple sert de cas de test documentaire. Les informations techniques affichées devront être vérifiées dans le document source complet.
 
 # 10. Stratégie de mise à jour automatique
+
+> **Cible non implémentée en v1.0.** Cette section décrit le pipeline serveur envisagé. L'application livrée fonctionne par mise à jour manuelle versionnée du corpus (voir F05) ; aucun composant décrit ci-dessous n'est actif.
 
 ## 10.1 Détection
 

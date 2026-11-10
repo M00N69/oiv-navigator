@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { OivDocument, FilterState, OivFamily } from '../types/oiv';
-import { FAMILIES_META } from '../data/oivCorpus';
+import { CORPUS_META, FAMILIES_META } from '../data/oivCorpus';
 import { SearchBar } from './SearchBar';
 import { FilterSidebar } from './FilterSidebar';
 import { DocumentCard } from './DocumentCard';
@@ -9,12 +9,11 @@ import {
   Sparkles, 
   ArrowRight, 
   ExternalLink, 
-  RefreshCw, 
-  CheckCircle2, 
   FileText,
   Calculator
 } from 'lucide-react';
 import { PageContainer } from './PageContainer';
+import { PageHeader } from './PageHeader';
 
 interface HomeExplorerProps {
   documents: OivDocument[];
@@ -51,45 +50,32 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
   onOpenSolver
 }) => {
   const [showMobileFilters, setShowMobileFilters] = useState(false);
-  const [syncTimestamp, setSyncTimestamp] = useState<string>('9 nov. 2026 à 11:00');
-  const [isRefreshing, setIsRefreshing] = useState(false);
-
-  const handleRefreshSync = () => {
-    setIsRefreshing(true);
-    setTimeout(() => {
-      setSyncTimestamp(new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }));
-      setIsRefreshing(false);
-    }, 450);
-  };
 
   // Featured flagship document (OIV-OENO 738-2025)
   const featuredDoc = documents.find(d => d.id === 'oiv-oeno-738-2025');
 
+  // Counts are derived from the corpus itself: FAMILIES_META only supplies labels.
+  const familyTabs = FAMILIES_META.map((family) => ({
+    ...family,
+    count: documents.filter((doc) => doc.family === family.id).length
+  })).filter((family) => family.count > 0);
+
   return (
     <PageContainer className="space-y-6">
       
-      {/* 1. Header Structure: Title + Freshness Status Strip + Pro Shortcuts */}
-      <div className="bg-white border border-[#E7E2DA] rounded-xl p-5 sm:p-6 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <div className="flex items-center gap-2 mb-1">
-            <span className="text-xs uppercase font-mono font-semibold tracking-wider text-[#6B1728]">
-              Répertoire Officiel Œnologique
-            </span>
-            <span className="text-[#D6D3D1]">·</span>
-            <span className="text-xs text-emerald-800 font-medium inline-flex items-center gap-1">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-              Règlements UE & OIV à jour 2025/2026
-            </span>
-          </div>
-          <h1 className="text-2xl sm:text-3xl font-bold font-editorial text-[#1C1917] tracking-tight">
-            Base Documentaire OIV & Conformité Européenne
-          </h1>
-          <p className="text-xs sm:text-sm text-[#57534E] mt-1 max-w-3xl">
-            Recherche, prescriptions officielles et vérification de conformité au Règlement (UE) 2019/934 et JOUE C/2025/1829.
-          </p>
-
-          {/* Quick Pro Shortcuts */}
-          <div className="flex items-center gap-2 pt-3 flex-wrap">
+      {/* 1. Header: title, corpus provenance, pro shortcuts */}
+      <PageHeader
+        eyebrow="Répertoire officiel œnologique"
+        title="Base documentaire OIV & conformité européenne"
+        description={
+          <>
+            Recherche, prescriptions officielles et vérification de conformité au Règlement (UE)
+            2019/934 et JOUE C/2025/1829. Corpus v{CORPUS_META.version} — dernière mise à jour
+            le {CORPUS_META.updatedAtLabel}. Source : {CORPUS_META.source}.
+          </>
+        }
+        actions={
+          <div className="flex flex-wrap items-center gap-2 sm:justify-end">
             {onOpenSimulator && (
               <button
                 type="button"
@@ -97,7 +83,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
                 className="px-3 py-1.5 text-xs font-semibold text-[#6B1728] bg-[#6B1728]/10 hover:bg-[#6B1728] hover:text-white rounded-lg transition-colors inline-flex items-center gap-1.5 cursor-pointer"
               >
                 <Calculator className="w-3.5 h-3.5" />
-                <span>Simulateur de Chai & Doses</span>
+                <span>Simulateur de chai & doses</span>
               </button>
             )}
             {onOpenSolver && (
@@ -107,27 +93,12 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
                 className="px-3 py-1.5 text-xs font-semibold text-[#44403C] bg-[#FAF8F5] hover:bg-[#F3EFEA] border border-[#E7E2DA] rounded-lg transition-colors inline-flex items-center gap-1.5 cursor-pointer"
               >
                 <Sparkles className="w-3.5 h-3.5 text-amber-700" />
-                <span>Guide par Objectif Œnologique</span>
+                <span>Guide par objectif œnologique</span>
               </button>
             )}
           </div>
-        </div>
-
-        {/* Sync & Live Status Pill */}
-        <div className="flex items-center gap-2 self-start md:self-center shrink-0 bg-[#FAF8F5] border border-[#E7E2DA] px-3 py-1.5 rounded-lg text-xs text-[#57534E]">
-          <span className="font-mono text-[11px] text-[#78716C]">
-            Vérifié : {syncTimestamp}
-          </span>
-          <button
-            onClick={handleRefreshSync}
-            disabled={isRefreshing}
-            className="p-1 text-[#57534E] hover:text-[#6B1728] rounded cursor-pointer transition-colors"
-            title="Vérifier la synchronisation avec les dépôts OIV & EUR-Lex"
-          >
-            <RefreshCw className={`w-3.5 h-3.5 ${isRefreshing ? 'animate-spin text-[#6B1728]' : ''}`} />
-          </button>
-        </div>
-      </div>
+        }
+      />
 
       {/* 2. Primary Search Box (Immediately Accessible) */}
       <div className="space-y-3">
@@ -154,7 +125,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
             <span className="font-mono text-[11px] opacity-75">({documents.length})</span>
           </button>
 
-          {FAMILIES_META.slice(0, 4).map((fam) => (
+          {familyTabs.map((fam) => (
             <button
               key={fam.id}
               onClick={() => onChangeFilters({ ...filters, family: fam.id as OivFamily })}
