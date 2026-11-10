@@ -4,7 +4,7 @@
 
 OIV Navigator est une application web autonome (100 % frontend, sans backend ni base de données distante) destinée aux œnologues, responsables qualité et réglementaire, maîtres de chai et laboratoires. Elle rassemble les fiches des résolutions OIV, les pratiques œnologiques autorisées et leur statut vis-à-vis du droit de l'Union européenne (règlement délégué (UE) 2019/934 et ses actualisations), avec un moteur de recherche local, un simulateur de chai et un registre exportable.
 
-[![CI](https://github.com/M00N69/oiv-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/M00N69/oiv-navigator/actions/workflows/ci.yml)
+[![CI](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
@@ -55,7 +55,6 @@ cd oiv-navigator
 npm ci          # ou npm install
 npm run dev     # http://localhost:3000
 ```
-
 Aucune variable d'environnement n'est nécessaire.
 
 ## Scripts
