@@ -1,5 +1,18 @@
-import React from 'react';
-import { BookOpen, Search, GitCompare, Scale, FileText, Calculator, Sparkles, HelpCircle } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
+import {
+  Menu,
+  X,
+  Search,
+  GitCompare,
+  Scale,
+  BookOpen,
+  Calculator,
+  Sparkles,
+  HelpCircle,
+  FileText,
+  Bookmark,
+} from 'lucide-react';
+import { Logo } from './Logo';
 
 interface HeaderProps {
   currentTab: string;
@@ -8,186 +21,177 @@ interface HeaderProps {
   dossierCount: number;
 }
 
+interface NavItem {
+  id: string;
+  label: string;
+  icon: React.ComponentType<{ className?: string }>;
+}
+
+/** Short labels keep the inline nav breathable between 1280 and 1440 px. */
+const NAV_ITEMS: NavItem[] = [
+  { id: 'explorer', label: 'Corpus', icon: Search },
+  { id: 'simulator', label: 'Simulateur', icon: Calculator },
+  { id: 'solver', label: 'Objectifs', icon: Sparkles },
+  { id: 'regulatory', label: 'Cadre UE', icon: Scale },
+  { id: 'comparator', label: 'Comparateur', icon: GitCompare },
+  { id: 'veille', label: 'Veille', icon: BookOpen },
+  { id: 'guide', label: 'Guide', icon: HelpCircle },
+];
+
 export const Header: React.FC<HeaderProps> = ({
   currentTab,
   onSelectTab,
-  dossierCount
+  bookmarkCount,
+  dossierCount,
 }) => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  const isActive = (id: string) =>
+    currentTab === id || (id === 'explorer' && currentTab === 'home');
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setMobileOpen(false);
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [mobileOpen]);
+
+  const handleSelect = (tab: string) => {
+    onSelectTab(tab);
+    setMobileOpen(false);
+  };
+
   return (
-    <header className="sticky top-0 z-40 bg-[#FBF9F5]/95 backdrop-blur-md border-b border-[#E7E2DA] no-print">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-8 h-16">
-          
-          {/* Zone 1: Distinctive Brand Emblem & Wordmark (UX-optimized) */}
-          <button 
-            onClick={() => onSelectTab('home')}
-            className="text-left group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B1728] focus-visible:ring-offset-2 rounded-lg py-1 px-1 -ml-1 transition-all"
+    <header
+      className={`sticky top-0 z-40 border-b border-[#E7E2DA] bg-[#FBF9F5]/95 backdrop-blur-md no-print ${
+        scrolled ? 'shadow-sm' : ''
+      }`}
+    >
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between gap-4">
+          <button
+            type="button"
+            onClick={() => handleSelect('home')}
+            className="flex min-w-0 items-center rounded-lg px-1 py-1 text-left transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6B1728]"
             title="OIV Navigator — Retour à l'accueil"
             aria-label="OIV Navigator — Accueil"
           >
-            <div className="flex items-center gap-3">
-              {/* Custom Wine & Compass Emblem */}
-              <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-[#6B1728] via-[#52101D] to-[#380913] text-white flex items-center justify-center shadow-md shadow-[#6B1728]/15 border border-[#8B263E]/40 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-[#6B1728]/25 transition-all duration-200 shrink-0">
-                {/* SVG Grape + Compass Navigator Insignia */}
-                <svg
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 text-[#FBF9F5]"
-                >
-                  {/* Subtle navigation compass ring */}
-                  <circle
-                    cx="16"
-                    cy="16"
-                    r="13.5"
-                    stroke="#D4AF37"
-                    strokeWidth="0.8"
-                    strokeDasharray="2 2"
-                    className="opacity-60"
-                  />
-                  {/* Compass cardinal points */}
-                  <path
-                    d="M16 2.5V5M16 27V29.5M2.5 16H5M27 16H29.5"
-                    stroke="#D4AF37"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    className="opacity-75"
-                  />
-                  {/* Stylized Grape Droplet cluster & Vine Leaf */}
-                  <circle cx="16" cy="11.5" r="2.2" fill="currentColor" />
-                  <circle cx="13" cy="15.5" r="2.2" fill="currentColor" />
-                  <circle cx="19" cy="15.5" r="2.2" fill="currentColor" />
-                  <circle cx="14.5" cy="19.5" r="2" fill="currentColor" />
-                  <circle cx="17.5" cy="19.5" r="2" fill="currentColor" />
-                  <circle cx="16" cy="23" r="1.6" fill="#D4AF37" />
-                  {/* Delicate vine tendril */}
-                  <path
-                    d="M16 8.5C16 6.5 17.5 5.5 19 6"
-                    stroke="#D4AF37"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </div>
-
-              {/* Refined Brand Wordmark */}
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1.5 leading-none">
-                  <span className="text-xl font-bold font-editorial text-[#1C1917] tracking-tight group-hover:text-[#6B1728] transition-colors whitespace-nowrap">
-                    OIV
-                  </span>
-                  <span className="text-xl font-light font-editorial text-[#6B1728] tracking-tight whitespace-nowrap">
-                    Navigator
-                  </span>
-                </div>
-                <div className="flex items-center gap-1.5 mt-0.5">
-                  <span className="text-[10px] uppercase font-mono font-semibold tracking-wider text-[#78716C] group-hover:text-[#57534E] transition-colors">
-                    Veille & Pratiques Œnologiques
-                  </span>
-                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-600/80" title="Système de veille actif" />
-                </div>
-              </div>
-            </div>
+            <Logo size={40} withWordmark />
           </button>
 
-          {/* Zone 2: Clean single-line nav links */}
-          <nav className="hidden lg:flex items-center gap-5 text-sm font-medium text-[#57534E]">
-            <button
-              onClick={() => onSelectTab('explorer')}
-              className={`hover:text-[#1C1917] transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 cursor-pointer pb-1 ${
-                currentTab === 'explorer' || currentTab === 'home' ? 'text-[#6B1728] font-semibold border-b-2 border-[#6B1728]' : ''
-              }`}
-            >
-              <Search className="w-4 h-4" />
-              <span>Corpus & Recherche</span>
-            </button>
-
-            <button
-              onClick={() => onSelectTab('simulator')}
-              className={`hover:text-[#1C1917] transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 cursor-pointer pb-1 ${
-                currentTab === 'simulator' ? 'text-[#6B1728] font-semibold border-b-2 border-[#6B1728]' : ''
-              }`}
-            >
-              <Calculator className="w-4 h-4 text-[#6B1728]" />
-              <span>Simulateur de Chai</span>
-            </button>
-
-            <button
-              onClick={() => onSelectTab('solver')}
-              className={`hover:text-[#1C1917] transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 cursor-pointer pb-1 ${
-                currentTab === 'solver' ? 'text-[#6B1728] font-semibold border-b-2 border-[#6B1728]' : ''
-              }`}
-            >
-              <Sparkles className="w-4 h-4 text-amber-700" />
-              <span>Guide par Objectif</span>
-            </button>
-
-            <button
-              onClick={() => onSelectTab('regulatory')}
-              className={`hover:text-[#1C1917] transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 cursor-pointer pb-1 ${
-                currentTab === 'regulatory' ? 'text-[#6B1728] font-semibold border-b-2 border-[#6B1728]' : ''
-              }`}
-            >
-              <Scale className="w-4 h-4" />
-              <span>Cadre UE</span>
-            </button>
-
-            <button
-              onClick={() => onSelectTab('comparator')}
-              className={`hover:text-[#1C1917] transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 cursor-pointer pb-1 ${
-                currentTab === 'comparator' ? 'text-[#6B1728] font-semibold border-b-2 border-[#6B1728]' : ''
-              }`}
-            >
-              <GitCompare className="w-4 h-4" />
-              <span>Comparateur</span>
-            </button>
-
-            <button
-              onClick={() => onSelectTab('veille')}
-              className={`hover:text-[#1C1917] transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 cursor-pointer pb-1 ${
-                currentTab === 'veille' ? 'text-[#6B1728] font-semibold border-b-2 border-[#6B1728]' : ''
-              }`}
-            >
-              <BookOpen className="w-4 h-4" />
-              <span>Veille</span>
-              <span className="text-[10px] text-emerald-800 bg-emerald-50 border border-emerald-200 px-1 py-0.2 rounded font-mono font-medium">
-                À jour
-              </span>
-            </button>
-
-            <button
-              onClick={() => onSelectTab('guide')}
-              className={`hover:text-[#1C1917] transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 cursor-pointer pb-1 ${
-                currentTab === 'guide' ? 'text-[#6B1728] font-semibold border-b-2 border-[#6B1728]' : ''
-              }`}
-            >
-              <HelpCircle className="w-4 h-4 text-[#6B1728]" />
-              <span>Guide Explicatif</span>
-            </button>
+          <nav
+            aria-label="Navigation principale"
+            className="hidden min-w-0 items-center gap-1 text-sm font-medium text-[#57534E] xl:flex"
+          >
+            {NAV_ITEMS.map(({ id, label, icon: Icon }) => (
+              <button
+                key={id}
+                type="button"
+                onClick={() => handleSelect(id)}
+                aria-current={isActive(id) ? 'page' : undefined}
+                className={`flex items-center gap-1.5 whitespace-nowrap rounded-md px-2.5 py-1.5 transition-colors hover:text-[#1C1917] ${
+                  isActive(id)
+                    ? 'border-b-2 border-[#6B1728] font-semibold text-[#6B1728]'
+                    : 'border-b-2 border-transparent'
+                }`}
+              >
+                <Icon className="h-4 w-4" />
+                <span>{label}</span>
+              </button>
+            ))}
           </nav>
 
-          {/* Zone 3: 1 primary action */}
-          <div className="flex items-center gap-3 shrink-0">
+          <div className="flex shrink-0 items-center gap-2">
             <button
-              onClick={() => onSelectTab('dossier')}
-              className={`px-3.5 py-1.5 text-xs font-semibold rounded transition-colors whitespace-nowrap shrink-0 flex items-center gap-2 cursor-pointer ${
+              type="button"
+              onClick={() => handleSelect('dossier')}
+              aria-current={currentTab === 'dossier' ? 'page' : undefined}
+              className={`flex items-center gap-2 rounded px-2.5 py-1.5 text-xs font-semibold transition-colors sm:px-3.5 ${
                 currentTab === 'dossier'
                   ? 'bg-[#6B1728] text-white shadow-sm'
-                  : 'bg-white hover:bg-[#F3EFEA] text-[#1C1917] border border-[#E7E2DA]'
+                  : 'border border-[#E7E2DA] bg-white text-[#1C1917] hover:bg-[#F3EFEA]'
               }`}
+              title="Dossier technique"
             >
-              <FileText className="w-3.5 h-3.5 text-[#6B1728]" />
-              <span>Dossier Technique</span>
+              <FileText className="h-3.5 w-3.5 shrink-0 text-[#6B1728]" />
+              <span className="hidden sm:inline">Dossier technique</span>
+              <span className="sr-only sm:hidden">Dossier technique</span>
               {dossierCount > 0 && (
-                <span className="w-4 h-4 rounded-full bg-[#6B1728] text-white text-[10px] flex items-center justify-center font-bold">
+                <span className="flex h-4 min-w-4 items-center justify-center rounded-full bg-[#6B1728] px-1 text-[10px] font-bold text-white">
                   {dossierCount}
                 </span>
               )}
             </button>
-          </div>
 
+            <button
+              type="button"
+              onClick={() => handleSelect('dossier')}
+              className="relative hidden rounded px-2 py-1.5 text-[#57534E] transition-colors hover:text-[#6B1728] sm:flex"
+              aria-label={`Favoris enregistrés : ${bookmarkCount}`}
+              title={`${bookmarkCount} favori(s)`}
+            >
+              <Bookmark className="h-4 w-4" />
+              {bookmarkCount > 0 && (
+                <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-[#6B1728] px-1 text-[10px] font-bold text-white">
+                  {bookmarkCount}
+                </span>
+              )}
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setMobileOpen((open) => !open)}
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-nav"
+              aria-label={mobileOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+              className="rounded p-2 text-[#1C1917] transition-colors hover:bg-[#F3EFEA] xl:hidden"
+            >
+              {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </button>
+          </div>
         </div>
       </div>
+
+      {mobileOpen && (
+        <div
+          id="mobile-nav"
+          ref={panelRef}
+          className="border-t border-[#E7E2DA] bg-[#FBF9F5] xl:hidden"
+        >
+          <nav aria-label="Navigation principale (mobile)" className="mx-auto w-full max-w-7xl px-4 py-3 sm:px-6">
+            <ul className="flex flex-col gap-1">
+              {NAV_ITEMS.map(({ id, label, icon: Icon }) => (
+                <li key={id}>
+                  <button
+                    type="button"
+                    onClick={() => handleSelect(id)}
+                    aria-current={isActive(id) ? 'page' : undefined}
+                    className={`flex w-full items-center gap-2.5 rounded-lg px-3 py-2.5 text-sm transition-colors ${
+                      isActive(id)
+                        ? 'bg-[#6B1728]/10 font-semibold text-[#6B1728]'
+                        : 'text-[#57534E] hover:bg-[#F3EFEA] hover:text-[#1C1917]'
+                    }`}
+                  >
+                    <Icon className="h-4 w-4 shrink-0" />
+                    <span>{label}</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
