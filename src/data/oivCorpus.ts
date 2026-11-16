@@ -807,17 +807,17 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'oiv-acidification-mouts-vins-2024',
-    officialReference: "OIV — Pratiques œnologiques : acidification (moûts et vins)",
-    title: "Acidification des moûts et des vins : ajustement de l'acidité",
+    id: 'oiv-oeno-581b-2024',
+    officialReference: 'OIV-OENO 581B-2024',
+    title: "Traitement des vins à l'acide fumarique pour l'acidification",
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '19/07/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    officialUrl: 'https://www.oiv.int/fr/node/3807/download/pdf',
     summary: "Encadre l'acidification des moûts et des vins pour corriger l'acidité naturelle, par voies chimique, microbiologique ou physique, dans les conditions fixées par le code des pratiques œnologiques.",
     oenologicalObjectives: [
       "Corriger l'acidité insuffisante des moûts et des vins.",
@@ -982,17 +982,17 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'oiv-etiquetage-nutritionnel-2024',
-    officialReference: "OIV — Norme internationale pour l'étiquetage des vins (étiquetage nutritionnel)",
-    title: "Étiquetage nutritionnel des vins : valeur énergétique et liste des ingrédients",
+    id: 'oiv-eco-676-2024',
+    officialReference: 'OIV-ECO 676-2024',
+    title: "Mise à jour de la Norme internationale pour l'étiquetage des vins — e-label, déclaration des éléments nutritifs et indication des ingrédients",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
     category: 'Général',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '19/07/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins',
+    officialUrl: 'https://www.oiv.int/fr/node/3814/download/pdf',
     summary: "Encadre l'indication de la valeur énergétique et de la liste des ingrédients sur l'étiquette des vins, en cohérence avec le Règlement (UE) 2021/2117.",
     oenologicalObjectives: [
       "Informer le consommateur sur la valeur énergétique et la composition du vin.",
@@ -1242,6 +1242,49 @@ export const OIV_CORPUS: OivDocument[] = [
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
+  {
+    id: 'oiv-oeno-723-2024',
+    officialReference: 'OIV-OENO 723-2024',
+    title: "Mise à jour de la monographie et du Code sur les matières protéiques d'origine végétale (suppression du blé)",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '19/07/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3810/download/pdf',
+    summary: "Met à jour la monographie et le Code sur les matières protéiques d'origine végétale en supprimant le blé, ce qui a un impact sur la déclaration des allergènes (gluten) dans les vins traités avec des protéines de blé.",
+    oenologicalObjectives: [
+      "Encadrer l'emploi des protéines végétales (pois, pomme de terre) comme auxiliaires technologiques.",
+      "Clarifier le statut allergène du blé dans les vins."
+    ],
+    prescriptions: [
+      "Le blé est retiré des matières protéiques d'origine végétale autorisées comme auxiliaires technologiques.",
+      "Les protéines de pois et de pomme de terre restent autorisées dans les conditions fixées.",
+      "La déclaration allergène (gluten) est liée à la présence de résidus détectables dans le produit fini."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1169/2011, annexe II (gluten) ; Règlement délégué (UE) 2019/934",
+      prevalenceRule: "Le droit de l'UE prime : la présence de gluten dans le produit fini doit être déclarée.",
+      euLimitsAndConditions: "La démonstration d'absence de résidus dispense de la déclaration, sous réserve de justificatif."
+    },
+    versions: [
+      {
+        id: 'v2024-proteines-veg',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Mise à jour de la monographie sur les matières protéiques d'origine végétale (suppression du blé).",
+        prescriptions: ["Blé retiré des auxiliaires autorisés.", "Pois et pomme de terre conservés."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -1266,7 +1309,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'pratiques',
     label: 'Code des pratiques œnologiques',
-    count: 17,
+    count: 18,
     desc: 'Traitements, procédés de vinification, autorisations pour moûts et vins.'
   },
   {
