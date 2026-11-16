@@ -45,6 +45,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
               onClick={onClear}
               className="p-1 text-muted hover:text-ink rounded hover:bg-surface-hover transition-colors"
               title="Effacer la recherche"
+              aria-label="Effacer la recherche"
             >
               <X className="w-4 h-4" />
             </button>
@@ -54,6 +55,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
               onClick={onToggleFilters}
               className="md:hidden p-2 text-muted hover:text-ink rounded hover:bg-surface-hover transition-colors border-l border-line pl-2"
               title="Filtres"
+              aria-label="Ouvrir les filtres"
             >
               <SlidersHorizontal className="w-4 h-4" />
             </button>

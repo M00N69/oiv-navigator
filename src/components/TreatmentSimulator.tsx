@@ -1,11 +1,13 @@
-import React, { useState, useMemo } from 'react';
+﻿import React, { useState, useMemo } from 'react';
 import { OivDocument } from '../types/oiv';
-import { 
-  Calculator, 
-  CheckCircle2, 
-  AlertTriangle, 
-  ShieldAlert, 
-  Printer, 
+import { CORPUS_META } from '../data/oivCorpus';
+import { Logo } from './Logo';
+import {
+  Calculator,
+  CheckCircle2,
+  AlertTriangle,
+  ShieldAlert,
+  Printer,
   ChevronRight
 } from 'lucide-react';
 import { PageContainer } from './PageContainer';
@@ -217,7 +219,24 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
 
   return (
     <PageContainer className="space-y-8">
-      
+      <div className="print-only mb-6 space-y-3">
+        <div className="flex items-center gap-3">
+          <Logo size={40} />
+          <div className="flex flex-col">
+            <span className="text-xs font-mono uppercase tracking-[0.14em] text-muted">
+              OIV Navigator · fiche de traitement
+            </span>
+            <span className="text-[11px] text-muted">
+              Corpus v{CORPUS_META.version} · {new Date().toLocaleDateString('fr-FR')} ·
+              dernière mise à jour le {CORPUS_META.updatedAtLabel}
+            </span>
+          </div>
+        </div>
+        <h1 className="text-2xl font-bold font-editorial text-ink">
+          Simulateur & contrôleur de conformité de traitement
+        </h1>
+      </div>
+
       {/* Header */}
       <PageHeader
         className="no-print"
@@ -496,7 +515,7 @@ export const TreatmentSimulator: React.FC<TreatmentSimulatorProps> = ({
               <strong className="text-ink block">Conseil de mise en œuvre de chai :</strong>
               <ul className="space-y-0.5 text-muted">
                 {selectedRule.preparationTips.map((tip, i) => (
-                  <li key={i}>· {tip}</li>
+                  <li key={i}><span aria-hidden="true" className="mr-1.5 text-brand">·</span>{tip}</li>
                 ))}
               </ul>
             </div>

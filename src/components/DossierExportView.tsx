@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { OivDocument, DossierItem, UserNote } from '../types/oiv';
-import { FileText, Printer, Trash2 } from 'lucide-react';
+import { FileText, Printer, Trash2, Download } from 'lucide-react';
+import { CORPUS_META } from '../data/oivCorpus';
+import { Logo } from './Logo';
 import { PageContainer } from './PageContainer';
 
 interface DossierExportViewProps {
@@ -32,6 +34,41 @@ export const DossierExportView: React.FC<DossierExportViewProps> = ({
     window.print();
   };
 
+  const handleExportCsv = () => {
+    const header = [
+      'Référence',
+      'Titre',
+      'Domaine',
+      'Catégorie',
+      'Année d\'adoption',
+      'Doses & limites',
+      'Statut UE',
+      'Note interne'
+    ];
+    const rows = dossierDocs.map((doc) => [
+      doc.officialReference,
+      doc.title,
+      doc.domain,
+      doc.category,
+      String(doc.adoptionYear),
+      doc.limitsAndDoses,
+      doc.euRegulation.primaryReference,
+      (userNotes[doc.id]?.content ?? '').replace(/\s+/g, ' ')
+    ]);
+    const csv = [header, ...rows]
+      .map((row) => row.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(';'))
+      .join('\r\n');
+    const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `dossier-oiv-${new Date().toISOString().slice(0, 10)}.csv`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <PageContainer className="space-y-8">
       {/* Configuration & Action Header */}
@@ -46,6 +83,14 @@ export const DossierExportView: React.FC<DossierExportViewProps> = ({
         </div>
 
         <div className="flex items-center gap-3">
+          <button
+            onClick={handleExportCsv}
+            disabled={dossierDocs.length === 0}
+            className="px-4 py-2 text-xs font-semibold text-ink bg-white border border-line hover:bg-surface-muted rounded-lg transition-colors flex items-center gap-2 cursor-pointer disabled:opacity-50"
+          >
+            <Download className="w-4 h-4" />
+            <span>Exporter CSV</span>
+          </button>
           <button
             onClick={handlePrint}
             disabled={dossierDocs.length === 0}
@@ -88,10 +133,18 @@ export const DossierExportView: React.FC<DossierExportViewProps> = ({
       <div className="bg-white border border-line rounded-xl p-8 sm:p-10 shadow-xs space-y-8">
         
         {/* Print Header */}
-        <div className="border-b-2 border-ink pb-6 space-y-2">
-          <div className="flex items-center justify-between text-xs text-muted font-mono">
-            <span>OIV NAVIGATOR · AUDIT & VEILLE DOCUMENTAIRE</span>
-            <span>Édité le {new Date().toLocaleDateString('fr-FR')}</span>
+        <div className="border-b-2 border-ink pb-6 space-y-3">
+          <div className="flex items-center gap-3">
+            <Logo size={40} />
+            <div className="flex flex-col">
+              <span className="text-xs font-mono font-semibold uppercase tracking-[0.14em] text-muted">
+                OIV Navigator · dossier technique
+              </span>
+              <span className="text-[11px] text-muted">
+                Corpus v{CORPUS_META.version} · édité le {new Date().toLocaleDateString('fr-FR')} ·
+                dernière mise à jour le {CORPUS_META.updatedAtLabel}
+              </span>
+            </div>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold font-editorial text-ink">
             {dossierTitle}
@@ -131,11 +184,11 @@ export const DossierExportView: React.FC<DossierExportViewProps> = ({
                       <div>
                         <div className="flex items-center gap-2 text-xs font-mono text-muted mb-1">
                           <span className="font-bold text-brand">{doc.officialReference}</span>
-                          <span>·</span>
+                          <span aria-hidden="true">·</span>
                           <span>{doc.domain}</span>
-                          <span>·</span>
+                          <span aria-hidden="true">·</span>
                           <span>{doc.category}</span>
-                          <span>·</span>
+                          <span aria-hidden="true">·</span>
                           <span>Adoption {doc.adoptionYear}</span>
                         </div>
                         <h4 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { OivDocument } from '../types/oiv';
 import { GitCompare, Sparkles } from 'lucide-react';
 import { PageContainer } from './PageContainer';
@@ -146,7 +146,7 @@ export const VersionComparator: React.FC<VersionComparatorProps> = ({
             <ul className="space-y-1.5 text-xs text-muted">
               {versionB.prescriptions.map((p, idx) => (
                 <li key={idx} className="flex items-start gap-2 bg-surface-muted p-2 rounded">
-                  <span className="text-subtle font-bold shrink-0">·</span>
+                  <span aria-hidden="true" className="text-subtle font-bold shrink-0">·</span>
                   <span className="leading-relaxed">{p}</span>
                 </li>
               ))}

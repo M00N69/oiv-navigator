@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { Header } from './components/Header';
 import { HomeExplorer } from './components/HomeExplorer';
 import { DocumentDetail } from './components/DocumentDetail';
@@ -22,16 +22,21 @@ import {
   saveCustomDocument 
 } from './lib/storage';
 import { filterAndSearchDocuments } from './lib/search';
+import { PageContainer } from './components/PageContainer';
 import { parseHash, routeToHash } from './lib/router';
 
 export default function App() {
   // Navigation
   const [currentTab, setCurrentTab] = useState<string>('home');
   const [selectedDoc, setSelectedDoc] = useState<OivDocument | null>(null);
+  const [docOriginTab, setDocOriginTab] = useState<string>('home');
+  const [missingDocId, setMissingDocId] = useState<string | null>(null);
   const [comparatorInitialDoc, setComparatorInitialDoc] = useState<OivDocument | null>(null);
 
   // Local Storage States
   const [allDocs, setAllDocs] = useState<OivDocument[]>(getAllCorpusDocuments());
+  const allDocsRef = useRef<OivDocument[]>(allDocs);
+  allDocsRef.current = allDocs;
   const [bookmarks, setBookmarks] = useState<string[]>(getStoredBookmarks());
   const [dossierItems, setDossierItems] = useState<DossierItem[]>(getStoredDossier());
   const [notes, setNotes] = useState<Record<string, UserNote>>(getStoredNotes());
@@ -67,11 +72,13 @@ export default function App() {
     const applyHash = () => {
       const route = parseHash(window.location.hash);
       if (route.docId) {
-        const doc = allDocs.find(d => d.id === route.docId) ?? null;
+        const doc = allDocsRef.current.find(d => d.id === route.docId) ?? null;
         setSelectedDoc(doc);
+        setMissingDocId(doc ? null : route.docId);
         if (!doc) setCurrentTab('home');
       } else {
         setSelectedDoc(null);
+        setMissingDocId(null);
         setCurrentTab(route.tab);
       }
     };
@@ -115,7 +122,15 @@ export default function App() {
   };
 
   const handleSelectDoc = (doc: OivDocument) => {
+    setDocOriginTab(currentTab);
+    setMissingDocId(null);
     setSelectedDoc(doc);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleBackFromDoc = () => {
+    setSelectedDoc(null);
+    setCurrentTab(docOriginTab);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -139,6 +154,7 @@ export default function App() {
   };
 
   const handleTabChange = (tab: string) => {
+    setMissingDocId(null);
     setSelectedDoc(null);
     setCurrentTab(tab);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -165,11 +181,24 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <main id="main" tabIndex={-1} className="flex-1 pb-16 focus:outline-none">
-        {selectedDoc ? (
+      <main id="main" tabIndex={-1} className="flex-1 pb-16">
+        {missingDocId ? (
+          <PageContainer>
+            <div className="rounded-xl border border-line bg-white p-10 text-center space-y-3">
+              <h1 className="font-editorial text-2xl font-bold text-ink">Fiche introuvable</h1>
+              <p className="text-sm text-muted">La référence « {missingDocId} » n'existe pas dans ce corpus.</p>
+              <button
+                onClick={() => handleTabChange('home')}
+                className="px-4 py-2 text-xs font-semibold text-white bg-brand rounded-lg hover:bg-brand-dark cursor-pointer"
+              >
+                Retour au corpus
+              </button>
+            </div>
+          </PageContainer>
+        ) : selectedDoc ? (
           <DocumentDetail
             document={selectedDoc}
-            onBack={() => setSelectedDoc(null)}
+            onBack={handleBackFromDoc}
             isBookmarked={bookmarks.includes(selectedDoc.id)}
             isInDossier={dossierItems.some(i => i.documentId === selectedDoc.id)}
             onToggleBookmark={handleToggleBookmark}

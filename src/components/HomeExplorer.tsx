@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { OivDocument, FilterState, OivFamily } from '../types/oiv';
 import { CORPUS_META, FAMILIES_META } from '../data/oivCorpus';
 import { SearchBar } from './SearchBar';
@@ -151,9 +151,9 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
                 <Sparkles className="w-3.5 h-3.5" />
                 {featuredDoc.officialReference}
               </span>
-              <span className="text-separator">·</span>
+              <span aria-hidden="true" className="text-separator">·</span>
               <span className="text-muted font-medium">{featuredDoc.title}</span>
-              <span className="text-separator">·</span>
+              <span aria-hidden="true" className="text-separator">·</span>
               <span className="text-amber-900 bg-amber-100/70 text-[11px] px-1.5 py-0.2 rounded font-medium">
                 Plafond : {featuredDoc.limitsAndDoses}
               </span>
