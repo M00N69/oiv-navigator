@@ -1721,6 +1721,275 @@ export const OIV_CORPUS: OivDocument[] = [
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
+  {
+    id: 'netvs-a93-25-denomination-vente-2026',
+    officialReference: "NETVS A93/25 — Étiquetage : dénomination de vente",
+    title: "Étiquetage des vins : dénomination de vente (AOP, IGP, catégorie)",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8080',
+    summary: "Synthèse professionnelle des règles de dénomination de vente des vins (AOP, IGP, catégorie de produit) selon le droit de l'Union européenne.",
+    oenologicalObjectives: [
+      "Garantir la dénomination correcte des vins sur l'étiquette.",
+      "Distinguer les mentions obligatoires des mentions facultatives."
+    ],
+    prescriptions: [
+      "Pour les vins AOC/AOP : l'étiquette doit comporter le nom de l'appellation ET les termes « Appellation d'Origine Protégée » (sauf mention traditionnelle « Appellation d'Origine Contrôlée »).",
+      "Pour les vins à IGP : l'étiquette doit comporter le nom du vin IGP et les termes « Indication Géographique Protégée ».",
+      "La dénomination de vente doit figurer en caractères indélébiles, dans le même champ visuel que les autres mentions obligatoires.",
+      "La taille des caractères est libre mais doit respecter la lisibilité (≥ 1,2 mm pour les mentions obligatoires)."
+    ],
+    limitsAndDoses: "Taille minimale des caractères : 1,2 mm (0,9 mm si surface < 80 cm²).",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 119-120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions obligatoires doivent figurer dans un même champ visuel."
+    },
+    versions: [
+      {
+        id: 'v2026-denomination',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Dénomination de vente des vins selon le droit de l'UE.",
+        prescriptions: ["Dénomination AOP/IGP obligatoire.", "Champ visuel unique."],
+        limitsAndDoses: "Taille min. 1,2 mm.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'netvs-a93-26-provenance-2026',
+    officialReference: "NETVS A93/26 — Étiquetage : indication de provenance",
+    title: "Étiquetage des vins : indication de provenance",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/21861',
+    summary: "Synthèse professionnelle des règles d'indication de provenance sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: [
+      "Garantir l'information du consommateur sur l'origine des raisins et du vin.",
+      "Distinguer les vins de l'UE des vins de pays tiers."
+    ],
+    prescriptions: [
+      "Pour les vins de l'UE : indication de l'État membre ou du pays tiers où les raisins ont été récoltés et vinifiés, précédée des termes « vin de... », « produit de... », « produit en... ».",
+      "Pour les vins résultant d'un mélange de plusieurs États membres : « vin de l'Union européenne » ou « mélange de vins de différents pays de l'Union européenne ».",
+      "Pour les vins de pays tiers : « mélange de... » complété par les noms des pays concernés.",
+      "Il est interdit de produire du vin dans l'UE à partir de raisins, moûts ou vins originaires de pays tiers.",
+      "L'indication de provenance doit figurer dans le même champ visuel que les autres mentions obligatoires."
+    ],
+    limitsAndDoses: "Mentions dans le même champ visuel que les autres mentions obligatoires.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 45 et annexe VIII, partie II, point B",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions obligatoires doivent figurer dans un même champ visuel."
+    },
+    versions: [
+      {
+        id: 'v2026-provenance',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Indication de provenance des vins selon le droit de l'UE.",
+        prescriptions: ["Provenance obligatoire.", "UE vs pays tiers."],
+        limitsAndDoses: "Champ visuel unique.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'netvs-a93-30-nutrition-2026',
+    officialReference: "NETVS A93/30 — Étiquetage : déclaration nutritionnelle",
+    title: "Étiquetage des vins : déclaration nutritionnelle",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '30/03/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/41544',
+    summary: "Synthèse professionnelle des règles de déclaration nutritionnelle des vins selon le droit de l'Union européenne (obligatoire depuis le 8 décembre 2023).",
+    oenologicalObjectives: [
+      "Informer le consommateur sur la valeur énergétique et la composition du vin.",
+      "Harmoniser l'étiquetage au niveau européen."
+    ],
+    prescriptions: [
+      "La déclaration nutritionnelle devient obligatoire pour toutes les catégories de vin (tranquilles, mousseux, pétillants, de liqueur, désalcoolisés) mis sur le marché de l'UE depuis le 8 décembre 2023.",
+      "La déclaration peut être fournie sur l'emballage physique ou de façon dématérialisée (e-label via QR code).",
+      "Lorsque la déclaration est dématérialisée, la valeur énergétique doit en plus figurer sur l'emballage physique (E = XX kJ / YY kcal pour 100 ml).",
+      "La page d'e-label doit être neutre, sans publicité ni traçage.",
+      "La valeur énergétique doit être exprimée en kJ et kcal pour 100 ml de produit."
+    ],
+    limitsAndDoses: "Valeur énergétique avec tolérance de +/- 20 %.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) 2021/2117 modifiant le Règlement (UE) n° 1308/2013",
+      prevalenceRule: "Le droit de l'UE rend obligatoire l'indication depuis le 8 décembre 2023.",
+      euLimitsAndConditions: "Le symbole « E » accompagne la valeur énergétique si la liste complète est dématérialisée."
+    },
+    versions: [
+      {
+        id: 'v2026-nutrition-netvs',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Déclaration nutritionnelle des vins selon le droit de l'UE.",
+        prescriptions: ["Valeur énergétique obligatoire.", "E-label neutre."],
+        limitsAndDoses: "Tolérance +/- 20 %.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'netvs-a93-31-ingredients-2026',
+    officialReference: "NETVS A93/31 — Étiquetage : liste des ingrédients",
+    title: "Étiquetage des vins : liste des ingrédients",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '30/03/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/41543',
+    summary: "Synthèse professionnelle des règles de la liste des ingrédients des vins selon le droit de l'Union européenne (obligatoire depuis le 8 décembre 2023).",
+    oenologicalObjectives: [
+      "Informer le consommateur sur la composition du vin.",
+      "Distinguer les ingrédients des auxiliaires technologiques."
+    ],
+    prescriptions: [
+      "La liste des ingrédients devient obligatoire pour toutes les catégories de vin mis sur le marché de l'UE depuis le 8 décembre 2023.",
+      "La liste peut être fournie sur l'emballage physique ou de façon dématérialisée (e-label via QR code).",
+      "Un ingrédient est toute substance utilisée durant la fabrication et encore présente dans le produit fini (les résidus ne sont pas des ingrédients).",
+      "Les additifs et auxiliaires technologiques sont définis selon le Règlement délégué (UE) 2019/934, annexe I, partie A, tableau 2.",
+      "Les auxiliaires technologiques ne figurent dans la liste des ingrédients que s'ils sont présents dans le produit fini."
+    ],
+    limitsAndDoses: "Liste des ingrédients selon le Règlement (UE) 1169/2011 et 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) 2021/2117 ; Règlement (UE) n° 1169/2011",
+      prevalenceRule: "Le droit de l'UE rend obligatoire l'indication depuis le 8 décembre 2023.",
+      euLimitsAndConditions: "Les ingrédients doivent être listés par ordre décroissant de leur importance."
+    },
+    versions: [
+      {
+        id: 'v2026-ingredients-netvs',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Liste des ingrédients des vins selon le droit de l'UE.",
+        prescriptions: ["Liste des ingrédients obligatoire.", "E-label autorisé."],
+        limitsAndDoses: "Selon Règlement 1169/2011.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'netvs-a93-35-titre-alcoometrique-2026',
+    officialReference: "NETVS A93/35 — Étiquetage : titre alcoométrique acquis",
+    title: "Étiquetage des vins : titre alcoométrique volumique acquis",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '02/03/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8075',
+    summary: "Synthèse professionnelle des règles d'indication du titre alcoométrique volumique acquis sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: [
+      "Informer le consommateur sur la teneur en alcool du vin.",
+      "Garantir la précision de l'indication."
+    ],
+    prescriptions: [
+      "L'indication du titre alcoométrique volumique acquis est obligatoire pour tous les vins.",
+      "L'indication se fait par unité ou demi-unité de % en volume, obligatoirement suivie du symbole « % vol ».",
+      "Les dixièmes de degré ne correspondant pas au demi-degré sont interdits (ex. 14,3 % vol. est interdit).",
+      "La tolérance est de +/- 0,5 % vol par rapport au titre déterminé par l'analyse.",
+      "Pour les moûts partiellement fermentés et les vins nouveaux en fermentation, le titre alcoométrique total peut être mentionné."
+    ],
+    limitsAndDoses: "Tolérance : +/- 0,5 % vol par rapport à l'analyse.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, annexe II, partie IV, §13-15",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "L'indication par unité ou demi-unité de % vol, suivie de « % vol »."
+    },
+    versions: [
+      {
+        id: 'v2026-tav-netvs',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Titre alcoométrique volumique acquis des vins.",
+        prescriptions: ["Indication par unité ou demi-unité.", "Tolérance +/- 0,5 % vol."],
+        limitsAndDoses: "Tolérance +/- 0,5 % vol.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'netvs-a93-37-volume-nominal-2026',
+    officialReference: "NETVS A93/37 — Étiquetage : volume nominal",
+    title: "Étiquetage des vins : volume nominal",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '02/03/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8076',
+    summary: "Synthèse professionnelle des règles d'indication du volume nominal sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: [
+      "Informer le consommateur sur le volume du produit.",
+      "Garantir la lisibilité de la mention."
+    ],
+    prescriptions: [
+      "L'indication du volume nominal est obligatoire pour tous les vins.",
+      "L'indication se fait en litres, centilitres ou millilitres, accompagnée de l'unité de mesure ou de son symbole.",
+      "La taille minimale des caractères dépend du volume : ≤ 5 cl → 2 mm ; 5-20 cl → 3 mm ; 20-100 cl → 4 mm ; > 100 cl → 6 mm.",
+      "La mention doit être apposée dans le même champ visuel que la dénomination du produit et le titre alcoométrique volumique acquis.",
+      "Les mentions doivent être indélébiles et clairement lisibles."
+    ],
+    limitsAndDoses: "Taille minimale : 2 mm (≤5 cl), 3 mm (5-20 cl), 4 mm (20-100 cl), 6 mm (>100 cl).",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1169/2011, art. 13§5 et 23 ; Règlement (UE) 2019/33, art. 40.1",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "L'indication dans le même champ visuel que les autres mentions obligatoires."
+    },
+    versions: [
+      {
+        id: 'v2026-volume-netvs',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Volume nominal des vins.",
+        prescriptions: ["Volume nominal obligatoire.", "Taille minimale selon le volume."],
+        limitsAndDoses: "2/3/4/6 mm selon le volume.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -1731,7 +2000,7 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.6',
+  version: '2026.7',
   updatedAt: '2026-11-16',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
@@ -1763,7 +2032,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'etiquetage',
     label: 'Norme d\'étiquetage des vins',
-    count: 7,
+    count: 13,
     desc: 'Mentions obligatoires, valeurs nutritionnelles et normes e-labels.'
   },
   {
