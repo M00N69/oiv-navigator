@@ -697,7 +697,7 @@ export const OIV_CORPUS: OivDocument[] = [
       "La déclaration « contient des sulfites » est obligatoire au-delà de 10 mg/L (SO2 total).",
       "L'ajout de SO2 doit être justifié par le besoin de protection microbiologique et antioxydante."
     ],
-    limitsAndDoses: "Limites indicatives : vins rouges 150 mg/L ; vins blancs/rosés 200 mg/L ; vins doux 300 mg/L (à vérifier selon le type et la teneur en sucres).",
+    limitsAndDoses: "Limites UE (Règlement délégué (UE) 2019/934, annexe II, partie B) : vins rouges 150 mg/L ; vins blancs et rosés 200 mg/L ; vins à teneur en sucres ≥ 5 g/L + 50 mg/L ; vins liquoreux jusqu'à 400 mg/L ; vins mousseux 235 mg/L (290 pour demi-sec/doux).",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II, partie B",
@@ -711,7 +711,7 @@ export const OIV_CORPUS: OivDocument[] = [
         adoptionYear: 2024,
         extractedText: "Limites maximales de SO2 total selon le type de vin.",
         prescriptions: ["SO2 total dans les limites fixées.", "Déclaration au-delà de 10 mg/L."],
-        limitsAndDoses: "150/200/300 mg/L selon le type.",
+        limitsAndDoses: "150 (rouge) / 200 (blanc-rosé) / +50 si sucres ≥ 5 g/L / jusqu'à 400 (liquoreux) mg/L.",
         isCurrent: true
       }
     ],
