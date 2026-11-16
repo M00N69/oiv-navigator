@@ -15,6 +15,14 @@ export function escapeHtml(text: string): string {
   return text.replace(/[&<>"']/g, (character) => HTML_ESCAPES[character] ?? character);
 }
 
+function normalizeAccents(text: string): string {
+  return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function containsInsensitive(text: string, query: string): boolean {
+  return normalizeAccents(text.toLowerCase()).includes(normalizeAccents(query.toLowerCase()));
+}
+
 function escapeRegExp(text: string): string {
   return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
@@ -43,40 +51,46 @@ export function filterAndSearchDocuments(
     if (query) {
       const normalizedQuery = query.replace(/[\s\-_]/g, '');
       const normalizedRef = doc.officialReference.toLowerCase().replace(/[\s\-_]/g, '');
-      const refMatch = normalizedRef.includes(normalizedQuery);
+      const refMatch = normalizedRef.includes(normalizedQuery) || containsInsensitive(doc.officialReference, query);
 
-      const titleMatch = doc.title.toLowerCase().includes(query);
-      const summaryMatch = doc.summary.toLowerCase().includes(query);
-      const domainMatch = doc.domain.toLowerCase().includes(query);
+      const titleMatch = doc.title.toLowerCase().includes(query) || containsInsensitive(doc.title, query);
+      const summaryMatch = doc.summary.toLowerCase().includes(query) || containsInsensitive(doc.summary, query);
+      const domainMatch = doc.domain.toLowerCase().includes(query) || containsInsensitive(doc.domain, query);
       const substanceMatch = doc.substanceName
-        ? doc.substanceName.toLowerCase().includes(query)
+        ? doc.substanceName.toLowerCase().includes(query) || containsInsensitive(doc.substanceName, query)
         : false;
-      const casMatch = doc.casNumber ? doc.casNumber.toLowerCase().includes(query) : false;
+      const casMatch = doc.casNumber ? doc.casNumber.toLowerCase().includes(query) || containsInsensitive(doc.casNumber, query) : false;
       const objectiveMatch = doc.oenologicalObjectives.some((objective) =>
-        objective.toLowerCase().includes(query)
+        objective.toLowerCase().includes(query) || containsInsensitive(objective, query)
       );
       const prescriptionMatch = doc.prescriptions.some((prescription) =>
-        prescription.toLowerCase().includes(query)
+        prescription.toLowerCase().includes(query) || containsInsensitive(prescription, query)
       );
-      const limitsMatch = doc.limitsAndDoses.toLowerCase().includes(query);
+      const limitsMatch = doc.limitsAndDoses.toLowerCase().includes(query) || containsInsensitive(doc.limitsAndDoses, query);
 
       const euReference = doc.euRegulation?.primaryReference ?? '';
       const euConditions = doc.euRegulation?.euLimitsAndConditions ?? '';
       const euMatch =
         euReference.toLowerCase().includes(query) ||
-        euConditions.toLowerCase().includes(query);
+        euConditions.toLowerCase().includes(query) ||
+        containsInsensitive(euReference, query) ||
+        containsInsensitive(euConditions, query);
 
       // Version contents are part of the documentary record too
       const versionMatch = doc.versions.some(
         (version) =>
           version.extractedText.toLowerCase().includes(query) ||
-          version.versionLabel.toLowerCase().includes(query)
+          version.versionLabel.toLowerCase().includes(query) ||
+          containsInsensitive(version.extractedText, query) ||
+          containsInsensitive(version.versionLabel, query)
       );
 
       const relatedMatch = doc.relatedDocuments.some(
         (related) =>
           related.officialReference.toLowerCase().includes(query) ||
-          related.title.toLowerCase().includes(query)
+          related.title.toLowerCase().includes(query) ||
+          containsInsensitive(related.officialReference, query) ||
+          containsInsensitive(related.title, query)
       );
 
       // Synonyms (e.g. "fml" -> fermentation malolactique, "so2" -> sulfites)
@@ -93,6 +107,20 @@ export function filterAndSearchDocuments(
           doc.summary.toLowerCase().includes('sulfur') ||
           doc.summary.toLowerCase().includes('sulfite') ||
           doc.prescriptions.some((prescription) => prescription.toLowerCase().includes('so2')))
+      ) {
+        synonymMatch = true;
+      }
+
+      // Allergen synonyms (FR/EN) - accent-insensitive
+      if (
+        (query === 'allergen' || query === 'allergens' || query === 'allergene' || query === 'allergenes' || query === 'allergène' || query === 'allergènes' || query === 'allergenique') &&
+        (doc.summary.toLowerCase().includes('allerg') ||
+          doc.prescriptions.some((prescription) => prescription.toLowerCase().includes('allerg')) ||
+          doc.title.toLowerCase().includes('allerg') ||
+          doc.oenologicalObjectives.some((o) => o.toLowerCase().includes('allerg')) ||
+          containsInsensitive(doc.summary, 'allerg') ||
+          doc.prescriptions.some((prescription) => containsInsensitive(prescription, 'allerg')) ||
+          containsInsensitive(doc.title, 'allerg'))
       ) {
         synonymMatch = true;
       }
