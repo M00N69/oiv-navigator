@@ -1684,7 +1684,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8091',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8091',
     summary: "Synthèse professionnelle des règles d'étiquetage des vins tranquilles et mousseux selon le droit de l'Union européenne (Règlements 1308/2013, 2019/33, 1169/2011) et les pratiques françaises (DGCCRF).",
     oenologicalObjectives: [
       "Garantir l'information du consommateur sur les vins.",
@@ -1732,7 +1732,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8080',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8080',
     summary: "Synthèse professionnelle des règles de dénomination de vente des vins (AOP, IGP, catégorie de produit) selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Garantir la dénomination correcte des vins sur l'étiquette.",
@@ -1776,7 +1776,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/21861',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=21861',
     summary: "Synthèse professionnelle des règles d'indication de provenance sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Garantir l'information du consommateur sur l'origine des raisins et du vin.",
@@ -1821,7 +1821,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/41544',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=41544',
     summary: "Synthèse professionnelle des règles de déclaration nutritionnelle des vins selon le droit de l'Union européenne (obligatoire depuis le 8 décembre 2023).",
     oenologicalObjectives: [
       "Informer le consommateur sur la valeur énergétique et la composition du vin.",
@@ -1866,7 +1866,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/41543',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=41543',
     summary: "Synthèse professionnelle des règles de la liste des ingrédients des vins selon le droit de l'Union européenne (obligatoire depuis le 8 décembre 2023).",
     oenologicalObjectives: [
       "Informer le consommateur sur la composition du vin.",
@@ -1911,7 +1911,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8075',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8075',
     summary: "Synthèse professionnelle des règles d'indication du titre alcoométrique volumique acquis sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Informer le consommateur sur la teneur en alcool du vin.",
@@ -1956,7 +1956,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8076',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8076',
     summary: "Synthèse professionnelle des règles d'indication du volume nominal sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Informer le consommateur sur le volume du produit.",
@@ -2001,7 +2001,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8077',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8077',
     summary: "Synthèse professionnelle des règles d'indication du numéro de lot sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Permettre l'identification et la traçabilité des lots de vin.",
@@ -2046,7 +2046,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8081',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8081',
     summary: "Synthèse professionnelle des règles d'indication du millésime sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Informer le consommateur sur l'année de récolte.",
@@ -2091,7 +2091,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8082',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8082',
     summary: "Synthèse professionnelle des règles d'indication du cépage sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Informer le consommateur sur la variété de vigne utilisée.",
@@ -2136,7 +2136,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8083',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8083',
     summary: "Synthèse professionnelle des règles d'usage des mentions traditionnelles sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Encadrer l'usage des mentions traditionnelles sur les vins.",
@@ -2180,7 +2180,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8087',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8087',
     summary: "Synthèse professionnelle des règles d'étiquetage des vins biologiques selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Encadrer l'usage de la mention « vin biologique ».",
@@ -2224,7 +2224,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8088',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8088',
     summary: "Synthèse professionnelle des règles d'usage des distinctions et médailles sur l'étiquetage des vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Encadrer l'usage des distinctions et médailles sur les vins.",
@@ -2268,7 +2268,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8069',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8069',
     summary: "Synthèse professionnelle des règles d'indication de l'identité de l'embouteilleur et de l'importateur sur les vins.",
     oenologicalObjectives: ["Identifier l'embouteilleur ou l'importateur.", "Garantir la traçabilité."],
     prescriptions: [
@@ -2299,7 +2299,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/21862',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=21862',
     summary: "Synthèse professionnelle des règles d'usage du symbole communautaire sur les vins AOP/IGP selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Identifier les vins AOP/IGP par le symbole communautaire.", "Encadrer l'usage du symbole."],
     prescriptions: [
@@ -2330,7 +2330,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8089',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8089',
     summary: "Synthèse professionnelle des règles d'usage des unités géographiques plus grandes ou plus petites que l'IG sur les vins.",
     oenologicalObjectives: ["Encadrer l'usage des unités géographiques complémentaires.", "Garantir la conformité avec le cahier des charges."],
     prescriptions: [
@@ -2360,7 +2360,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8071',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8071',
     summary: "Synthèse professionnelle des règles d'indication des participants à la commercialisation sur les vins.",
     oenologicalObjectives: ["Identifier les participants à la commercialisation.", "Garantir la traçabilité."],
     prescriptions: [
@@ -2390,7 +2390,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8072',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8072',
     summary: "Synthèse professionnelle des règles d'usage du nom d'exploitation viticole sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'usage du nom d'exploitation viticole.", "Garantir la conformité avec le cahier des charges."],
     prescriptions: [
@@ -2420,7 +2420,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8073',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8073',
     summary: "Synthèse professionnelle des règles de la mention « mise en bouteille à la propriété » sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'usage de la mention « mise en bouteille à la propriété ».", "Garantir la véracité de la mention."],
     prescriptions: [
@@ -2450,7 +2450,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8084',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8084',
     summary: "Synthèse professionnelle des règles d'indication de la méthode de production sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'usage des mentions de méthode de production.", "Garantir la conformité."],
     prescriptions: [
@@ -2480,7 +2480,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8085',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8085',
     summary: "Synthèse professionnelle des règles d'usage des mentions de couleur sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'usage des mentions de couleur.", "Garantir la conformité."],
     prescriptions: [
@@ -2511,7 +2511,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8086',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8086',
     summary: "Synthèse professionnelle des règles d'indication de la teneur en sucre sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'indication de la teneur en sucre.", "Garantir la conformité."],
     prescriptions: [
@@ -2542,7 +2542,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8078',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8078',
     summary: "Synthèse professionnelle des règles d'usage du logo point vert (Adelphe) sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'usage du logo point vert.", "Garantir la conformité avec la réglementation sur les emballages."],
     prescriptions: [
@@ -2572,7 +2572,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.netvs.org/fr/documents/8074',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8074',
     summary: "Synthèse professionnelle des règles d'usage du nom de l'imprimeur sur les étiquettes de vins.",
     oenologicalObjectives: ["Clarifier le statut du nom de l'imprimeur.", "Garantir la conformité."],
     prescriptions: [
