@@ -1674,8 +1674,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-etiquetage-vins-grands-principes-2026',
-    officialReference: "NETVS — Étiquetage des Vins : Grands Principes (fiche A93/20)",
+    id: 'etiquetage-vins-grands-principes-2026',
+    officialReference: "— Étiquetage des Vins : Grands Principes (fiche A93/20)",
     title: "Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -1710,7 +1710,7 @@ export const OIV_CORPUS: OivDocument[] = [
     versions: [
       {
         id: 'v2026-etiquetage',
-        versionLabel: 'Version NETVS 2026',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Grands principes de l'étiquetage des vins selon le droit de l'UE.",
         prescriptions: ["Mentions obligatoires dans un même champ visuel.", "Allergènes déclarés.", "Date de durabilité pour vins désalcoolisés."],
@@ -1722,8 +1722,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-25-denomination-vente-2026',
-    officialReference: "NETVS A93/25 — Étiquetage : dénomination de vente",
+    id: 'a93-25-denomination-vente-2026',
+    officialReference: "A93/25 — Étiquetage : dénomination de vente",
     title: "Étiquetage des vins : dénomination de vente (AOP, IGP, catégorie)",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -1754,7 +1754,7 @@ export const OIV_CORPUS: OivDocument[] = [
     versions: [
       {
         id: 'v2026-denomination',
-        versionLabel: 'Version NETVS 2026',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Dénomination de vente des vins selon le droit de l'UE.",
         prescriptions: ["Dénomination AOP/IGP obligatoire.", "Champ visuel unique."],
@@ -1766,8 +1766,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-26-provenance-2026',
-    officialReference: "NETVS A93/26 — Étiquetage : indication de provenance",
+    id: 'a93-26-provenance-2026',
+    officialReference: "A93/26 — Étiquetage : indication de provenance",
     title: "Étiquetage des vins : indication de provenance",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -1799,7 +1799,7 @@ export const OIV_CORPUS: OivDocument[] = [
     versions: [
       {
         id: 'v2026-provenance',
-        versionLabel: 'Version NETVS 2026',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Indication de provenance des vins selon le droit de l'UE.",
         prescriptions: ["Provenance obligatoire.", "UE vs pays tiers."],
@@ -1811,8 +1811,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-30-nutrition-2026',
-    officialReference: "NETVS A93/30 — Étiquetage : déclaration nutritionnelle",
+    id: 'a93-30-nutrition-2026',
+    officialReference: "A93/30 — Étiquetage : déclaration nutritionnelle",
     title: "Étiquetage des vins : déclaration nutritionnelle",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -1843,8 +1843,8 @@ export const OIV_CORPUS: OivDocument[] = [
     },
     versions: [
       {
-        id: 'v2026-nutrition-netvs',
-        versionLabel: 'Version NETVS 2026',
+        id: 'v2026-nutrition',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Déclaration nutritionnelle des vins selon le droit de l'UE.",
         prescriptions: ["Valeur énergétique obligatoire.", "E-label neutre."],
@@ -1856,8 +1856,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-31-ingredients-2026',
-    officialReference: "NETVS A93/31 — Étiquetage : liste des ingrédients",
+    id: 'a93-31-ingredients-2026',
+    officialReference: "A93/31 — Étiquetage : liste des ingrédients",
     title: "Étiquetage des vins : liste des ingrédients",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -1888,8 +1888,8 @@ export const OIV_CORPUS: OivDocument[] = [
     },
     versions: [
       {
-        id: 'v2026-ingredients-netvs',
-        versionLabel: 'Version NETVS 2026',
+        id: 'v2026-ingredients',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Liste des ingrédients des vins selon le droit de l'UE.",
         prescriptions: ["Liste des ingrédients obligatoire.", "E-label autorisé."],
@@ -1901,8 +1901,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-35-titre-alcoometrique-2026',
-    officialReference: "NETVS A93/35 — Étiquetage : titre alcoométrique acquis",
+    id: 'a93-35-titre-alcoometrique-2026',
+    officialReference: "A93/35 — Étiquetage : titre alcoométrique acquis",
     title: "Étiquetage des vins : titre alcoométrique volumique acquis",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -1933,8 +1933,8 @@ export const OIV_CORPUS: OivDocument[] = [
     },
     versions: [
       {
-        id: 'v2026-tav-netvs',
-        versionLabel: 'Version NETVS 2026',
+        id: 'v2026-tav',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Titre alcoométrique volumique acquis des vins.",
         prescriptions: ["Indication par unité ou demi-unité.", "Tolérance +/- 0,5 % vol."],
@@ -1946,8 +1946,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-37-volume-nominal-2026',
-    officialReference: "NETVS A93/37 — Étiquetage : volume nominal",
+    id: 'a93-37-volume-nominal-2026',
+    officialReference: "A93/37 — Étiquetage : volume nominal",
     title: "Étiquetage des vins : volume nominal",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -1978,8 +1978,8 @@ export const OIV_CORPUS: OivDocument[] = [
     },
     versions: [
       {
-        id: 'v2026-volume-netvs',
-        versionLabel: 'Version NETVS 2026',
+        id: 'v2026-volume',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Volume nominal des vins.",
         prescriptions: ["Volume nominal obligatoire.", "Taille minimale selon le volume."],
@@ -1991,8 +1991,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-42-numero-lot-2026',
-    officialReference: "NETVS A93/42 — Étiquetage : numéro de lot",
+    id: 'a93-42-numero-lot-2026',
+    officialReference: "A93/42 — Étiquetage : numéro de lot",
     title: "Étiquetage des vins : numéro de lot",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -2023,8 +2023,8 @@ export const OIV_CORPUS: OivDocument[] = [
     },
     versions: [
       {
-        id: 'v2026-lot-netvs',
-        versionLabel: 'Version NETVS 2026',
+        id: 'v2026-lot',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Numéro de lot des vins.",
         prescriptions: ["Numéro de lot obligatoire.", "Traçabilité."],
@@ -2036,8 +2036,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-52-millesime-2026',
-    officialReference: "NETVS A93/52 — Étiquetage : millésime",
+    id: 'a93-52-millesime-2026',
+    officialReference: "A93/52 — Étiquetage : millésime",
     title: "Étiquetage des vins : millésime",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -2068,8 +2068,8 @@ export const OIV_CORPUS: OivDocument[] = [
     },
     versions: [
       {
-        id: 'v2026-millesime-netvs',
-        versionLabel: 'Version NETVS 2026',
+        id: 'v2026-millesime',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Millésime des vins.",
         prescriptions: ["Facultatif sauf vins primeurs.", "Taille adaptée pour les vins primeurs."],
@@ -2081,8 +2081,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-55-cepage-2026',
-    officialReference: "NETVS A93/55 — Étiquetage : cépage",
+    id: 'a93-55-cepage-2026',
+    officialReference: "A93/55 — Étiquetage : cépage",
     title: "Étiquetage des vins : cépage",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -2113,8 +2113,8 @@ export const OIV_CORPUS: OivDocument[] = [
     },
     versions: [
       {
-        id: 'v2026-cepage-netvs',
-        versionLabel: 'Version NETVS 2026',
+        id: 'v2026-cepage',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Cépage des vins.",
         prescriptions: ["Facultatif.", "Cépage du classement officiel."],
@@ -2126,8 +2126,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-60-mentions-traditionnelles-2026',
-    officialReference: "NETVS A93/60 — Étiquetage : mentions traditionnelles",
+    id: 'a93-60-mentions-traditionnelles-2026',
+    officialReference: "A93/60 — Étiquetage : mentions traditionnelles",
     title: "Étiquetage des vins : mentions traditionnelles",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -2157,8 +2157,8 @@ export const OIV_CORPUS: OivDocument[] = [
     },
     versions: [
       {
-        id: 'v2026-traditionnelles-netvs',
-        versionLabel: 'Version NETVS 2026',
+        id: 'v2026-traditionnelles',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Mentions traditionnelles des vins.",
         prescriptions: ["Mentions facultatives définies.", "Langue de protection."],
@@ -2170,8 +2170,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-87-vin-biologique-2026',
-    officialReference: "NETVS A93/87 — Étiquetage : vin biologique",
+    id: 'a93-87-vin-biologique-2026',
+    officialReference: "A93/87 — Étiquetage : vin biologique",
     title: "Étiquetage des vins : vin biologique",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -2201,8 +2201,8 @@ export const OIV_CORPUS: OivDocument[] = [
     },
     versions: [
       {
-        id: 'v2026-bio-netvs',
-        versionLabel: 'Version NETVS 2026',
+        id: 'v2026-bio',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Vin biologique.",
         prescriptions: ["Certification bio obligatoire.", "Traitements limités."],
@@ -2214,8 +2214,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'netvs-a93-92-distinctions-2026',
-    officialReference: "NETVS A93/92 — Étiquetage : distinctions, médailles, concours",
+    id: 'a93-92-distinctions-2026',
+    officialReference: "A93/92 — Étiquetage : distinctions, médailles, concours",
     title: "Étiquetage des vins : distinctions, médailles, concours",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -2245,8 +2245,8 @@ export const OIV_CORPUS: OivDocument[] = [
     },
     versions: [
       {
-        id: 'v2026-distinctions-netvs',
-        versionLabel: 'Version NETVS 2026',
+        id: 'v2026-distinctions',
+        versionLabel: 'Version 2026',
         adoptionYear: 2026,
         extractedText: "Distinctions, médailles, concours.",
         prescriptions: ["Mentions libres vérifiables.", "Concours agréés DGCCRF."],
@@ -2254,6 +2254,340 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'a93-27-embouteilleur-2026',
+    officialReference: "A93/27 — Étiquetage : nom et adresse de l'embouteilleur/importateur",
+    title: "Étiquetage des vins : nom et adresse de l'embouteilleur et de l'importateur",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '08/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8069',
+    summary: "Synthèse professionnelle des règles d'indication de l'identité de l'embouteilleur et de l'importateur sur les vins.",
+    oenologicalObjectives: ["Identifier l'embouteilleur ou l'importateur.", "Garantir la traçabilité."],
+    prescriptions: [
+      "L'identité de l'embouteilleur doit figurer sur l'étiquette (nom et adresse).",
+      "Pour les vins importés, l'identité de l'importateur doit également figurer.",
+      "L'embouteilleur est la personne qui procède ou fait procéder à l'embouteillage.",
+      "Les mentions doivent être dans le même champ visuel que les autres mentions obligatoires."
+    ],
+    limitsAndDoses: "Mentions dans le même champ visuel que les autres mentions obligatoires.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 119 ; Règlement délégué (UE) 2019/33, art. 46",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "L'identité de l'embouteilleur doit figurer dans le même champ visuel."
+    },
+    versions: [{ id: 'v2026-embouteilleur', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Embouteilleur/importateur.", prescriptions: ["Identité obligatoire.", "Champ visuel unique."], limitsAndDoses: "Selon règlementation.", isCurrent: true }],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'a93-29-symbole-communautaire-2026',
+    officialReference: "A93/29 — Étiquetage : symbole communautaire",
+    title: "Étiquetage des vins : symbole communautaire (AOP/IGP)",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '02/03/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/21862',
+    summary: "Synthèse professionnelle des règles d'usage du symbole communautaire sur les vins AOP/IGP selon le droit de l'Union européenne.",
+    oenologicalObjectives: ["Identifier les vins AOP/IGP par le symbole communautaire.", "Encadrer l'usage du symbole."],
+    prescriptions: [
+      "Le symbole communautaire est facultatif (art. 120.1.E du Règlement 1308/2013).",
+      "Les cahiers des charges des AOC/AOP ou IGP peuvent rendre obligatoire, interdire ou préciser l'apposition du symbole.",
+      "Les symboles sont définis à l'Annexe XVII du Règlement d'exécution (UE) 2025-26.",
+      "Le symbole peut accompagner la dénomination géographique correspondante."
+    ],
+    limitsAndDoses: "Selon le cahier des charges de l'AOP/IGP.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120.1.E ; Règlement d'exécution (UE) 2025-26, annexe XVII",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les cahiers des charges peuvent rendre le symbole obligatoire, l'interdire ou le préciser."
+    },
+    versions: [{ id: 'v2026-symbole', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Symbole communautaire.", prescriptions: ["Facultatif.", "Selon cahier des charges."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'a93-57-unite-geographique-2026',
+    officialReference: "A93/57 — Étiquetage : unité géographique",
+    title: "Étiquetage des vins : unité géographique plus grande ou plus petite que l'IG",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '08/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8089',
+    summary: "Synthèse professionnelle des règles d'usage des unités géographiques plus grandes ou plus petites que l'IG sur les vins.",
+    oenologicalObjectives: ["Encadrer l'usage des unités géographiques complémentaires.", "Garantir la conformité avec le cahier des charges."],
+    prescriptions: [
+      "Les cahiers des charges des AOC/AOP ou IGP peuvent rendre obligatoire, interdire ou préciser l'usage du nom d'une unité géographique plus grande ou plus petite.",
+      "L'unité géographique peut être une localité, une zone administrative, une sous-région viticole, etc.",
+      "Les dénominations géographiques complémentaires (GDC) sont un type d'unité géographique plus petite."
+    ],
+    limitsAndDoses: "Selon le cahier des charges de l'AOP/IGP.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120 ; Règlement délégué (UE) 2019/33, art. 58",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les cahiers des charges peuvent rendre l'unité géographique obligatoire, l'interdire ou la préciser."
+    },
+    versions: [{ id: 'v2026-unite-geo', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Unité géographique.", prescriptions: ["Selon cahier des charges."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'a93-62-participants-commercialisation-2026',
+    officialReference: "A93/62 — Étiquetage : participants à la commercialisation",
+    title: "Étiquetage des vins : participants à la commercialisation",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '08/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8071',
+    summary: "Synthèse professionnelle des règles d'indication des participants à la commercialisation sur les vins.",
+    oenologicalObjectives: ["Identifier les participants à la commercialisation.", "Garantir la traçabilité."],
+    prescriptions: [
+      "L'identité de l'embouteilleur, du producteur, de l'importateur et du vendeur peut figurer sur l'étiquette.",
+      "Pour les vins mousseux, l'identité du producteur/élaborateur et du vendeur doit figurer.",
+      "Les mentions doivent être conformes au Règlement (UE) 1308/2013 et au Règlement délégué 2019/33."
+    ],
+    limitsAndDoses: "Selon le Règlement (UE) 1308/2013.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 119",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions doivent être conformes au Règlement 1308/2013."
+    },
+    versions: [{ id: 'v2026-participants', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Participants à la commercialisation.", prescriptions: ["Identité des participants.", "Conformité UE."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'a93-65-nom-exploitation-2026',
+    officialReference: "A93/65 — Étiquetage : nom d'exploitation viticole",
+    title: "Étiquetage des vins : nom d'exploitation viticole",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '14/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8072',
+    summary: "Synthèse professionnelle des règles d'usage du nom d'exploitation viticole sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: ["Encadrer l'usage du nom d'exploitation viticole.", "Garantir la conformité avec le cahier des charges."],
+    prescriptions: [
+      "Certains noms sont réservés pour désigner des vins AOP/IGP issus d'une exploitation où ces vins sont élaborés exclusivement à partir des raisins récoltés dans les vignobles cultivés par cette exploitation.",
+      "Les expressions « château », « clos », « cru » et « hospices » sont réservées aux vins à AOP/AOC.",
+      "La vinification doit être entièrement effectuée dans l'exploitation."
+    ],
+    limitsAndDoses: "Selon le décret n° 2012-655 et le Règlement délégué 2019/33.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/33, art. 54 et annexe VI",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "L'exploitation doit être une entité déterminée avec cuverie individualisée."
+    },
+    versions: [{ id: 'v2026-exploitation', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Nom d'exploitation viticole.", prescriptions: ["Expressions réservées.", "Vinification dans l'exploitation."], limitsAndDoses: "Selon décret 2012-655.", isCurrent: true }],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'a93-67-mise-en-bouteille-propriete-2026',
+    officialReference: "A93/67 — Étiquetage : mise en bouteille à la propriété",
+    title: "Étiquetage des vins : mise en bouteille à la propriété, au château ou dans la région",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '11/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8073',
+    summary: "Synthèse professionnelle des règles de la mention « mise en bouteille à la propriété » sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: ["Encadrer l'usage de la mention « mise en bouteille à la propriété ».", "Garantir la véracité de la mention."],
+    prescriptions: [
+      "La mention « mise en bouteille à la propriété » (ou au château, dans la région) est une mention libre, sous réserve de vérifiabilité.",
+      "Le metteur en marché doit être en mesure de justifier la mention par une traçabilité adéquate.",
+      "Les mentions doivent être conformes au Règlement (UE) 1308/2013."
+    ],
+    limitsAndDoses: "Mention libre vérifiable.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "La mention doit être vérifiable et non trompeuse."
+    },
+    versions: [{ id: 'v2026-mise-bouteille', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Mise en bouteille à la propriété.", prescriptions: ["Mention libre vérifiable.", "Traçabilité."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'a93-70-methode-production-2026',
+    officialReference: "A93/70 — Étiquetage : méthode de production",
+    title: "Étiquetage des vins : méthode de production",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '14/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8084',
+    summary: "Synthèse professionnelle des règles d'indication de la méthode de production sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: ["Encadrer l'usage des mentions de méthode de production.", "Garantir la conformité."],
+    prescriptions: [
+      "Pour les vins tranquilles, seules les indications relatives au vieillissement sous bois ou l'utilisation des copeaux sont mentionnées (art. 53, point 2, R. 2019/33).",
+      "Pour les vins mousseux, les indications relatives au vieillissement sous bois, à l'utilisation des copeaux, à la « fermentation en bouteille », à la « méthode traditionnelle » et au « Crémant » sont mentionnées (art. 53, points 3-5, R. 2019/33).",
+      "Les mentions doivent être conformes au Règlement (UE) 1308/2013."
+    ],
+    limitsAndDoses: "Selon le Règlement (UE) 2019/33, art. 53.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/33, art. 53",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seules les méthodes expressément mentionnées sont autorisées."
+    },
+    versions: [{ id: 'v2026-methode', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Méthode de production.", prescriptions: ["Vieillissement sous bois.", "Copeaux."], limitsAndDoses: "Selon R. 2019/33.", isCurrent: true }],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'a93-72-couleur-2026',
+    officialReference: "A93/72 — Étiquetage : couleur",
+    title: "Étiquetage des vins : couleur",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8085',
+    summary: "Synthèse professionnelle des règles d'usage des mentions de couleur sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: ["Encadrer l'usage des mentions de couleur.", "Garantir la conformité."],
+    prescriptions: [
+      "Les expressions « rouge », « rosé » et « blanc » sont libres d'emploi.",
+      "L'usage de ces expressions doit être porté sur les documents d'accompagnement et dans les registres.",
+      "Des couleurs particulières peuvent être utilisées dans des conditions déterminées.",
+      "Les mentions doivent être conformes au Règlement (UE) 1308/2013."
+    ],
+    limitsAndDoses: "Mentions libres pour rouge, rosé, blanc.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions doivent être conformes au Règlement 1308/2013."
+    },
+    versions: [{ id: 'v2026-couleur', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Couleur des vins.", prescriptions: ["Rouge, rosé, blanc libres.", "Conformité UE."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'a93-77-teneur-sucre-2026',
+    officialReference: "A93/77 — Étiquetage : teneur en sucre",
+    title: "Étiquetage des vins : teneur en sucre",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8086',
+    summary: "Synthèse professionnelle des règles d'indication de la teneur en sucre sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: ["Encadrer l'indication de la teneur en sucre.", "Garantir la conformité."],
+    prescriptions: [
+      "La teneur en sucre est une mention facultative pour les vins tranquilles.",
+      "Pour les vins mousseux, la teneur en sucre est obligatoire.",
+      "Les cahiers des charges des AOC/AOP ou IGP peuvent rendre obligatoire, interdire ou préciser certaines mentions de teneur en sucre.",
+      "Les mentions doivent être conformes au Règlement (UE) 1308/2013."
+    ],
+    limitsAndDoses: "Selon le Règlement (UE) 1308/2013 et le cahier des charges.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "La teneur en sucre est obligatoire pour les vins mousseux."
+    },
+    versions: [{ id: 'v2026-sucre', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Teneur en sucre.", prescriptions: ["Facultatif pour VT.", "Obligatoire pour Mx."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'a93-80-logo-point-vert-2026',
+    officialReference: "A93/80 — Étiquetage : logo point vert-Adelphe",
+    title: "Étiquetage des vins : logo point vert (Adelphe)",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8078',
+    summary: "Synthèse professionnelle des règles d'usage du logo point vert (Adelphe) sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: ["Encadrer l'usage du logo point vert.", "Garantir la conformité avec la réglementation sur les emballages."],
+    prescriptions: [
+      "Le logo point vert identifie les entreprises remplissant leurs obligations d'élimination des emballages ménagers.",
+      "Adelphe est un organisme agréé créé par les professionnels des vins et spiritueux.",
+      "L'usage du logo est facultatif et soumis à l'adhésion à Adelphe."
+    ],
+    limitsAndDoses: "Selon les conditions d'adhésion à Adelphe.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Directive 94/62/CE (emballages et déchets d'emballages)",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les conditions sont celles de la Directive 94/62/CE."
+    },
+    versions: [{ id: 'v2026-point-vert', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Logo point vert-Adelphe.", prescriptions: ["Logo facultatif.", "Adhésion Adelphe."], limitsAndDoses: "Selon Adelphe.", isCurrent: true }],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'a93-95-nom-imprimeur-2026',
+    officialReference: "A93/95 — Étiquetage : nom de l'imprimeur",
+    title: "Étiquetage des vins : nom de l'imprimeur",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '22/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8074',
+    summary: "Synthèse professionnelle des règles d'usage du nom de l'imprimeur sur les étiquettes de vins.",
+    oenologicalObjectives: ["Clarifier le statut du nom de l'imprimeur.", "Garantir la conformité."],
+    prescriptions: [
+      "Le Règlement (UE) 1169/2011 ne prévoit pas la mention du nom de l'imprimeur ni à titre obligatoire ni à titre facultatif.",
+      "Le droit de la presse ne s'applique pas aux étiquettes.",
+      "Les entreprises sont fondées à refuser cette mention."
+    ],
+    limitsAndDoses: "Mention non prévue par le Règlement (UE) 1169/2011.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1169/2011",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "La mention du nom de l'imprimeur n'est pas prévue par le Règlement 1169/2011."
+    },
+    versions: [{ id: 'v2026-imprimeur', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Nom de l'imprimeur.", prescriptions: ["Mention non prévue.", "Refus possible."], limitsAndDoses: "Selon R. 1169/2011.", isCurrent: true }],
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
@@ -2267,7 +2601,7 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.8',
+  version: '2026.9',
   updatedAt: '2026-11-16',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
@@ -2299,7 +2633,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'etiquetage',
     label: 'Norme d\'étiquetage des vins',
-    count: 19,
+    count: 30,
     desc: 'Mentions obligatoires, valeurs nutritionnelles et normes e-labels.'
   },
   {
