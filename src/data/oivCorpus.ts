@@ -806,6 +806,268 @@ export const OIV_CORPUS: OivDocument[] = [
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
+  {
+    id: 'oiv-acidification-mouts-vins-2024',
+    officialReference: "OIV — Pratiques œnologiques : acidification (moûts et vins)",
+    title: "Acidification des moûts et des vins : ajustement de l'acidité",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    summary: "Encadre l'acidification des moûts et des vins pour corriger l'acidité naturelle, par voies chimique, microbiologique ou physique, dans les conditions fixées par le code des pratiques œnologiques.",
+    oenologicalObjectives: [
+      "Corriger l'acidité insuffisante des moûts et des vins.",
+      "Améliorer l'équilibre et la stabilité microbiologique."
+    ],
+    prescriptions: [
+      "L'acidification est autorisée dans les conditions fixées par le code des pratiques œnologiques (acides tartrique, malique, citrique, lactique selon les cas).",
+      "Les doses et les modes d'emploi doivent respecter les limites fixées par l'OIV et, le cas échéant, par le droit de l'Union européenne.",
+      "L'acidification doit être justifiée par l'acidité naturelle du moût ou du vin et tracée dans le registre de chai.",
+      "Les pratiques d'acidification sont soumises à la primauté du droit de l'UE."
+    ],
+    limitsAndDoses: "Acides autorisés et doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime : seules les pratiques et doses expressément autorisées sont licites.",
+      euLimitsAndConditions: "Les limites et conditions sont celles de l'annexe II du Règlement 2019/934."
+    },
+    versions: [
+      {
+        id: 'v2024-acidification',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Acidification des moûts et des vins selon le code des pratiques œnologiques.",
+        prescriptions: ["Acidification autorisée dans les conditions fixées.", "Traçabilité obligatoire."],
+        limitsAndDoses: "Selon code des pratiques et annexe II UE.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-stabilisation-tartrique-2024',
+    officialReference: "OIV — Pratiques œnologiques : stabilisation tartrique",
+    title: "Stabilisation tartrique des vins : électrodialyse, échangeurs cationiques, traitement au froid",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    summary: "Encadre la stabilisation tartrique des vins par électrodialyse, échangeurs cationiques, traitement au froid, acide métatartrique et autres auxiliaires, afin d'éviter la précipitation du bitartrate de potassium.",
+    oenologicalObjectives: [
+      "Éviter la précipitation du tartre dans le vin en bouteille.",
+      "Garantir la stabilité physico-chimique du vin."
+    ],
+    prescriptions: [
+      "La stabilisation tartrique est autorisée selon les méthodes reconnues par le code des pratiques œnologiques (électrodialyse, échangeurs cationiques, traitement au froid, acide métatartrique, gomme arabique, polyaspartate de potassium).",
+      "Chaque traitement doit être tracé et compatible avec le statut UE.",
+      "L'emploi d'auxiliaires technologiques doit respecter les conditions fixées par l'OIV."
+    ],
+    limitsAndDoses: "Doses et conditions selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les auxiliaires et doses autorisés sont ceux de l'annexe II du Règlement 2019/934."
+    },
+    versions: [
+      {
+        id: 'v2024-tartrate',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Stabilisation tartrique par électrodialyse, échangeurs cationiques et traitement au froid.",
+        prescriptions: ["Stabilisation autorisée selon les méthodes reconnues.", "Traçabilité obligatoire."],
+        limitsAndDoses: "Selon code des pratiques et annexe II UE.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-tracabilite-vins-2024',
+    officialReference: "OIV — Traçabilité et registres vitivinicoles",
+    title: "Traçabilité dans la filière vitivinicole : registres et identification des lots",
+    family: 'etiquetage',
+    domain: 'Traçabilité & Contrôle',
+    category: 'Général',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins',
+    summary: "Encadre la traçabilité des produits vitivinicoles, de la vigne à la mise en marché, au moyen de registres et d'identifiants de lot, pour garantir l'authenticité et la sécurité.",
+    oenologicalObjectives: [
+      "Garantir l'authenticité et la traçabilité des vins.",
+      "Permettre le retrait ciblé en cas d'incident."
+    ],
+    prescriptions: [
+      "Les opérateurs doivent tenir des registres permettant d'identifier l'origine, les mouvements et les traitements des produits.",
+      "Les lots doivent être identifiables par un numéro de lot reporté sur l'étiquette ou le document commercial.",
+      "Les auxiliaires technologiques et traitements appliqués doivent être consignés.",
+      "La traçabilité doit être compatible avec les exigences du droit de l'UE (Règlement (CE) 178/2002)."
+    ],
+    limitsAndDoses: "Registres tenus selon les modalités nationales et les normes OIV.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (CE) n° 178/2002 (traçabilité alimentaire)",
+      prevalenceRule: "Le droit de l'UE prime en matière de traçabilité alimentaire.",
+      euLimitsAndConditions: "Obligation de traçabilité « un pas en avant, un pas en arrière » pour tous les opérateurs."
+    },
+    versions: [
+      {
+        id: 'v2024-tracabilite',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Traçabilité et registres vitivinicoles.",
+        prescriptions: ["Registres obligatoires.", "Identification des lots."],
+        limitsAndDoses: "Selon modalités nationales.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-haccp-vitivinicole-2024',
+    officialReference: "OIV — Bonnes pratiques et HACCP dans la filière vitivinicole",
+    title: "Sécurité sanitaire et HACCP dans les caves et chais vitivinicoles",
+    family: 'techniques',
+    domain: 'Sécurité sanitaire & Qualité',
+    category: 'Général',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    summary: "Présente les principes HACCP et les bonnes pratiques d'hygiène applicables dans la filière vitivinicole, en complément du Règlement (CE) 852/2004.",
+    oenologicalObjectives: [
+      "Garantir la sécurité sanitaire des vins.",
+      "Structurer la démarche HACCP dans les caves."
+    ],
+    prescriptions: [
+      "Les opérateurs doivent mettre en place un système HACCP adapté à leur activité.",
+      "Les dangers microbiologiques, chimiques et physiques doivent être identifiés et maîtrisés.",
+      "Les points critiques de contrôle (CCP) doivent être surveillés et documentés.",
+      "Le système doit être compatible avec le Règlement (CE) 852/2004 et les guides de bonnes pratiques."
+    ],
+    limitsAndDoses: "Selon le plan HACCP de l'établissement et la réglementation nationale.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (CE) n° 852/2004 (hygiène des denrées alimentaires)",
+      prevalenceRule: "Le droit de l'UE prime en matière d'hygiène alimentaire.",
+      euLimitsAndConditions: "Obligation de mise en place d'une procédure fondée sur les principes HACCP."
+    },
+    versions: [
+      {
+        id: 'v2024-haccp',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Principes HACCP et bonnes pratiques d'hygiène vitivinicoles.",
+        prescriptions: ["Système HACCP obligatoire.", "Documentation des CCP."],
+        limitsAndDoses: "Selon plan HACCP.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-etiquetage-nutritionnel-2024',
+    officialReference: "OIV — Norme internationale pour l'étiquetage des vins (étiquetage nutritionnel)",
+    title: "Étiquetage nutritionnel des vins : valeur énergétique et liste des ingrédients",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins',
+    summary: "Encadre l'indication de la valeur énergétique et de la liste des ingrédients sur l'étiquette des vins, en cohérence avec le Règlement (UE) 2021/2117.",
+    oenologicalObjectives: [
+      "Informer le consommateur sur la valeur énergétique et la composition du vin.",
+      "Harmoniser l'étiquetage au niveau international."
+    ],
+    prescriptions: [
+      "La valeur énergétique (kJ et kcal pour 100 ml) doit être indiquée sur l'étiquette physique.",
+      "La liste des ingrédients peut être dématérialisée via un e-label (QR code) dans les conditions fixées par l'OIV et l'UE.",
+      "Les mentions doivent être lisibles, indélébiles et visibles.",
+      "La page d'e-label doit être neutre, sans publicité ni traçage."
+    ],
+    limitsAndDoses: "Valeur énergétique avec tolérance de +/- 20 %.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) 2021/2117 modifiant le Règlement (UE) n° 1308/2013",
+      prevalenceRule: "Le droit de l'UE rend obligatoire l'indication depuis le 8 décembre 2023.",
+      euLimitsAndConditions: "Le symbole « E » accompagne la valeur énergétique si la liste complète est dématérialisée."
+    },
+    versions: [
+      {
+        id: 'v2024-nutrition',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Étiquetage nutritionnel et e-labels.",
+        prescriptions: ["Valeur énergétique obligatoire.", "E-label neutre."],
+        limitsAndDoses: "Tolérance +/- 20 %.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-mentions-geographiques-2024',
+    officialReference: "OIV — Mentions géographiques et indications géographiques",
+    title: "Mentions géographiques et indications géographiques (IG/AOP) sur les vins",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/ce-que-nous-faisons/giao-database-report',
+    summary: "Encadre l'usage des mentions géographiques et des indications géographiques (IG/AOP) sur les vins, en cohérence avec le système de l'Union européenne.",
+    oenologicalObjectives: [
+      "Protéger l'origine géographique des vins.",
+      "Garantir l'information du consommateur sur la provenance."
+    ],
+    prescriptions: [
+      "Les mentions géographiques doivent correspondre à une aire de production définie et à un cahier des charges.",
+      "L'usage d'une indication géographique est réservé aux produits répondant aux conditions fixées.",
+      "Les mentions doivent être conformes au droit de l'UE (Règlement (UE) 1308/2013)."
+    ],
+    limitsAndDoses: "Selon le cahier des charges de l'IG/AOP.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013 (OCM vitivinicole)",
+      prevalenceRule: "Le droit de l'UE prime en matière d'indications géographiques.",
+      euLimitsAndConditions: "Enregistrement et contrôle selon le Règlement (UE) 1308/2013."
+    },
+    versions: [
+      {
+        id: 'v2024-mentions-geo',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Mentions géographiques et indications géographiques.",
+        prescriptions: ["Mentions conformes au cahier des charges.", "Respect du droit UE."],
+        limitsAndDoses: "Selon cahier des charges.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -816,7 +1078,7 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.2',
+  version: '2026.3',
   updatedAt: '2026-11-16',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
@@ -830,7 +1092,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'pratiques',
     label: 'Code des pratiques œnologiques',
-    count: 11,
+    count: 13,
     desc: 'Traitements, procédés de vinification, autorisations pour moûts et vins.'
   },
   {
@@ -848,7 +1110,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'etiquetage',
     label: 'Norme d\'étiquetage des vins',
-    count: 2,
+    count: 5,
     desc: 'Mentions obligatoires, valeurs nutritionnelles et normes e-labels.'
   },
   {
@@ -860,7 +1122,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'techniques',
     label: 'Documents & Rapports techniques',
-    count: 0,
+    count: 1,
     desc: 'Guides d\'experts, bilans annuels et synthèses de commissions scientifiques.'
   }
 ];
