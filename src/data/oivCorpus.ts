@@ -2808,6 +2808,432 @@ export const OIV_CORPUS: OivDocument[] = [
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
+  {
+    id: 'oiv-oeno-567b4-2022',
+    officialReference: 'OIV-OENO 567B4-2022',
+    title: "Distinction entre les additifs et les auxiliaires technologiques — Dicarbonate de diméthyle (DMDC)",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2853/download/pdf',
+    summary: "Précise la distinction entre l'additif et l'auxiliaire technologique pour le dicarbonate de diméthyle (DMDC), utilisé comme agent antimicrobien.",
+    oenologicalObjectives: [
+      "Clarifier le statut réglementaire du DMDC.",
+      "Distinguer l'additif de l'auxiliaire technologique."
+    ],
+    prescriptions: [
+      "Le DMDC est classé comme auxiliaire technologique (processing aid) dans les conditions fixées.",
+      "Le statut du DMDC doit être compatible avec le Règlement délégué (UE) 2019/934.",
+      "L'emploi doit être tracé et conforme au Codex œnologique international."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seul le DMDC expressément autorisé par l'UE est licite."
+    },
+    versions: [
+      {
+        id: 'v2022-dmdc-distinction',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Distinction additif/auxiliaire pour le DMDC.",
+        prescriptions: ["DMDC classé comme auxiliaire.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-567c1-2022',
+    officialReference: 'OIV-OENO 567C1-2022',
+    title: "Distinction entre les additifs et les auxiliaires technologiques — Lait écrémé",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2856/download/pdf',
+    summary: "Précise la distinction entre l'additif et l'auxiliaire technologique pour le lait écrémé, utilisé comme agent de collage.",
+    oenologicalObjectives: [
+      "Clarifier le statut réglementaire du lait écrémé.",
+      "Distinguer l'additif de l'auxiliaire technologique."
+    ],
+    prescriptions: [
+      "Le lait écrémé est classé comme auxiliaire technologique (processing aid) dans les conditions fixées.",
+      "Le statut du lait écrémé doit être compatible avec le Règlement délégué (UE) 2019/934.",
+      "L'emploi doit être tracé et conforme au Codex œnologique international.",
+      "Le lait écrémé contient des protéines (caséine) à potentiel allergénique."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1169/2011, annexe II (lait) ; Règlement délégué (UE) 2019/934",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Le lait écrémé est un allergène à déclaration obligatoire si présent dans le produit fini."
+    },
+    versions: [
+      {
+        id: 'v2022-lait-ecreme',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Distinction additif/auxiliaire pour le lait écrémé.",
+        prescriptions: ["Lait écrémé classé comme auxiliaire.", "Allergène à déclaration."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-657-2023',
+    officialReference: 'OIV-OENO 657-2023',
+    title: "Traitement du vin par une technique membranaire couplée à une adsorption sur charbon actif désodorisant ou des billes adsorbantes de styrène-divinylbenzène pour réduire les teneurs en phénols volatils",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '21/10/2023',
+    adoptionYear: 2023,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3029/download/pdf',
+    summary: "Autorise le traitement du vin par une technique membranaire couplée à une adsorption sur charbon actif désodorisant ou des billes adsorbantes de styrène-divinylbenzène pour réduire les teneurs en phénols volatils (Brettanomyces).",
+    oenologicalObjectives: [
+      "Réduire les teneurs en phénols volatils dans les vins.",
+      "Corriger les défauts organoleptiques liés à Brettanomyces."
+    ],
+    prescriptions: [
+      "Le traitement est autorisé dans les conditions fixées par le code des pratiques œnologiques.",
+      "La technique membranaire doit être conforme au Codex œnologique international.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seules les techniques et matériaux expressément autorisés par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2023-phenols-volatils',
+        versionLabel: 'Version OIV 2023',
+        adoptionYear: 2023,
+        extractedText: "Traitement membranaire + adsorption pour réduire les phénols volatils.",
+        prescriptions: ["Technique membranaire autorisée.", "Adsorption sur charbon actif."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-707-2022',
+    officialReference: 'OIV-OENO 707-2022',
+    title: "Vins — Traitement au chlorure d'argent",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2869/download/pdf',
+    summary: "Autorise le traitement des vins au chlorure d'argent pour l'élimination des sulfures.",
+    oenologicalObjectives: [
+      "Éliminer les sulfures dans les vins.",
+      "Corriger les défauts organoleptiques liés au soufre."
+    ],
+    prescriptions: [
+      "Le traitement au chlorure d'argent est autorisé dans les conditions fixées par le code des pratiques œnologiques.",
+      "Le chlorure d'argent doit être conforme au Codex œnologique international.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seul le chlorure d'argent expressément autorisé par l'UE est licite."
+    },
+    versions: [
+      {
+        id: 'v2022-chlorure-argent',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Traitement des vins au chlorure d'argent.",
+        prescriptions: ["Chlorure d'argent autorisé.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-eco-697-2023',
+    officialReference: 'OIV-ECO 697-2023',
+    title: "Mise à jour de la Norme internationale pour l'étiquetage des vins : millésime ou année de récolte",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/10/2023',
+    adoptionYear: 2023,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3040/download/pdf',
+    summary: "Met à jour la Norme internationale pour l'étiquetage des vins concernant le millésime ou l'année de récolte.",
+    oenologicalObjectives: [
+      "Encadrer l'indication du millésime sur les vins.",
+      "Harmoniser les règles au niveau international."
+    ],
+    prescriptions: [
+      "Le millésime est une mention facultative pour les vins.",
+      "L'indication du millésime est obligatoire pour les vins primeurs ou nouveaux.",
+      "Les cahiers des charges des AOC/AOP ou IGP peuvent rendre obligatoire, interdire ou préciser la mention du millésime."
+    ],
+    limitsAndDoses: "Selon la Norme internationale pour l'étiquetage des vins.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les cahiers des charges peuvent rendre le millésime obligatoire, l'interdire ou le préciser."
+    },
+    versions: [
+      {
+        id: 'v2023-millesime-oiv',
+        versionLabel: 'Version OIV 2023',
+        adoptionYear: 2023,
+        extractedText: "Mise à jour de la Norme pour l'étiquetage des vins - millésime.",
+        prescriptions: ["Millésime facultatif.", "Obligatoire pour vins primeurs."],
+        limitsAndDoses: "Selon Norme OIV.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-eco-698-2023',
+    officialReference: 'OIV-ECO 698-2023',
+    title: "Mise à jour de la Norme internationale pour l'étiquetage des vins : vieillissement du vin",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/10/2023',
+    adoptionYear: 2023,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3041/download/pdf',
+    summary: "Met à jour la Norme internationale pour l'étiquetage des vins concernant le vieillissement du vin.",
+    oenologicalObjectives: [
+      "Encadrer l'indication du vieillissement sur les vins.",
+      "Harmoniser les règles au niveau international."
+    ],
+    prescriptions: [
+      "Le vieillissement du vin peut être indiqué sur l'étiquette dans les conditions fixées par la Norme.",
+      "Les mentions doivent être conformes au Règlement (UE) 1308/2013."
+    ],
+    limitsAndDoses: "Selon la Norme internationale pour l'étiquetage des vins.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions doivent être conformes au Règlement 1308/2013."
+    },
+    versions: [
+      {
+        id: 'v2023-vieillissement-oiv',
+        versionLabel: 'Version OIV 2023',
+        adoptionYear: 2023,
+        extractedText: "Mise à jour de la Norme pour l'étiquetage des vins - vieillissement.",
+        prescriptions: ["Vieillissement indiqué selon la Norme.", "Conformité UE."],
+        limitsAndDoses: "Selon Norme OIV.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-eco-699-2023',
+    officialReference: 'OIV-ECO 699-2023',
+    title: "Mise à jour de la Norme internationale pour l'étiquetage des vins : le nom et l'adresse du responsable du préemballage",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/10/2023',
+    adoptionYear: 2023,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3042/download/pdf',
+    summary: "Met à jour la Norme internationale pour l'étiquetage des vins concernant le nom et l'adresse du responsable du préemballage.",
+    oenologicalObjectives: [
+      "Encadrer l'indication du responsable du préemballage.",
+      "Harmoniser les règles au niveau international."
+    ],
+    prescriptions: [
+      "Le nom et l'adresse du responsable du préemballage doivent figurer sur l'étiquette.",
+      "Les mentions doivent être conformes au Règlement (UE) 1308/2013."
+    ],
+    limitsAndDoses: "Selon la Norme internationale pour l'étiquetage des vins.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 119",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions doivent être conformes au Règlement 1308/2013."
+    },
+    versions: [
+      {
+        id: 'v2023-preemballage-oiv',
+        versionLabel: 'Version OIV 2023',
+        adoptionYear: 2023,
+        extractedText: "Mise à jour de la Norme pour l'étiquetage des vins - responsable du préemballage.",
+        prescriptions: ["Nom et adresse du responsable.", "Conformité UE."],
+        limitsAndDoses: "Selon Norme OIV.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-eco-700-2023',
+    officialReference: 'OIV-ECO 700-2023',
+    title: "Mise à jour de la Norme internationale pour l'étiquetage des vins : nom de l'exploitation viticole",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/10/2023',
+    adoptionYear: 2023,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3043/download/pdf',
+    summary: "Met à jour la Norme internationale pour l'étiquetage des vins concernant le nom de l'exploitation viticole.",
+    oenologicalObjectives: [
+      "Encadrer l'indication du nom de l'exploitation viticole.",
+      "Harmoniser les règles au niveau international."
+    ],
+    prescriptions: [
+      "Le nom de l'exploitation viticole peut figurer sur l'étiquette dans les conditions fixées par la Norme.",
+      "Les mentions doivent être conformes au Règlement (UE) 1308/2013."
+    ],
+    limitsAndDoses: "Selon la Norme internationale pour l'étiquetage des vins.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions doivent être conformes au Règlement 1308/2013."
+    },
+    versions: [
+      {
+        id: 'v2023-exploitation-oiv',
+        versionLabel: 'Version OIV 2023',
+        adoptionYear: 2023,
+        extractedText: "Mise à jour de la Norme pour l'étiquetage des vins - nom de l'exploitation viticole.",
+        prescriptions: ["Nom de l'exploitation selon la Norme.", "Conformité UE."],
+        limitsAndDoses: "Selon Norme OIV.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-eco-696-2024',
+    officialReference: 'OIV-ECO 696-2024',
+    title: "Mise à jour de la Norme internationale pour l'étiquetage des vins : nom de la variété",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '19/07/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3815/download/pdf',
+    summary: "Met à jour la Norme internationale pour l'étiquetage des vins concernant le nom de la variété de vigne.",
+    oenologicalObjectives: [
+      "Encadrer l'indication du nom de la variété sur les vins.",
+      "Harmoniser les règles au niveau international."
+    ],
+    prescriptions: [
+      "Le nom de la variété peut figurer sur l'étiquette dans les conditions fixées par la Norme.",
+      "Les mentions doivent être conformes au Règlement (UE) 1308/2013."
+    ],
+    limitsAndDoses: "Selon la Norme internationale pour l'étiquetage des vins.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions doivent être conformes au Règlement 1308/2013."
+    },
+    versions: [
+      {
+        id: 'v2024-variete-oiv',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Mise à jour de la Norme pour l'étiquetage des vins - nom de la variété.",
+        prescriptions: ["Nom de la variété selon la Norme.", "Conformité UE."],
+        limitsAndDoses: "Selon Norme OIV.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-eco-685-2022',
+    officialReference: 'OIV-ECO 685-2022',
+    title: "Mise à jour de la Norme internationale pour l'étiquetage des vins : médailles et distinctions",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2920/download/pdf',
+    summary: "Met à jour la Norme internationale pour l'étiquetage des vins concernant les médailles et distinctions.",
+    oenologicalObjectives: [
+      "Encadrer l'indication des médailles et distinctions sur les vins.",
+      "Harmoniser les règles au niveau international."
+    ],
+    prescriptions: [
+      "Les médailles et distinctions sont des mentions libres, sous réserve de vérifiabilité.",
+      "Les mentions doivent être conformes au Règlement (UE) 1308/2013."
+    ],
+    limitsAndDoses: "Selon la Norme internationale pour l'étiquetage des vins.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions doivent être conformes au Règlement 1308/2013."
+    },
+    versions: [
+      {
+        id: 'v2022-medailles-oiv',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Mise à jour de la Norme pour l'étiquetage des vins - médailles et distinctions.",
+        prescriptions: ["Médailles et distinctions selon la Norme.", "Conformité UE."],
+        limitsAndDoses: "Selon Norme OIV.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -2818,7 +3244,7 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.10',
+  version: '2026.11',
   updatedAt: '2026-11-16',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
@@ -2832,7 +3258,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'pratiques',
     label: 'Code des pratiques œnologiques',
-    count: 31,
+    count: 35,
     desc: 'Traitements, procédés de vinification, autorisations pour moûts et vins.'
   },
   {
@@ -2850,7 +3276,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'etiquetage',
     label: 'Norme d\'étiquetage des vins',
-    count: 30,
+    count: 36,
     desc: 'Mentions obligatoires, valeurs nutritionnelles et normes e-labels.'
   },
   {
