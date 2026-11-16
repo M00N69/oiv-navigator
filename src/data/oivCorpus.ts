@@ -1285,6 +1285,136 @@ export const OIV_CORPUS: OivDocument[] = [
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
+  {
+    id: 'oiv-oeno-732-2025',
+    officialReference: 'OIV-OENO 732-2025',
+    title: "Déshydratation partielle des moûts et concentration : base pour la déalcoolisation",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '21/11/2025',
+    adoptionYear: 2025,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/4088/download/pdf',
+    summary: "Cadre pour la déalcoolisation et la modification du degré alcoolique des vins, en cohérence avec le code des pratiques œnologiques et le droit de l'Union européenne (Règlement (UE) 2021/2117).",
+    oenologicalObjectives: [
+      "Permettre la production de vins à teneur réduite en alcool.",
+      "Garantir la conformité avec la réglementation européenne."
+    ],
+    prescriptions: [
+      "La déalcoolisation est autorisée par des techniques physiques (évaporation sous vide, osmose inverse, distillation sous vide, colonnes à cône tournant) dans les conditions fixées par le code des pratiques œnologiques.",
+      "Le degré alcoolique ne peut être réduit en dessous des seuils fixés par la réglementation (vin à 0,5 % vol minimum pour être qualifié de vin).",
+      "La déalcoolisation doit être tracée et compatible avec le statut UE.",
+      "Les vins désalcoolisés doivent respecter les mentions d'étiquetage spécifiques (Règlement (UE) 2021/2117)."
+    ],
+    limitsAndDoses: "Degré alcoolique minimum : 0,5 % vol pour les vins partiellement désalcoolisés ; 0 % pour les boissons désalcoolisées (hors catégorie vin).",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) 2021/2117 modifiant le Règlement (UE) n° 1308/2013",
+      prevalenceRule: "Le droit de l'UE prime : les conditions de déalcoolisation sont celles du Règlement (UE) 2021/2117.",
+      euLimitsAndConditions: "Les techniques autorisées et les seuils sont ceux du Règlement (UE) 2021/2117."
+    },
+    versions: [
+      {
+        id: 'v2025-dealcoholisation',
+        versionLabel: 'Version OIV 2025',
+        adoptionYear: 2025,
+        extractedText: "Déalcoolisation et modification du degré alcoolique des vins.",
+        prescriptions: ["Techniques physiques autorisées.", "Traçabilité obligatoire."],
+        limitsAndDoses: "Degré minimum 0,5 % vol.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-672b-2024',
+    officialReference: 'OIV-OENO 672B-2024',
+    title: "Traitement à la silice mésoporeuse fonctionnalisée (SMF) pour la stabilisation protéique des vins",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '19/07/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3809/download/pdf',
+    summary: "Autorise le traitement à la silice mésoporeuse fonctionnalisée (SMF) pour la stabilisation protéique des vins, en complément des auxiliaires technologiques existants.",
+    oenologicalObjectives: [
+      "Stabiliser les vins contre le trouble protéique.",
+      "Réduire l'emploi de bentonite."
+    ],
+    prescriptions: [
+      "Le traitement à la SMF est autorisé comme auxiliaire technologique dans les conditions fixées par le code des pratiques œnologiques.",
+      "La SMF doit être conforme au Codex œnologique international.",
+      "Le traitement doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seule la SMF expressément autorisée par l'UE est licite."
+    },
+    versions: [
+      {
+        id: 'v2024-smf',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Traitement à la silice mésoporeuse fonctionnalisée pour la stabilisation protéique.",
+        prescriptions: ["SMF autorisée comme auxiliaire.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-740-2024',
+    officialReference: 'OIV-OENO 740-2024',
+    title: "Mise à jour des monographies sur les produits et sous-produits de levures non-Saccharomyces",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '19/07/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3811/download/pdf',
+    summary: "Met à jour les monographies sur les produits et sous-produits de levures non-Saccharomyces utilisés en œnologie, en complément des auxiliaires technologiques autorisés.",
+    oenologicalObjectives: [
+      "Encadrer l'emploi des levures non-Saccharomyces et de leurs sous-produits.",
+      "Garantir la sécurité et la traçabilité."
+    ],
+    prescriptions: [
+      "Les produits et sous-produits de levures non-Saccharomyces doivent être conformes au Codex œnologique international.",
+      "L'emploi doit être justifié par un objectif technique (fermentation, stabilisation, clarification).",
+      "Les doses et conditions sont celles fixées par le code des pratiques œnologiques."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seuls les produits expressément autorisés par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2024-levures-nonsacch',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Mise à jour des monographies sur les produits et sous-produits de levures non-Saccharomyces.",
+        prescriptions: ["Conformité au Codex.", "Doses selon code des pratiques."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -1309,7 +1439,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'pratiques',
     label: 'Code des pratiques œnologiques',
-    count: 18,
+    count: 21,
     desc: 'Traitements, procédés de vinification, autorisations pour moûts et vins.'
   },
   {
