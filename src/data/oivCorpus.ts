@@ -1673,6 +1673,54 @@ export const OIV_CORPUS: OivDocument[] = [
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
+  {
+    id: 'netvs-etiquetage-vins-grands-principes-2026',
+    officialReference: "NETVS — Étiquetage des Vins : Grands Principes (fiche A93/20)",
+    title: "Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '17/02/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8091',
+    summary: "Synthèse professionnelle des règles d'étiquetage des vins tranquilles et mousseux selon le droit de l'Union européenne (Règlements 1308/2013, 2019/33, 1169/2011) et les pratiques françaises (DGCCRF).",
+    oenologicalObjectives: [
+      "Garantir l'information du consommateur sur les vins.",
+      "Harmoniser l'étiquetage au niveau européen."
+    ],
+    prescriptions: [
+      "Les mentions obligatoires doivent figurer dans un même champ visuel, en caractères indélébiles et lisibles (taille minimale 1,2 mm, ou 0,9 mm si la face la plus grande < 80 cm²).",
+      "Mentions obligatoires : dénomination de la catégorie de produit, AOP/IGP (si applicable), titre alcoométrique volumique acquis, provenance, identité de l'embouteilleur, liste des ingrédients, déclaration nutritionnelle, date de durabilité minimale (vins désalcoolisés/partiellement désalcoolisés).",
+      "Les allergènes (sulfites > 10 mg/L, protéines de lait et d'œuf, poisson) doivent être déclarés ; le SO2 peut être complété par un pictogramme.",
+      "Les mentions facultatives définies (millésime, cépage, teneur en sucre, marque commerciale, etc.) sont limitativement énumérées à l'article 120 du Règlement 1308/2013.",
+      "Les mentions libres sont autorisées sous réserve de vérifiabilité et d'absence de confusion.",
+      "L'étiquetage doit être conforme aux règles européennes y compris en cas d'exportation vers les pays tiers.",
+      "Les vins désalcoolisés et partiellement désalcoolisés doivent porter la date de durabilité minimale."
+    ],
+    limitsAndDoses: "Taille de caractère minimale : 1,2 mm (0,9 mm si surface < 80 cm²). Seuil allergène sulfites : 10 mg/L.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013 (OCM vitivinicole), art. 119-121",
+      amendmentReference: "Règlement délégué (UE) 2019/33 ; Règlement (UE) 2021/2117 ; Règlement (UE) 2026/471",
+      prevalenceRule: "Le droit de l'Union européenne prime sur les recommandations de l'OIV en cas de divergence.",
+      euLimitsAndConditions: "Les mentions obligatoires doivent figurer dans un même champ visuel, en caractères indélébiles et lisibles."
+    },
+    versions: [
+      {
+        id: 'v2026-etiquetage',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Grands principes de l'étiquetage des vins selon le droit de l'UE.",
+        prescriptions: ["Mentions obligatoires dans un même champ visuel.", "Allergènes déclarés.", "Date de durabilité pour vins désalcoolisés."],
+        limitsAndDoses: "Taille min. 1,2 mm.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -1683,7 +1731,7 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.5',
+  version: '2026.6',
   updatedAt: '2026-11-16',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
@@ -1715,7 +1763,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'etiquetage',
     label: 'Norme d\'étiquetage des vins',
-    count: 6,
+    count: 7,
     desc: 'Mentions obligatoires, valeurs nutritionnelles et normes e-labels.'
   },
   {
