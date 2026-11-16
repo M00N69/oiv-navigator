@@ -2591,6 +2591,223 @@ export const OIV_CORPUS: OivDocument[] = [
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
+  {
+    id: 'oiv-membrane-techniques-2024',
+    officialReference: "OIV — Pratiques œnologiques : techniques membranaires (filtration tangentielle)",
+    title: "Techniques membranaires en œnologie : microfiltration, ultrafiltration, nanofiltration, osmose inverse",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    summary: "Encadre l'emploi des techniques membranaires (microfiltration, ultrafiltration, nanofiltration, osmose inverse, électromembranes) pour le traitement des moûts et des vins, y compris la filtration tangentielle.",
+    oenologicalObjectives: [
+      "Permettre le développement de vins plus équilibrés en termes de caractéristiques organoleptiques et technologiques.",
+      "Compenser les effets des conditions climatiques défavorables."
+    ],
+    prescriptions: [
+      "Les techniques membranaires sont autorisées pour : la déshydratation partielle du moût, la réduction de la teneur en sucre, l'ajustement de l'acidité/pH, la réduction de la concentration de certains acides organiques.",
+      "Les techniques membranaires ne peuvent pas être utilisées pour obtenir des caractéristiques opposées.",
+      "La pratique doit être réalisée par un œnologue ou un technicien qualifié.",
+      "Les membranes et matériaux doivent être conformes au Codex œnologique international.",
+      "La filtration tangentielle (ultrafiltration/microfiltration) est une technique membranaire couramment utilisée pour la clarification et la stabilisation."
+    ],
+    limitsAndDoses: "Selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seules les techniques et membranes expressément autorisées par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2024-membranes',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Techniques membranaires en œnologie dont la filtration tangentielle.",
+        prescriptions: ["Techniques membranaires autorisées.", "Réalisation par œnologue qualifié."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-681-2022',
+    officialReference: 'OIV-OENO 681-2022',
+    title: "Cellulose en poudre : usage comme auxiliaire technologique",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2899/download/pdf',
+    summary: "Autorise l'emploi de la cellulose en poudre comme auxiliaire technologique dans les vins.",
+    oenologicalObjectives: [
+      "Clarifier les vins.",
+      "Améliorer la filtrabilité."
+    ],
+    prescriptions: [
+      "La cellulose en poudre est autorisée comme auxiliaire technologique dans les conditions fixées par le code des pratiques œnologiques.",
+      "La cellulose doit être conforme au Codex œnologique international.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seule la cellulose expressément autorisée par l'UE est licite."
+    },
+    versions: [
+      {
+        id: 'v2022-cellulose',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Cellulose en poudre comme auxiliaire technologique.",
+        prescriptions: ["Cellulose autorisée.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-684b-2022',
+    officialReference: 'OIV-OENO 684B-2022',
+    title: "Utilisation de fibres végétales sélectives dans les moûts",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Moûts',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2862/download/pdf',
+    summary: "Autorise l'utilisation de fibres végétales sélectives dans les moûts pour la clarification et la stabilisation.",
+    oenologicalObjectives: [
+      "Clarifier les moûts.",
+      "Améliorer la filtrabilité."
+    ],
+    prescriptions: [
+      "Les fibres végétales sélectives sont autorisées dans les moûts dans les conditions fixées par le code des pratiques œnologiques.",
+      "Les fibres doivent être conformes au Codex œnologique international.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seules les fibres expressément autorisées par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2022-fibres-mouts',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Utilisation de fibres végétales sélectives dans les moûts.",
+        prescriptions: ["Fibres autorisées dans les moûts.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-674-2022',
+    officialReference: 'OIV-OENO 674-2022',
+    title: "Mise à jour de la monographie sur les extraits de levures contenant des mannoprotéines",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2884/download/pdf',
+    summary: "Met à jour la monographie sur les extraits de levures contenant des mannoprotéines utilisés comme auxiliaires technologiques.",
+    oenologicalObjectives: [
+      "Stabiliser les vins par l'emploi de mannoprotéines.",
+      "Améliorer la stabilité tartrique et protéique."
+    ],
+    prescriptions: [
+      "Les extraits de levures contenant des mannoprotéines sont autorisés comme auxiliaires technologiques dans les conditions fixées par le code des pratiques œnologiques.",
+      "Les extraits doivent être conformes au Codex œnologique international.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seuls les extraits expressément autorisés par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2022-mannoproteines',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Mise à jour de la monographie sur les extraits de levures contenant des mannoprotéines.",
+        prescriptions: ["Extraits autorisés.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-624-2022',
+    officialReference: 'OIV-OENO 624-2022',
+    title: "Actualisation de la monographie des tanins œnologiques",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2881/download/pdf',
+    summary: "Met à jour la monographie des tanins œnologiques utilisés comme auxiliaires technologiques.",
+    oenologicalObjectives: [
+      "Encadrer l'emploi des tanins œnologiques.",
+      "Améliorer la stabilité et la structure des vins."
+    ],
+    prescriptions: [
+      "Les tanins œnologiques sont autorisés comme auxiliaires technologiques dans les conditions fixées par le code des pratiques œnologiques.",
+      "Les tanins doivent être conformes au Codex œnologique international.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seuls les tanins expressément autorisés par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2022-tanins',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Actualisation de la monographie des tanins œnologiques.",
+        prescriptions: ["Tanins autorisés.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -2601,7 +2818,7 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.9',
+  version: '2026.10',
   updatedAt: '2026-11-16',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
@@ -2615,7 +2832,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'pratiques',
     label: 'Code des pratiques œnologiques',
-    count: 26,
+    count: 31,
     desc: 'Traitements, procédés de vinification, autorisations pour moûts et vins.'
   },
   {
