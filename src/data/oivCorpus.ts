@@ -1425,7 +1425,7 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.3',
+  version: '2026.4',
   updatedAt: '2026-11-16',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
