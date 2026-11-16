@@ -631,8 +631,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-09-18'
   },
   {
-    id: 'oiv-allergenes-etiquetage-2024',
-    officialReference: "OIV — Norme internationale pour l'étiquetage des vins (section allergènes)",
+    id: 'oiv-oeno-427-2010',
+    officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)',
     title: "Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d'œuf, gélatine de poisson",
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
@@ -719,8 +719,8 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'oiv-proteines-lait-oeuf-fining-2024',
-    officialReference: "OIV — Pratiques œnologiques : protéines de lait et d'œuf",
+    id: 'oiv-oeno-secsan-520-2014',
+    officialReference: 'OIV-OENO-SECSAN 520-2014 (mis à jour par OIV-SECSAN 710-2022)',
     title: "Protéines de lait et d'œuf comme auxiliaires technologiques (collage) — conditions et déclaration",
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
@@ -1415,6 +1415,264 @@ export const OIV_CORPUS: OivDocument[] = [
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
+  {
+    id: 'oiv-oeno-602-2022',
+    officialReference: 'OIV-OENO 602-2022',
+    title: "Principes généraux à prendre en compte dans l'évaluation des pratiques œnologiques et des substances composant des produits œnologiques",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Général',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2878/download/pdf',
+    summary: "Définit les principes généraux à prendre en compte dans l'évaluation des pratiques œnologiques et des substances composant des produits œnologiques.",
+    oenologicalObjectives: [
+      "Harmoniser l'évaluation des pratiques œnologiques au niveau international.",
+      "Garantir la sécurité du consommateur."
+    ],
+    prescriptions: [
+      "Les pratiques œnologiques doivent être évaluées selon les principes fixés par l'OIV.",
+      "Les substances composant des produits œnologiques doivent répondre aux critères de sécurité.",
+      "L'évaluation doit prendre en compte les données toxicologiques et technologiques."
+    ],
+    limitsAndDoses: "Selon les principes d'évaluation de l'OIV.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seules les pratiques et substances expressément autorisées par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2022-principes',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Principes généraux d'évaluation des pratiques œnologiques.",
+        prescriptions: ["Évaluation selon les principes OIV.", "Sécurité du consommateur."],
+        limitsAndDoses: "Selon principes OIV.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-686-2022',
+    officialReference: 'OIV-OENO 686-2022',
+    title: "Révision du Code des bonnes pratiques vitivinicoles destinées à prévenir ou à limiter la contamination par Brettanomyces",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2875/download/pdf',
+    summary: "Révise le Code des bonnes pratiques vitivinicoles pour prévenir ou limiter la contamination par Brettanomyces (Brett), responsable de défauts organoleptiques.",
+    oenologicalObjectives: [
+      "Prévenir la contamination par Brettanomyces dans les vins.",
+      "Limiter les défauts organoleptiques (phénols volatils)."
+    ],
+    prescriptions: [
+      "Les bonnes pratiques de cave doivent être appliquées pour prévenir la contamination par Brettanomyces.",
+      "Les traitements curatifs (filtration, SO2, chitosane, etc.) sont encadrés.",
+      "La traçabilité et le contrôle microbiologique sont recommandés."
+    ],
+    limitsAndDoses: "Selon les bonnes pratiques vitivinicoles et le code des pratiques œnologiques.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seules les pratiques et doses expressément autorisées par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2022-brettanomyces',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Code des bonnes pratiques pour prévenir la contamination par Brettanomyces.",
+        prescriptions: ["Bonnes pratiques de cave.", "Contrôle microbiologique."],
+        limitsAndDoses: "Selon bonnes pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-secsan-701-2022',
+    officialReference: 'OIV-SECSAN 701-2022',
+    title: "Révision de la limite maximale d'arsenic dans le vin",
+    family: 'pratiques',
+    domain: 'Sécurité sanitaire & Qualité',
+    category: 'Vins',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2923/download/pdf',
+    summary: "Révise la limite maximale d'arsenic dans le vin pour la sécurité du consommateur.",
+    oenologicalObjectives: [
+      "Protéger le consommateur contre l'exposition à l'arsenic.",
+      "Harmoniser les limites avec les normes internationales."
+    ],
+    prescriptions: [
+      "La teneur en arsenic dans le vin ne doit pas dépasser la limite maximale fixée par l'OIV.",
+      "Le contrôle de l'arsenic est recommandé dans le cadre du plan HACCP.",
+      "Les résultats doivent être consignés dans le registre de contrôle."
+    ],
+    limitsAndDoses: "Limite maximale d'arsenic dans le vin selon l'OIV (à vérifier dans la résolution).",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (CE) n° 1881/2006 (contaminants dans les denrées alimentaires)",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les limites de contaminants sont celles du Règlement (CE) 1881/2006."
+    },
+    versions: [
+      {
+        id: 'v2022-arsenic',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Révision de la limite maximale d'arsenic dans le vin.",
+        prescriptions: ["Limite maximale d'arsenic.", "Contrôle dans le plan HACCP."],
+        limitsAndDoses: "Selon résolution OIV.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-secsan-721-2025',
+    officialReference: 'OIV-SECSAN 721-2025',
+    title: "Mise à jour de la limite de cadmium dans le vin",
+    family: 'pratiques',
+    domain: 'Sécurité sanitaire & Qualité',
+    category: 'Vins',
+    adoptionDate: '21/11/2025',
+    adoptionYear: 2025,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/4097/download/pdf',
+    summary: "Met à jour la limite maximale de cadmium dans le vin pour la sécurité du consommateur.",
+    oenologicalObjectives: [
+      "Protéger le consommateur contre l'exposition au cadmium.",
+      "Harmoniser les limites avec les normes internationales."
+    ],
+    prescriptions: [
+      "La teneur en cadmium dans le vin ne doit pas dépasser la limite maximale fixée par l'OIV.",
+      "Le contrôle du cadmium est recommandé dans le cadre du plan HACCP.",
+      "Les résultats doivent être consignés dans le registre de contrôle."
+    ],
+    limitsAndDoses: "Limite maximale de cadmium dans le vin selon l'OIV (à vérifier dans la résolution).",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (CE) n° 1881/2006 (contaminants dans les denrées alimentaires)",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les limites de contaminants sont celles du Règlement (CE) 1881/2006."
+    },
+    versions: [
+      {
+        id: 'v2025-cadmium',
+        versionLabel: 'Version OIV 2025',
+        adoptionYear: 2025,
+        extractedText: "Mise à jour de la limite maximale de cadmium dans le vin.",
+        prescriptions: ["Limite maximale de cadmium.", "Contrôle dans le plan HACCP."],
+        limitsAndDoses: "Selon résolution OIV.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-689-2022',
+    officialReference: 'OIV-OENO 689-2022',
+    title: "Limite OIV gomme arabique — Mise à jour",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2865/download/pdf',
+    summary: "Met à jour la limite d'emploi de la gomme arabique dans les vins pour la stabilisation colloïdale.",
+    oenologicalObjectives: [
+      "Stabiliser les vins contre les troubles colloïdaux.",
+      "Encadrer l'emploi de la gomme arabique."
+    ],
+    prescriptions: [
+      "La gomme arabique est autorisée comme auxiliaire technologique dans les conditions fixées par le code des pratiques œnologiques.",
+      "La limite d'emploi est celle fixée par la résolution OIV-OENO 689-2022.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Limite selon la résolution OIV-OENO 689-2022.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seule la gomme arabique expressément autorisée par l'UE est licite."
+    },
+    versions: [
+      {
+        id: 'v2022-gomme-arabique',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Mise à jour de la limite d'emploi de la gomme arabique.",
+        prescriptions: ["Gomme arabique autorisée.", "Limite selon résolution."],
+        limitsAndDoses: "Selon résolution OIV.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-secsan-679-2022',
+    officialReference: 'OIV-SECSAN 679-2022',
+    title: "Recommandations pour la diffusion de l'information en matière de consommation de vin",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/10/2022',
+    adoptionYear: 2022,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/2935/download/pdf',
+    summary: "Établit des recommandations pour la diffusion de l'information en matière de consommation de vin, notamment pour limiter les usages à risque.",
+    oenologicalObjectives: [
+      "Informer le consommateur sur la consommation responsable de vin.",
+      "Limiter les usages à risque."
+    ],
+    prescriptions: [
+      "Les informations sur la consommation de vin doivent être diffusées de manière responsable.",
+      "Les messages doivent éviter toute incitation à la consommation excessive.",
+      "Les avertissements santé doivent être visibles et lisibles."
+    ],
+    limitsAndDoses: "Selon les recommandations de l'OIV.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1169/2011",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions obligatoires sont celles du Règlement (UE) 1169/2011."
+    },
+    versions: [
+      {
+        id: 'v2022-info-consommation',
+        versionLabel: 'Version OIV 2022',
+        adoptionYear: 2022,
+        extractedText: "Recommandations pour la diffusion de l'information sur la consommation de vin.",
+        prescriptions: ["Information responsable.", "Pas d'incitation excessive."],
+        limitsAndDoses: "Selon recommandations OIV.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -1425,7 +1683,7 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.4',
+  version: '2026.5',
   updatedAt: '2026-11-16',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
@@ -1439,7 +1697,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'pratiques',
     label: 'Code des pratiques œnologiques',
-    count: 21,
+    count: 26,
     desc: 'Traitements, procédés de vinification, autorisations pour moûts et vins.'
   },
   {
@@ -1457,7 +1715,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'etiquetage',
     label: 'Norme d\'étiquetage des vins',
-    count: 5,
+    count: 6,
     desc: 'Mentions obligatoires, valeurs nutritionnelles et normes e-labels.'
   },
   {
