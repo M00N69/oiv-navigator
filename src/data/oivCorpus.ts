@@ -1990,6 +1990,273 @@ export const OIV_CORPUS: OivDocument[] = [
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
+  {
+    id: 'netvs-a93-42-numero-lot-2026',
+    officialReference: "NETVS A93/42 — Étiquetage : numéro de lot",
+    title: "Étiquetage des vins : numéro de lot",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '02/03/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8077',
+    summary: "Synthèse professionnelle des règles d'indication du numéro de lot sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: [
+      "Permettre l'identification et la traçabilité des lots de vin.",
+      "Faciliter le retrait en cas d'incident."
+    ],
+    prescriptions: [
+      "Un produit ne peut être commercialisé que s'il est accompagné d'une mention permettant d'identifier le lot auquel il appartient.",
+      "Le lot est l'ensemble d'unités de vente d'un même vin, produites, fabriquées ou conditionnées dans des circonstances pratiquement identiques.",
+      "La mention doit être visible et lisible, en caractères d'au moins 1,2 mm.",
+      "Le numéro de lot peut figurer en dehors du même champ visuel que les autres mentions obligatoires.",
+      "Le marquage du lot est obligatoire depuis le 1er janvier 1992 (Directive 89/396)."
+    ],
+    limitsAndDoses: "Caractères ≥ 1,2 mm. Mention visible et lisible.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Directive 89/396/CEE ; Règlement (UE) 2019/33, art. 40.2",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Le numéro de lot peut figurer en dehors du champ visuel des autres mentions obligatoires."
+    },
+    versions: [
+      {
+        id: 'v2026-lot-netvs',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Numéro de lot des vins.",
+        prescriptions: ["Numéro de lot obligatoire.", "Traçabilité."],
+        limitsAndDoses: "Caractères ≥ 1,2 mm.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'netvs-a93-52-millesime-2026',
+    officialReference: "NETVS A93/52 — Étiquetage : millésime",
+    title: "Étiquetage des vins : millésime",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '09/03/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8081',
+    summary: "Synthèse professionnelle des règles d'indication du millésime sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: [
+      "Informer le consommateur sur l'année de récolte.",
+      "Encadrer l'usage du millésime."
+    ],
+    prescriptions: [
+      "Le millésime est une mention facultative pour les vins.",
+      "L'indication du millésime est obligatoire pour les vins primeurs ou nouveaux (AOC/AOP dont la commercialisation est fixée au 3e jeudi de novembre ; IGP au 3e jeudi d'octobre).",
+      "Pour les vins primeurs, la mention du millésime doit se faire en caractères d'une taille au moins équivalente à celle des mentions « primeur » ou « nouveau ».",
+      "Les cahiers des charges des AOC/AOP ou IGP peuvent rendre obligatoire, interdire ou préciser la mention du millésime.",
+      "La taille et l'emplacement sont libres, sauf disposition contraire dans le cahier des charges."
+    ],
+    limitsAndDoses: "Taille au moins équivalente aux mentions « primeur »/« nouveau » pour les vins primeurs.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Le millésime est une mention facultative, sauf pour les vins primeurs."
+    },
+    versions: [
+      {
+        id: 'v2026-millesime-netvs',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Millésime des vins.",
+        prescriptions: ["Facultatif sauf vins primeurs.", "Taille adaptée pour les vins primeurs."],
+        limitsAndDoses: "Selon règlementation.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'netvs-a93-55-cepage-2026',
+    officialReference: "NETVS A93/55 — Étiquetage : cépage",
+    title: "Étiquetage des vins : cépage",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '13/02/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8082',
+    summary: "Synthèse professionnelle des règles d'indication du cépage sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: [
+      "Informer le consommateur sur la variété de vigne utilisée.",
+      "Encadrer l'usage du cépage dans l'étiquetage."
+    ],
+    prescriptions: [
+      "Le cépage est une mention facultative pour les vins.",
+      "Le cépage doit figurer dans le classement des variétés établi par l'État membre de production (Règlement 1308/2013, art. 81).",
+      "Les cahiers des charges des AOC/AOP ou IGP peuvent rendre obligatoire, interdire ou préciser la mention du cépage.",
+      "Pour la mention de plusieurs cépages, ils doivent être indiqués par ordre décroissant de leur importance.",
+      "La taille et l'emplacement sont libres, sauf disposition contraire dans le cahier des charges."
+    ],
+    limitsAndDoses: "Taille et emplacement libres, sauf disposition contraire.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 81 et 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Le cépage doit figurer dans le classement des variétés de l'État membre de production."
+    },
+    versions: [
+      {
+        id: 'v2026-cepage-netvs',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Cépage des vins.",
+        prescriptions: ["Facultatif.", "Cépage du classement officiel."],
+        limitsAndDoses: "Selon règlementation.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'netvs-a93-60-mentions-traditionnelles-2026',
+    officialReference: "NETVS A93/60 — Étiquetage : mentions traditionnelles",
+    title: "Étiquetage des vins : mentions traditionnelles",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '08/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8083',
+    summary: "Synthèse professionnelle des règles d'usage des mentions traditionnelles sur les vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: [
+      "Encadrer l'usage des mentions traditionnelles sur les vins.",
+      "Distinguer les mentions traditionnelles des mentions libres."
+    ],
+    prescriptions: [
+      "Les mentions traditionnelles sont des mentions facultatives définies (art. 120 du Règlement 1308/2013).",
+      "Elles doivent être utilisées dans la langue pour laquelle la protection s'applique.",
+      "Les cahiers des charges des AOC/AOP peuvent rendre obligatoire, interdire ou préciser l'usage de certaines mentions traditionnelles.",
+      "Les mentions traditionnelles doivent être conformes à la réglementation européenne."
+    ],
+    limitsAndDoses: "Selon le cahier des charges de l'AOP/IGP.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions traditionnelles sont limitativement énumérées."
+    },
+    versions: [
+      {
+        id: 'v2026-traditionnelles-netvs',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Mentions traditionnelles des vins.",
+        prescriptions: ["Mentions facultatives définies.", "Langue de protection."],
+        limitsAndDoses: "Selon cahier des charges.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'netvs-a93-87-vin-biologique-2026',
+    officialReference: "NETVS A93/87 — Étiquetage : vin biologique",
+    title: "Étiquetage des vins : vin biologique",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8087',
+    summary: "Synthèse professionnelle des règles d'étiquetage des vins biologiques selon le droit de l'Union européenne.",
+    oenologicalObjectives: [
+      "Encadrer l'usage de la mention « vin biologique ».",
+      "Garantir la conformité avec la réglementation européenne."
+    ],
+    prescriptions: [
+      "La mention « vin biologique » ne peut être utilisée que pour les produits répondant aux conditions de production, de transformation et de commercialisation fixées par le règlement européen sur l'agriculture biologique.",
+      "Les vins biologiques doivent être certifiés par un organisme de contrôle agréé.",
+      "L'étiquetage doit respecter les règles d'étiquetage des vins et les mentions spécifiques à l'agriculture biologique.",
+      "Les traitements œnologiques autorisés pour les vins biologiques sont limités à ceux prévus par le règlement européen."
+    ],
+    limitsAndDoses: "Selon le règlement européen sur l'agriculture biologique.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) 2018/848 (agriculture biologique)",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les traitements œnologiques autorisés sont limités à ceux prévus par le règlement."
+    },
+    versions: [
+      {
+        id: 'v2026-bio-netvs',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Vin biologique.",
+        prescriptions: ["Certification bio obligatoire.", "Traitements limités."],
+        limitsAndDoses: "Selon règlement bio.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'netvs-a93-92-distinctions-2026',
+    officialReference: "NETVS A93/92 — Étiquetage : distinctions, médailles, concours",
+    title: "Étiquetage des vins : distinctions, médailles, concours",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '21/04/2026',
+    adoptionYear: 2026,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.netvs.org/fr/documents/8088',
+    summary: "Synthèse professionnelle des règles d'usage des distinctions et médailles sur l'étiquetage des vins selon le droit de l'Union européenne.",
+    oenologicalObjectives: [
+      "Encadrer l'usage des distinctions et médailles sur les vins.",
+      "Garantir la véracité des mentions."
+    ],
+    prescriptions: [
+      "Les distinctions et médailles sont des mentions libres, sous réserve de vérifiabilité.",
+      "Les concours organisés par des organismes établis en France doivent être inscrits sur une liste établie par la DGCCRF.",
+      "Seuls les lots primés peuvent mentionner la distinction sur leur étiquetage.",
+      "Les mentions ne doivent pas être de nature à induire le consommateur en erreur."
+    ],
+    limitsAndDoses: "Selon la DGCCRF et le règlement européen.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1308/2013, art. 120",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Les mentions doivent être vérifiables et non trompeuses."
+    },
+    versions: [
+      {
+        id: 'v2026-distinctions-netvs',
+        versionLabel: 'Version NETVS 2026',
+        adoptionYear: 2026,
+        extractedText: "Distinctions, médailles, concours.",
+        prescriptions: ["Mentions libres vérifiables.", "Concours agréés DGCCRF."],
+        limitsAndDoses: "Selon réglementation.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -2000,7 +2267,7 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.7',
+  version: '2026.8',
   updatedAt: '2026-11-16',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
@@ -2032,7 +2299,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'etiquetage',
     label: 'Norme d\'étiquetage des vins',
-    count: 13,
+    count: 19,
     desc: 'Mentions obligatoires, valeurs nutritionnelles et normes e-labels.'
   },
   {
