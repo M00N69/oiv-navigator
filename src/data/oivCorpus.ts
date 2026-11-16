@@ -629,7 +629,183 @@ export const OIV_CORPUS: OivDocument[] = [
     ],
     relatedDocuments: [],
     lastCheckedDate: '2026-09-18'
-  }
+  },
+  {
+    id: 'oiv-allergenes-etiquetage-2024',
+    officialReference: "OIV — Norme internationale pour l'étiquetage des vins (section allergènes)",
+    title: "Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d'œuf, gélatine de poisson",
+    family: 'etiquetage',
+    domain: 'Étiquetage & Information du consommateur',
+    category: 'Général',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins',
+    summary: "Encadre la déclaration obligatoire des substances allergènes présentes dans les vins, notamment les sulfites, les protéines de lait et d'œuf et la gélatine de poisson, conformément au droit de l'Union européenne.",
+    oenologicalObjectives: [
+      "Garantir l'information du consommateur sur les allergènes présents dans le vin.",
+      "Harmoniser les mentions allergènes avec le Règlement (UE) n° 1169/2011."
+    ],
+    prescriptions: [
+      "Tout vin contenant des sulfites à une concentration supérieure à 10 mg/L (exprimés en SO2 total) doit porter la mention « contient des sulfites » ou « contient du dioxyde de soufre ».",
+      "Les protéines de lait (caséine) et d'œuf (ovalbumine, lysozyme) utilisées comme auxiliaires technologiques doivent être déclarées sur l'étiquette, sauf si leur absence dans le produit fini est démontrée.",
+      "La gélatine de poisson et la colle de poisson (ichtyocolle) doivent être déclarées comme allergène lorsqu'elles sont utilisées.",
+      "Les mentions allergènes doivent figurer dans la même police et le même champ visuel que les autres mentions obligatoires."
+    ],
+    limitsAndDoses: "Seuil de déclaration des sulfites : 10 mg/L (SO2 total).",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1169/2011, annexe II (substances allergènes)",
+      amendmentReference: "Règlement (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'Union européenne prime : les mentions allergènes sont obligatoires dans l'UE même si l'OIV les présente comme recommandations.",
+      euLimitsAndConditions: "L'absence d'allergène dans le produit fini doit être justifiée par une analyse ou une démonstration technique documentée."
+    },
+    versions: [
+      {
+        id: 'v2024-allergenes',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Norme d'étiquetage et déclaration des allergènes dans les vins.",
+        prescriptions: ["Déclaration obligatoire des sulfites > 10 mg/L.", "Déclaration des protéines de lait et d'œuf utilisées."],
+        limitsAndDoses: "Seuil sulfites : 10 mg/L.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-sulfites-vins-2024',
+    officialReference: "OIV — Pratiques œnologiques : dioxyde de soufre (SO2)",
+    title: "Sulfites dans les vins : limites maximales et conditions d'emploi",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    summary: "Fixe les teneurs maximales en dioxyde de soufre total dans les vins selon leur type, en cohérence avec le Règlement délégué (UE) 2019/934.",
+    oenologicalObjectives: [
+      "Limiter la teneur en sulfites pour la sécurité du consommateur.",
+      "Encadrer l'emploi du SO2 comme agent antimicrobien et antioxydant."
+    ],
+    prescriptions: [
+      "Le SO2 total ne doit pas dépasser les limites fixées selon le type de vin et sa teneur en sucres.",
+      "La déclaration « contient des sulfites » est obligatoire au-delà de 10 mg/L (SO2 total).",
+      "L'ajout de SO2 doit être justifié par le besoin de protection microbiologique et antioxydante."
+    ],
+    limitsAndDoses: "Limites indicatives : vins rouges 150 mg/L ; vins blancs/rosés 200 mg/L ; vins doux 300 mg/L (à vérifier selon le type et la teneur en sucres).",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II, partie B",
+      prevalenceRule: "Les limites de l'UE prévalent sur les recommandations de l'OIV en cas de divergence.",
+      euLimitsAndConditions: "Les limites sont modulées selon le type de vin et la teneur en sucres résiduels (voir tableau de l'annexe II)."
+    },
+    versions: [
+      {
+        id: 'v2024-sulfites',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Limites maximales de SO2 total selon le type de vin.",
+        prescriptions: ["SO2 total dans les limites fixées.", "Déclaration au-delà de 10 mg/L."],
+        limitsAndDoses: "150/200/300 mg/L selon le type.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-proteines-lait-oeuf-fining-2024',
+    officialReference: "OIV — Pratiques œnologiques : protéines de lait et d'œuf",
+    title: "Protéines de lait et d'œuf comme auxiliaires technologiques (collage) — conditions et déclaration",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    summary: "Encadre l'emploi des protéines de lait (caséine) et d'œuf (ovalbumine, lysozyme) comme agents de collage/clarification et leur déclaration comme allergènes.",
+    oenologicalObjectives: [
+      "Clarifier et stabiliser les vins par collage protéique.",
+      "Garantir la sécurité des consommateurs allergiques."
+    ],
+    prescriptions: [
+      "L'emploi de caséine, d'ovalbumine et de lysozyme est autorisé comme auxiliaire technologique dans les conditions fixées par le code des pratiques œnologiques.",
+      "La déclaration allergène est obligatoire si la protéine est présente dans le produit fini à un niveau détectable.",
+      "L'absence de résidus dans le vin fini doit pouvoir être démontrée par une analyse ou une justification technique.",
+      "L'emploi doit être compatible avec le statut UE (annexe II du Règlement 2019/934)."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et les conditions d'emploi précisées par l'OIV.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1169/2011, annexe II ; Règlement délégué (UE) 2019/934",
+      prevalenceRule: "Le droit de l'UE prime : toute protéine de lait ou d'œuf présente dans le produit fini doit être déclarée.",
+      euLimitsAndConditions: "La démonstration d'absence de résidus dispense de la déclaration dans certains cas, sous réserve de justificatif."
+    },
+    versions: [
+      {
+        id: 'v2024-proteines',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Conditions d'emploi des protéines de lait et d'œuf et déclaration allergène.",
+        prescriptions: ["Autorisé comme auxiliaire.", "Déclaration si résidus détectables."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-geatine-poisson-2024',
+    officialReference: "OIV — Pratiques œnologiques : gélatine de poisson",
+    title: "Gélatine de poisson et colle de poisson (ichtyocolle) : usage comme auxiliaire technologique et allergène",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    summary: "Encadre l'emploi de la gélatine de poisson et de la colle de poisson pour la clarification des vins et leur déclaration comme allergène.",
+    oenologicalObjectives: [
+      "Clarifier les vins par collage à la gélatine de poisson.",
+      "Garantir l'information des consommateurs allergiques au poisson."
+    ],
+    prescriptions: [
+      "L'emploi de la gélatine de poisson et de la colle de poisson est autorisé comme auxiliaire technologique dans les conditions fixées par le code des pratiques œnologiques.",
+      "La déclaration « poisson » comme allergène est obligatoire si des résidus sont présents dans le produit fini.",
+      "L'absence de résidus doit être démontrée par une analyse ou une justification technique.",
+      "L'emploi doit être compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (UE) n° 1169/2011, annexe II ; Règlement délégué (UE) 2019/934",
+      prevalenceRule: "Le droit de l'UE prime : la présence de poisson dans le produit fini doit être déclarée.",
+      euLimitsAndConditions: "La démonstration d'absence de résidus dispense de la déclaration, sous réserve de justificatif."
+    },
+    versions: [
+      {
+        id: 'v2024-geatine',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Conditions d'emploi de la gélatine de poisson et déclaration allergène.",
+        prescriptions: ["Autorisé comme auxiliaire.", "Déclaration si résidus détectables."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -640,13 +816,13 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.1',
-  updatedAt: '2026-11-10',
+  version: '2026.2',
+  updatedAt: '2026-11-16',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
     month: 'long',
     year: 'numeric'
-  }).format(new Date('2026-11-10')),
+  }).format(new Date('2026-11-16')),
   source: 'OIV (oiv.int) et EUR-Lex — Règlement délégué (UE) 2019/934'
 } as const;
 
@@ -654,7 +830,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'pratiques',
     label: 'Code des pratiques œnologiques',
-    count: 8,
+    count: 11,
     desc: 'Traitements, procédés de vinification, autorisations pour moûts et vins.'
   },
   {
@@ -672,7 +848,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'etiquetage',
     label: 'Norme d\'étiquetage des vins',
-    count: 1,
+    count: 2,
     desc: 'Mentions obligatoires, valeurs nutritionnelles et normes e-labels.'
   },
   {
