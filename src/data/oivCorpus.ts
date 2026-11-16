@@ -1068,6 +1068,180 @@ export const OIV_CORPUS: OivDocument[] = [
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
+  {
+    id: 'oiv-deacidification-vins-2024',
+    officialReference: "OIV — Pratiques œnologiques : désacidification des moûts et des vins",
+    title: "Désacidification des moûts et des vins : ajustement de l'acidité à la baisse",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    summary: "Encadre la désacidification des moûts et des vins par voies physique, chimique ou microbiologique, dans les conditions fixées par le code des pratiques œnologiques.",
+    oenologicalObjectives: [
+      "Réduire l'acidité excessive des moûts et des vins.",
+      "Améliorer l'équilibre sensoriel."
+    ],
+    prescriptions: [
+      "La désacidification est autorisée par voies physique (électrodialyse, échangeurs), chimique (carbonate de potassium, bicarbonate) ou microbiologique (bactéries lactiques).",
+      "Les traitements doivent être tracés et compatibles avec le droit de l'UE.",
+      "Les doses et conditions sont celles fixées par le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934."
+    ],
+    limitsAndDoses: "Selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seules les pratiques et doses expressément autorisées par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2024-deacidification',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Désacidification des moûts et des vins.",
+        prescriptions: ["Désacidification autorisée selon les voies reconnues.", "Traçabilité obligatoire."],
+        limitsAndDoses: "Selon code des pratiques et annexe II UE.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-enzymes-clarification-2024',
+    officialReference: "OIV — Pratiques œnologiques : enzymes",
+    title: "Emploi des enzymes en œnologie : clarification, filtration, libération d'arômes",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    summary: "Encadre l'emploi des enzymes (pectinases, glucanases, protéases, etc.) pour la clarification, l'amélioration de la filtrabilité et la libération de composés aromatiques.",
+    oenologicalObjectives: [
+      "Clarifier les vins et améliorer leur filtrabilité.",
+      "Libérer des composés aromatiques glycosylés."
+    ],
+    prescriptions: [
+      "Les enzymes utilisées doivent être d'origine fongique ou microbienne et conformes au Codex œnologique international.",
+      "L'emploi doit être justifié par un objectif technique (clarification, filtration, libération d'arômes).",
+      "Les doses et conditions sont celles fixées par le code des pratiques œnologiques.",
+      "L'emploi doit être compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seules les enzymes expressément autorisées par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2024-enzymes',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Emploi des enzymes en œnologie.",
+        prescriptions: ["Enzymes conformes au Codex.", "Doses selon code des pratiques."],
+        limitsAndDoses: "Selon code des pratiques et annexe II UE.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-collage-chitosane-2024',
+    officialReference: "OIV — Pratiques œnologiques : collage au chitosane",
+    title: "Collage au chitosane : clarification des moûts et des vins",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    summary: "Encadre le collage des moûts et des vins au chitosane d'origine fongique pour la clarification et le traitement anti-protéique, à une dose recommandée ≤ 100 g/hl.",
+    oenologicalObjectives: [
+      "Clarifier les moûts et les vins.",
+      "Traiter les troubles protéiques."
+    ],
+    prescriptions: [
+      "Le chitosane doit être d'origine fongique et conforme au Codex œnologique international.",
+      "Les doses à utiliser sont déterminées après essais préliminaires ; la dose recommandée est ≤ 100 g/hl.",
+      "Le chitosane est classé comme auxiliaire technologique (processing aid).",
+      "L'emploi doit être compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Dose recommandée ≤ 100 g/hl.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seul le chitosane d'origine fongique expressément autorisé est licite."
+    },
+    versions: [
+      {
+        id: 'v2024-chitosane',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Collage au chitosane (dose ≤ 100 g/hl).",
+        prescriptions: ["Chitosane d'origine fongique.", "Dose ≤ 100 g/hl."],
+        limitsAndDoses: "≤ 100 g/hl.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-stabilisation-microbiologique-2024',
+    officialReference: "OIV — Pratiques œnologiques : stabilisation microbiologique",
+    title: "Stabilisation microbiologique des vins : lysozyme, sorbate, DMDC, pasteurisation",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2024',
+    adoptionYear: 2024,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
+    summary: "Encadre la stabilisation microbiologique des vins par lysozyme, sorbate de potassium, DMDC, pasteurisation et autres auxiliaires, pour prévenir les refermentations.",
+    oenologicalObjectives: [
+      "Prévenir les refermentations et les altérations microbiennes.",
+      "Garantir la stabilité du vin en bouteille."
+    ],
+    prescriptions: [
+      "La stabilisation microbiologique est autorisée par les méthodes reconnues par le code des pratiques œnologiques (lysozyme, sorbate de potassium, DMDC, pasteurisation, filtration stérilisante).",
+      "Chaque traitement doit être tracé et compatible avec le statut UE.",
+      "Les auxiliaires doivent être conformes au Codex œnologique international."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seules les pratiques et doses expressément autorisées par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2024-stab-micro',
+        versionLabel: 'Version OIV 2024',
+        adoptionYear: 2024,
+        extractedText: "Stabilisation microbiologique des vins.",
+        prescriptions: ["Stabilisation autorisée selon les méthodes reconnues.", "Traçabilité obligatoire."],
+        limitsAndDoses: "Selon code des pratiques et annexe II UE.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -1092,7 +1266,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'pratiques',
     label: 'Code des pratiques œnologiques',
-    count: 13,
+    count: 17,
     desc: 'Traitements, procédés de vinification, autorisations pour moûts et vins.'
   },
   {
