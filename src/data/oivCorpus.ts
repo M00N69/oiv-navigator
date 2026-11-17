@@ -1159,7 +1159,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-enzymes-clarification-2024', officialReference: 'OIV - Pratiques oenologiques : enzymes', title: 'Emploi des enzymes en oenologie', relationType: 'cite', evidence: 'Enzymes pour la clarification et la filtration.' },
+      { id: 'oiv-collage-chitosane-2024', officialReference: 'OIV - Pratiques oenologiques : collage au chitosane', title: 'Collage au chitosane', relationType: 'cite', evidence: 'Auxiliaire technologique pour la clarification.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2640,7 +2643,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-eco-523-2016', officialReference: 'OIV-ECO 523-2016', title: 'Vin a teneur en alcool modifiee par la desalcoolisation', relationType: 'cite', evidence: 'Les techniques membranaires sont utilisees pour la desalcoolisation.' },
+      { id: 'oiv-acidification-mouts-vins-2024', officialReference: 'OIV - Pratiques oenologiques : acidification', title: 'Acidification des mouts et des vins', relationType: 'cite', evidence: 'L ajustement de l acidite peut se faire par techniques membranaires.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
