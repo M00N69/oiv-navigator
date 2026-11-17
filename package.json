@@ -23,7 +23,8 @@
     "lint": "tsc --noEmit && tsc --noEmit -p tsconfig.scripts.json",
     "test": "vitest run",
     "test:watch": "vitest",
-    "corpus:check": "tsx scripts/check-corpus.ts"
+    "corpus:check": "tsx scripts/check-corpus.ts",
+    "links:check": "tsx scripts/check-links.ts"
   },
   "dependencies": {
     "lucide-react": "^0.546.0",

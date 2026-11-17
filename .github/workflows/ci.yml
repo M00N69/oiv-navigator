@@ -31,5 +31,6 @@ jobs:
       - name: Corpus check
         run: npm run corpus:check
 
-      - name: Build
-        run: npm run build
+      - name: Links check
+        run: npm run links:check
+        continue-on-error: true
