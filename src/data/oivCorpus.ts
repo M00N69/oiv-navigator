@@ -894,7 +894,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-650-2021', officialReference: 'OIV-OENO 650-2021', title: 'Polyaspartate de potassium pour la stabilisation tartrique', relationType: 'cite', evidence: 'Auxiliaire technologique pour la stabilisation tartrique.' },
+      { id: 'oiv-366-2009', officialReference: 'OIV-OENO 366-2009', title: 'Carboxyméthylcellulose (gomme de cellulose)', relationType: 'cite', evidence: 'Auxiliaire technologique pour la stabilisation tartrique.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
