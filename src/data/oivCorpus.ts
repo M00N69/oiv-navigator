@@ -672,7 +672,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-sulfites-vins-2024', officialReference: 'OIV — Pratiques œnologiques : dioxyde de soufre (SO2)', title: 'Sulfites dans les vins', relationType: 'cite', evidence: 'Allergène à déclaration obligatoire au-delà de 10 mg/L.' },
+      { id: 'oiv-proteines-lait-oeuf-fining-2024', officialReference: 'OIV — Pratiques œnologiques : protéines de lait et d\'œuf', title: 'Protéines de lait et d\'œuf', relationType: 'cite', evidence: 'Allergènes à déclaration si résidus détectables.' },
+      { id: 'oiv-geatine-poisson-2024', officialReference: 'OIV — Pratiques œnologiques : gélatine de poisson', title: 'Gélatine de poisson', relationType: 'cite', evidence: 'Allergène à déclaration si résidus détectables.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {

@@ -143,7 +143,7 @@ Le fichier `netlify.toml` est déjà configuré (build `npm run build`, publicat
 ## Limites connues et avertissement juridique
 
 - **Outil d'aide à la décision, non un texte officiel.** Les fiches sont une synthèse documentaire : en cas de divergence, seuls les textes publiés par l'OIV et au Journal officiel de l'Union européenne font foi. Le droit de l'Union européenne prime sur les recommandations de l'OIV.
-- **Corpus de démonstration.** Le corpus embarqué couvre un échantillon de pratiques, méthodes et normes ; plusieurs familles documentaires (Codex, résolutions annuelles, spiritueux) sont encore vides et doivent être alimentées avant un usage professionnel généralisé.
+- **Corpus enrichi.** Le corpus embarqué compte désormais 81 fiches couvrant les pratiques œnologiques, l'étiquetage, les allergènes, les méthodes d'analyse et les normes européennes. Il reste à compléter pour un usage professionnel généralisé (résolutions annuelles récentes, spiritueux, Codex).
 - **Vérification éditoriale requise.** Les statuts UE (annexes du règlement 2019/934, actualisations) doivent être revérifiés contre les versions en vigueur avant toute diffusion à des tiers.
 - **Mise à jour manuelle.** L'application n'effectue aucun appel réseau : la date affichée est celle de la version du corpus (`CORPUS_META`), pas une synchronisation en direct. Les liens « Voir sur OIV.int » et « Vérifier sur EUR-Lex » ouvrent les sources officielles à jour.
 - **Données locales.** Favoris, notes et fiches importées sont stockés dans le navigateur ; vider les données du site les efface définitivement (utiliser l'export JSON pour les sauvegarder).
