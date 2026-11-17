@@ -423,7 +423,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-684b-2022', officialReference: 'OIV-OENO 684B-2022', title: 'Utilisation de fibres végétales sélectives dans les moûts', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-578-2017', officialReference: 'OIV-OENO 578-2017', title: 'Monographie des fibres végétales sélectives', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-enzymes-clarification-2024', officialReference: 'OIV — Pratiques œnologiques : enzymes', title: 'Emploi des enzymes en œnologie : clarification, filtration, libération d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-08-30'
   },
   {
@@ -581,7 +585,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-eco-700-2023', officialReference: 'OIV-ECO 700-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-699-2023', officialReference: 'OIV-ECO 699-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-698-2023', officialReference: 'OIV-ECO 698-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-10-25'
   },
   {
@@ -627,7 +635,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-740-2024', officialReference: 'OIV-OENO 740-2024', title: 'Mise à jour des monographies sur les produits et sous-produits de levures non-Saccharomyces', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-684b-2022', officialReference: 'OIV-OENO 684B-2022', title: 'Utilisation de fibres végétales sélectives dans les moûts', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-684a-2022', officialReference: 'OIV-OENO 684A-2022', title: 'Utilisation du dicarbonate de diméthyle (DMDC) dans les vins spéciaux', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-09-18'
   },
   {
@@ -637,7 +649,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
     category: 'Général',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -686,7 +698,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -729,7 +741,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -773,7 +785,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -807,7 +819,9 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-681-2022', officialReference: 'OIV-OENO 681-2022', title: 'Cellulose en poudre : usage comme auxiliaire technologique', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -861,7 +875,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -907,7 +921,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'etiquetage',
     domain: 'Traçabilité & Contrôle',
     category: 'Général',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -951,7 +965,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'techniques',
     domain: 'Sécurité sanitaire & Qualité',
     category: 'Général',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -1029,7 +1043,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-eco-700-2023', officialReference: 'OIV-ECO 700-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-699-2023', officialReference: 'OIV-ECO 699-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-698-2023', officialReference: 'OIV-ECO 698-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1039,7 +1057,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'etiquetage',
     domain: 'Étiquetage & Information du consommateur',
     category: 'Général',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -1072,7 +1090,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-60-mentions-traditionnelles-2026', officialReference: 'A93/60 — Étiquetage : mentions traditionnelles', title: 'Étiquetage des vins : mentions traditionnelles', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1082,7 +1103,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -1125,7 +1146,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -1172,7 +1193,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -1206,7 +1227,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-494-2017', officialReference: 'OIV-OENO 494-2017', title: 'Clarification des vins par les protéines végétales issues de pois et de pomme de terre', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-enzymes-clarification-2024', officialReference: 'OIV — Pratiques œnologiques : enzymes', title: 'Emploi des enzymes en œnologie : clarification, filtration, libération d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1216,7 +1240,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -1249,7 +1273,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-stabilisation-tartrique-2024', officialReference: 'OIV — Pratiques œnologiques : stabilisation tartrique', title: 'Stabilisation tartrique des vins : électrodialyse, échangeurs cationiques, traitement au froid', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-672b-2024', officialReference: 'OIV-OENO 672B-2024', title: 'Traitement à la silice mésoporeuse fonctionnalisée (SMF) pour la stabilisation protéique des vins', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-650-2021', officialReference: 'OIV-OENO 650-2021', title: 'Utilisation du polyaspartate de potassium pour la stabilisation tartrique des vins', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1292,7 +1320,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-674-2022', officialReference: 'OIV-OENO 674-2022', title: 'Mise à jour de la monographie sur les extraits de levures contenant des mannoprotéines', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-624-2022', officialReference: 'OIV-OENO 624-2022', title: 'Actualisation de la monographie des tanins œnologiques', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-578-2017', officialReference: 'OIV-OENO 578-2017', title: 'Monographie des fibres végétales sélectives', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1302,7 +1334,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2016',
+    adoptionDate: '28/10/2016',
     adoptionYear: 2016,
     language: 'fr',
     status: 'en_vigueur',
@@ -1379,7 +1411,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-stabilisation-tartrique-2024', officialReference: 'OIV — Pratiques œnologiques : stabilisation tartrique', title: 'Stabilisation tartrique des vins : électrodialyse, échangeurs cationiques, traitement au froid', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-stabilisation-microbiologique-2024', officialReference: 'OIV — Pratiques œnologiques : stabilisation microbiologique', title: 'Stabilisation microbiologique des vins : lysozyme, sorbate, DMDC, pasteurisation', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-650-2021', officialReference: 'OIV-OENO 650-2021', title: 'Utilisation du polyaspartate de potassium pour la stabilisation tartrique des vins', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1422,7 +1458,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-674a-2022', officialReference: 'OIV-OENO 674A-2022', title: 'Utilisation de levures inactivées à niveau garanti de glutathion pour la conservation des vins', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-674-2022', officialReference: 'OIV-OENO 674-2022', title: 'Mise à jour de la monographie sur les extraits de levures contenant des mannoprotéines', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1508,7 +1547,9 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-secsan-701-2022', officialReference: 'OIV-SECSAN 701-2022', title: 'Révision de la limite maximale d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1551,7 +1592,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-secsan-721-2025', officialReference: 'OIV-SECSAN 721-2025', title: 'Mise à jour de la limite de cadmium dans le vin', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-689-2022', officialReference: 'OIV-OENO 689-2022', title: 'Limite OIV gomme arabique — Mise à jour', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-686-2022', officialReference: 'OIV-OENO 686-2022', title: 'Révision du Code des bonnes pratiques vitivinicoles destinées à prévenir ou à limiter la contamination par Brettanomyces', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1561,7 +1606,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Sécurité sanitaire & Qualité',
     category: 'Vins',
-    adoptionDate: '01/01/2016',
+    adoptionDate: '28/10/2016',
     adoptionYear: 2016,
     language: 'fr',
     status: 'en_vigueur',
@@ -1594,7 +1639,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-secsan-701-2022', officialReference: 'OIV-SECSAN 701-2022', title: 'Révision de la limite maximale d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-689-2022', officialReference: 'OIV-OENO 689-2022', title: 'Limite OIV gomme arabique — Mise à jour', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1637,7 +1685,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-secsan-721-2025', officialReference: 'OIV-SECSAN 721-2025', title: 'Mise à jour de la limite de cadmium dans le vin', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-secsan-701-2022', officialReference: 'OIV-SECSAN 701-2022', title: 'Révision de la limite maximale d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-366-2009', officialReference: 'OIV-OENO 366-2009', title: 'Traitement des vins par la carboxyméthylcellulose (gomme de cellulose)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1728,7 +1780,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'a93-60-mentions-traditionnelles-2026', officialReference: 'A93/60 — Étiquetage : mentions traditionnelles', title: 'Étiquetage des vins : mentions traditionnelles', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-mentions-geographiques-2024', officialReference: 'OIV — Mentions géographiques et indications géographiques', title: 'Mentions géographiques et indications géographiques (IG/AOP) sur les vins', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1772,7 +1828,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1817,7 +1877,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1862,7 +1926,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1907,7 +1975,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1952,7 +2024,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1997,7 +2073,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2042,7 +2122,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2087,7 +2171,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2132,7 +2220,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2176,7 +2268,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-mentions-geographiques-2024', officialReference: 'OIV — Mentions géographiques et indications géographiques', title: 'Mentions géographiques et indications géographiques (IG/AOP) sur les vins', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2220,7 +2316,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2264,7 +2364,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2295,7 +2399,11 @@ export const OIV_CORPUS: OivDocument[] = [
       euLimitsAndConditions: "L'identité de l'embouteilleur doit figurer dans le même champ visuel."
     },
     versions: [{ id: 'v2026-embouteilleur', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Embouteilleur/importateur.", prescriptions: ["Identité obligatoire.", "Champ visuel unique."], limitsAndDoses: "Selon règlementation.", isCurrent: true }],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Étiquetage des allergènes dans les vins : sulfites, protéines de lait et d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'etiquetage-vins-grands-principes-2026', officialReference: '— Étiquetage des Vins : Grands Principes (fiche A93/20)', title: 'Étiquetage des vins : grands principes — mentions obligatoires, facultatives et libres', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'a93-95-nom-imprimeur-2026', officialReference: 'A93/95 — Étiquetage : nom de l', title: 'Étiquetage des vins : nom de l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2648,7 +2756,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2024',
+    adoptionDate: '18/10/2024',
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
@@ -2729,7 +2837,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-geatine-poisson-2024', officialReference: 'OIV — Pratiques œnologiques : gélatine de poisson', title: 'Gélatine de poisson et colle de poisson (ichtyocolle) : usage comme auxiliaire technologique et allergène', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-366-2009', officialReference: 'OIV-OENO 366-2009', title: 'Traitement des vins par la carboxyméthylcellulose (gomme de cellulose)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2772,7 +2883,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-578-2017', officialReference: 'OIV-OENO 578-2017', title: 'Monographie des fibres végétales sélectives', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-684a-2022', officialReference: 'OIV-OENO 684A-2022', title: 'Utilisation du dicarbonate de diméthyle (DMDC) dans les vins spéciaux', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-674a-2022', officialReference: 'OIV-OENO 674A-2022', title: 'Utilisation de levures inactivées à niveau garanti de glutathion pour la conservation des vins', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2815,7 +2930,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-740-2024', officialReference: 'OIV-OENO 740-2024', title: 'Mise à jour des monographies sur les produits et sous-produits de levures non-Saccharomyces', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-723-2024', officialReference: 'OIV-OENO 723-2024', title: 'Mise à jour de la monographie et du Code sur les matières protéiques d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-674a-2022', officialReference: 'OIV-OENO 674A-2022', title: 'Utilisation de levures inactivées à niveau garanti de glutathion pour la conservation des vins', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2858,7 +2977,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-723-2024', officialReference: 'OIV-OENO 723-2024', title: 'Mise à jour de la monographie et du Code sur les matières protéiques d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-674-2022', officialReference: 'OIV-OENO 674-2022', title: 'Mise à jour de la monographie sur les extraits de levures contenant des mannoprotéines', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-578-2017', officialReference: 'OIV-OENO 578-2017', title: 'Monographie des fibres végétales sélectives', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2901,7 +3024,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-567c1-2022', officialReference: 'OIV-OENO 567C1-2022', title: 'Distinction entre les additifs et les auxiliaires technologiques — Lait écrémé', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-567a-2016', officialReference: 'OIV-OENO 567A-2016', title: 'Distinction entre les additifs et les auxiliaires technologiques — Partie 1', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-684a-2022', officialReference: 'OIV-OENO 684A-2022', title: 'Utilisation du dicarbonate de diméthyle (DMDC) dans les vins spéciaux', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2945,7 +3072,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-567b4-2022', officialReference: 'OIV-OENO 567B4-2022', title: 'Distinction entre les additifs et les auxiliaires technologiques — Dicarbonate de diméthyle (DMDC)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-567a-2016', officialReference: 'OIV-OENO 567A-2016', title: 'Distinction entre les additifs et les auxiliaires technologiques — Partie 1', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3074,7 +3204,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-eco-700-2023', officialReference: 'OIV-ECO 700-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-699-2023', officialReference: 'OIV-ECO 699-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-698-2023', officialReference: 'OIV-ECO 698-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3116,7 +3250,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-eco-700-2023', officialReference: 'OIV-ECO 700-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-699-2023', officialReference: 'OIV-ECO 699-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-697-2023', officialReference: 'OIV-ECO 697-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3158,7 +3296,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-eco-700-2023', officialReference: 'OIV-ECO 700-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-698-2023', officialReference: 'OIV-ECO 698-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-697-2023', officialReference: 'OIV-ECO 697-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3200,7 +3342,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-eco-699-2023', officialReference: 'OIV-ECO 699-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-698-2023', officialReference: 'OIV-ECO 698-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-697-2023', officialReference: 'OIV-ECO 697-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3242,7 +3388,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-eco-700-2023', officialReference: 'OIV-ECO 700-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-699-2023', officialReference: 'OIV-ECO 699-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-698-2023', officialReference: 'OIV-ECO 698-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3284,7 +3434,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-eco-700-2023', officialReference: 'OIV-ECO 700-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-699-2023', officialReference: 'OIV-ECO 699-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-eco-698-2023', officialReference: 'OIV-ECO 698-2023', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3337,7 +3491,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Général',
-    adoptionDate: '01/01/2016',
+    adoptionDate: '28/10/2016',
     adoptionYear: 2016,
     language: 'fr',
     status: 'en_vigueur',
@@ -3371,7 +3525,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-567c1-2022', officialReference: 'OIV-OENO 567C1-2022', title: 'Distinction entre les additifs et les auxiliaires technologiques — Lait écrémé', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-567b4-2022', officialReference: 'OIV-OENO 567B4-2022', title: 'Distinction entre les additifs et les auxiliaires technologiques — Dicarbonate de diméthyle (DMDC)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3381,7 +3538,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2017',
+    adoptionDate: '02/06/2017',
     adoptionYear: 2017,
     language: 'fr',
     status: 'en_vigueur',
@@ -3414,7 +3571,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-684b-2022', officialReference: 'OIV-OENO 684B-2022', title: 'Utilisation de fibres végétales sélectives dans les moûts', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-723-2024', officialReference: 'OIV-OENO 723-2024', title: 'Mise à jour de la monographie et du Code sur les matières protéiques d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-674-2022', officialReference: 'OIV-OENO 674-2022', title: 'Mise à jour de la monographie sur les extraits de levures contenant des mannoprotéines', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3424,7 +3585,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Moûts',
-    adoptionDate: '01/01/2017',
+    adoptionDate: '02/06/2017',
     adoptionYear: 2017,
     language: 'fr',
     status: 'en_vigueur',
@@ -3457,7 +3618,9 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-650-2021', officialReference: 'OIV-OENO 650-2021', title: 'Utilisation du polyaspartate de potassium pour la stabilisation tartrique des vins', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3467,7 +3630,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Moûts',
-    adoptionDate: '01/01/2015',
+    adoptionDate: '15/07/2015',
     adoptionYear: 2015,
     language: 'fr',
     status: 'en_vigueur',
@@ -3500,7 +3663,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-674a-2022', officialReference: 'OIV-OENO 674A-2022', title: 'Utilisation de levures inactivées à niveau garanti de glutathion pour la conservation des vins', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-446-2015', officialReference: 'OIV-OENO 446-2015', title: 'Traitement des vins au glutathion', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3510,7 +3676,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2015',
+    adoptionDate: '15/07/2015',
     adoptionYear: 2015,
     language: 'fr',
     status: 'en_vigueur',
@@ -3543,7 +3709,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-674a-2022', officialReference: 'OIV-OENO 674A-2022', title: 'Utilisation de levures inactivées à niveau garanti de glutathion pour la conservation des vins', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' },
+      { id: 'oiv-oeno-445-2015', officialReference: 'OIV-OENO 445-2015', title: 'Traitement des moûts au glutathion', relationType: 'cite', evidence: 'Fiche du meme domaine OIV (mots-cles communs).' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3553,7 +3722,7 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '01/01/2015',
+    adoptionDate: '15/07/2015',
     adoptionYear: 2015,
     language: 'fr',
     status: 'en_vigueur',
@@ -3599,7 +3768,7 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.13',
+  version: '2026.14',
   updatedAt: '2026-11-17',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
