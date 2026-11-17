@@ -2326,7 +2326,11 @@ export const OIV_CORPUS: OivDocument[] = [
       euLimitsAndConditions: "Les cahiers des charges peuvent rendre le symbole obligatoire, l'interdire ou le préciser."
     },
     versions: [{ id: 'v2026-symbole', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Symbole communautaire.", prescriptions: ["Facultatif.", "Selon cahier des charges."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'a93-57-unite-geographique-2026', officialReference: 'A93/57 — Étiquetage : unité géographique', title: 'Étiquetage des vins : unité géographique plus grande ou plus petite que l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-62-participants-commercialisation-2026', officialReference: 'A93/62 — Étiquetage : participants à la commercialisation', title: 'Étiquetage des vins : participants à la commercialisation', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-65-nom-exploitation-2026', officialReference: 'A93/65 — Étiquetage : nom d', title: 'Étiquetage des vins : nom d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2356,7 +2360,11 @@ export const OIV_CORPUS: OivDocument[] = [
       euLimitsAndConditions: "Les cahiers des charges peuvent rendre l'unité géographique obligatoire, l'interdire ou la préciser."
     },
     versions: [{ id: 'v2026-unite-geo', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Unité géographique.", prescriptions: ["Selon cahier des charges."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'a93-29-symbole-communautaire-2026', officialReference: 'A93/29 — Étiquetage : symbole communautaire', title: 'Étiquetage des vins : symbole communautaire (AOP/IGP)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-62-participants-commercialisation-2026', officialReference: 'A93/62 — Étiquetage : participants à la commercialisation', title: 'Étiquetage des vins : participants à la commercialisation', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-65-nom-exploitation-2026', officialReference: 'A93/65 — Étiquetage : nom d', title: 'Étiquetage des vins : nom d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2386,7 +2394,11 @@ export const OIV_CORPUS: OivDocument[] = [
       euLimitsAndConditions: "Les mentions doivent être conformes au Règlement 1308/2013."
     },
     versions: [{ id: 'v2026-participants', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Participants à la commercialisation.", prescriptions: ["Identité des participants.", "Conformité UE."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'a93-29-symbole-communautaire-2026', officialReference: 'A93/29 — Étiquetage : symbole communautaire', title: 'Étiquetage des vins : symbole communautaire (AOP/IGP)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-57-unite-geographique-2026', officialReference: 'A93/57 — Étiquetage : unité géographique', title: 'Étiquetage des vins : unité géographique plus grande ou plus petite que l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-65-nom-exploitation-2026', officialReference: 'A93/65 — Étiquetage : nom d', title: 'Étiquetage des vins : nom d', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2416,7 +2428,11 @@ export const OIV_CORPUS: OivDocument[] = [
       euLimitsAndConditions: "L'exploitation doit être une entité déterminée avec cuverie individualisée."
     },
     versions: [{ id: 'v2026-exploitation', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Nom d'exploitation viticole.", prescriptions: ["Expressions réservées.", "Vinification dans l'exploitation."], limitsAndDoses: "Selon décret 2012-655.", isCurrent: true }],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'a93-29-symbole-communautaire-2026', officialReference: 'A93/29 — Étiquetage : symbole communautaire', title: 'Étiquetage des vins : symbole communautaire (AOP/IGP)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-57-unite-geographique-2026', officialReference: 'A93/57 — Étiquetage : unité géographique', title: 'Étiquetage des vins : unité géographique plus grande ou plus petite que l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-62-participants-commercialisation-2026', officialReference: 'A93/62 — Étiquetage : participants à la commercialisation', title: 'Étiquetage des vins : participants à la commercialisation', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2446,7 +2462,11 @@ export const OIV_CORPUS: OivDocument[] = [
       euLimitsAndConditions: "La mention doit être vérifiable et non trompeuse."
     },
     versions: [{ id: 'v2026-mise-bouteille', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Mise en bouteille à la propriété.", prescriptions: ["Mention libre vérifiable.", "Traçabilité."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'a93-29-symbole-communautaire-2026', officialReference: 'A93/29 — Étiquetage : symbole communautaire', title: 'Étiquetage des vins : symbole communautaire (AOP/IGP)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-57-unite-geographique-2026', officialReference: 'A93/57 — Étiquetage : unité géographique', title: 'Étiquetage des vins : unité géographique plus grande ou plus petite que l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-62-participants-commercialisation-2026', officialReference: 'A93/62 — Étiquetage : participants à la commercialisation', title: 'Étiquetage des vins : participants à la commercialisation', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2476,7 +2496,11 @@ export const OIV_CORPUS: OivDocument[] = [
       euLimitsAndConditions: "Seules les méthodes expressément mentionnées sont autorisées."
     },
     versions: [{ id: 'v2026-methode', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Méthode de production.", prescriptions: ["Vieillissement sous bois.", "Copeaux."], limitsAndDoses: "Selon R. 2019/33.", isCurrent: true }],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'a93-29-symbole-communautaire-2026', officialReference: 'A93/29 — Étiquetage : symbole communautaire', title: 'Étiquetage des vins : symbole communautaire (AOP/IGP)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-57-unite-geographique-2026', officialReference: 'A93/57 — Étiquetage : unité géographique', title: 'Étiquetage des vins : unité géographique plus grande ou plus petite que l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-62-participants-commercialisation-2026', officialReference: 'A93/62 — Étiquetage : participants à la commercialisation', title: 'Étiquetage des vins : participants à la commercialisation', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2507,7 +2531,11 @@ export const OIV_CORPUS: OivDocument[] = [
       euLimitsAndConditions: "Les mentions doivent être conformes au Règlement 1308/2013."
     },
     versions: [{ id: 'v2026-couleur', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Couleur des vins.", prescriptions: ["Rouge, rosé, blanc libres.", "Conformité UE."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'a93-29-symbole-communautaire-2026', officialReference: 'A93/29 — Étiquetage : symbole communautaire', title: 'Étiquetage des vins : symbole communautaire (AOP/IGP)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-57-unite-geographique-2026', officialReference: 'A93/57 — Étiquetage : unité géographique', title: 'Étiquetage des vins : unité géographique plus grande ou plus petite que l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-62-participants-commercialisation-2026', officialReference: 'A93/62 — Étiquetage : participants à la commercialisation', title: 'Étiquetage des vins : participants à la commercialisation', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2538,7 +2566,11 @@ export const OIV_CORPUS: OivDocument[] = [
       euLimitsAndConditions: "La teneur en sucre est obligatoire pour les vins mousseux."
     },
     versions: [{ id: 'v2026-sucre', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Teneur en sucre.", prescriptions: ["Facultatif pour VT.", "Obligatoire pour Mx."], limitsAndDoses: "Selon réglementation.", isCurrent: true }],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'a93-29-symbole-communautaire-2026', officialReference: 'A93/29 — Étiquetage : symbole communautaire', title: 'Étiquetage des vins : symbole communautaire (AOP/IGP)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-57-unite-geographique-2026', officialReference: 'A93/57 — Étiquetage : unité géographique', title: 'Étiquetage des vins : unité géographique plus grande ou plus petite que l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-62-participants-commercialisation-2026', officialReference: 'A93/62 — Étiquetage : participants à la commercialisation', title: 'Étiquetage des vins : participants à la commercialisation', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2568,7 +2600,11 @@ export const OIV_CORPUS: OivDocument[] = [
       euLimitsAndConditions: "Les conditions sont celles de la Directive 94/62/CE."
     },
     versions: [{ id: 'v2026-point-vert', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Logo point vert-Adelphe.", prescriptions: ["Logo facultatif.", "Adhésion Adelphe."], limitsAndDoses: "Selon Adelphe.", isCurrent: true }],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'a93-29-symbole-communautaire-2026', officialReference: 'A93/29 — Étiquetage : symbole communautaire', title: 'Étiquetage des vins : symbole communautaire (AOP/IGP)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-57-unite-geographique-2026', officialReference: 'A93/57 — Étiquetage : unité géographique', title: 'Étiquetage des vins : unité géographique plus grande ou plus petite que l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-62-participants-commercialisation-2026', officialReference: 'A93/62 — Étiquetage : participants à la commercialisation', title: 'Étiquetage des vins : participants à la commercialisation', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -2598,7 +2634,11 @@ export const OIV_CORPUS: OivDocument[] = [
       euLimitsAndConditions: "La mention du nom de l'imprimeur n'est pas prévue par le Règlement 1169/2011."
     },
     versions: [{ id: 'v2026-imprimeur', versionLabel: 'Version 2026', adoptionYear: 2026, extractedText: "Nom de l'imprimeur.", prescriptions: ["Mention non prévue.", "Refus possible."], limitsAndDoses: "Selon R. 1169/2011.", isCurrent: true }],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'a93-29-symbole-communautaire-2026', officialReference: 'A93/29 — Étiquetage : symbole communautaire', title: 'Étiquetage des vins : symbole communautaire (AOP/IGP)', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-57-unite-geographique-2026', officialReference: 'A93/57 — Étiquetage : unité géographique', title: 'Étiquetage des vins : unité géographique plus grande ou plus petite que l', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' },
+      { id: 'a93-62-participants-commercialisation-2026', officialReference: 'A93/62 — Étiquetage : participants à la commercialisation', title: 'Étiquetage des vins : participants à la commercialisation', relationType: 'cite', evidence: 'Fiche du meme domaine OIV.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {

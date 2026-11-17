@@ -22,7 +22,8 @@
     "preview": "vite preview",
     "lint": "tsc --noEmit && tsc --noEmit -p tsconfig.scripts.json",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "corpus:check": "tsx scripts/check-corpus.ts"
   },
   "dependencies": {
     "lucide-react": "^0.546.0",
