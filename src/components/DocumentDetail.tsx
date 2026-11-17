@@ -170,10 +170,10 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-brand hover:bg-brand-dark px-3 py-1.5 rounded transition-colors shadow-xs"
-                title="Télécharger directement le document PDF officiel de l'OIV"
+                title="Consulter la résolution sur le portail OIV.int"
               >
                 <FileText className="w-3.5 h-3.5" />
-                <span>Télécharger le PDF officiel OIV</span>
+                <span>Voir la résolution sur OIV.int</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
             )}
