@@ -3006,7 +3006,10 @@ export const OIV_CORPUS: OivDocument[] = [
       "Le statut du DMDC doit être compatible avec le Règlement délégué (UE) 2019/934.",
       "L'emploi doit être tracé et conforme au Codex œnologique international."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Dicarbonate de diméthyle (DMDC)",
+    chemicalFormula: "C4H6O5",
+    casNumber: "4525-33-1",
+    limitsAndDoses: "COEI-1-DMDC : pureté >= 99,8 % ; métaux lourds < 10 mg/kg ; Hg < 1 mg/kg ; Cl < 3 mg/kg ; As < 3 mg/kg ; Pb < 2 mg/kg ; Cd < 0,5 mg/kg ; carbonate de diméthyle < 0,2 %. Dose d'emploi selon le code des pratiques et l'annexe II du Règlement (UE) 2019/934.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -3143,7 +3146,10 @@ export const OIV_CORPUS: OivDocument[] = [
       "Le chlorure d'argent doit être conforme au Codex œnologique international.",
       "L'emploi doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Chlorure d'argent (adsorbé sur support inerte)",
+    chemicalFormula: "AgCl",
+    casNumber: "7783-90-6",
+    limitsAndDoses: "COEI-1-CHLARG : pureté >= 99 % ; Ag dans le support >= 2 % ; Fe < 5 mg/kg ; Ni < 5 mg/kg ; Pb < 5 mg/kg ; Hg < 1 mg/kg ; As < 3 mg/kg. Solubilité dans l'eau à 25 °C : 0,00188 g/L. Dose d'emploi selon le code des pratiques et l'annexe II du Règlement (UE) 2019/934.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
