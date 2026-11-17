@@ -1286,17 +1286,17 @@ export const OIV_CORPUS: OivDocument[] = [
     lastCheckedDate: '2026-11-16'
   },
   {
-    id: 'oiv-oeno-732-2025',
-    officialReference: 'OIV-OENO 732-2025',
-    title: "Déshydratation partielle des moûts et concentration : base pour la déalcoolisation",
+    id: 'oiv-eco-523-2016',
+    officialReference: 'OIV-ECO 523-2016',
+    title: "Vin à teneur en alcool modifiée par la désalcoolisation",
     family: 'pratiques',
     domain: 'Pratiques œnologiques',
     category: 'Vins',
-    adoptionDate: '21/11/2025',
-    adoptionYear: 2025,
+    adoptionDate: '01/01/2016',
+    adoptionYear: 2016,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/node/4088/download/pdf',
+    officialUrl: 'https://www.oiv.int/fr/node/3221/download/pdf',
     summary: "Cadre pour la déalcoolisation et la modification du degré alcoolique des vins, en cohérence avec le code des pratiques œnologiques et le droit de l'Union européenne (Règlement (UE) 2021/2117).",
     oenologicalObjectives: [
       "Permettre la production de vins à teneur réduite en alcool.",
@@ -1551,8 +1551,8 @@ export const OIV_CORPUS: OivDocument[] = [
     family: 'pratiques',
     domain: 'Sécurité sanitaire & Qualité',
     category: 'Vins',
-    adoptionDate: '21/11/2025',
-    adoptionYear: 2025,
+    adoptionDate: '01/01/2016',
+    adoptionYear: 2016,
     language: 'fr',
     status: 'en_vigueur',
     officialUrl: 'https://www.oiv.int/fr/node/4097/download/pdf',
@@ -3234,6 +3234,308 @@ export const OIV_CORPUS: OivDocument[] = [
     relatedDocuments: [],
     lastCheckedDate: '2026-11-16'
   },
+  {
+    id: 'oiv-secsan-627-2018',
+    officialReference: 'OIV-SECSAN 627-2018',
+    title: "Mise à jour de l'arbre de décision de l'OIV pour l'évaluation toxicologique des auxiliaires technologiques et des additifs",
+    family: 'pratiques',
+    domain: 'Sécurité sanitaire & Qualité',
+    category: 'Général',
+    adoptionDate: '21/10/2018',
+    adoptionYear: 2018,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3148/download/pdf',
+    summary: "Met à jour l'arbre de décision de l'OIV pour l'évaluation toxicologique des auxiliaires technologiques et des additifs utilisés dans les produits de la vigne.",
+    oenologicalObjectives: [
+      "Évaluer la sécurité toxicologique des auxiliaires technologiques et des additifs.",
+      "Harmoniser l'évaluation au niveau international."
+    ],
+    prescriptions: [
+      "Les auxiliaires technologiques et additifs doivent être évalués selon l'arbre de décision de l'OIV.",
+      "L'évaluation doit prendre en compte les données toxicologiques disponibles.",
+      "Les résultats doivent être consignés dans le dossier de sécurité."
+    ],
+    limitsAndDoses: "Selon l'arbre de décision de l'OIV.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement (CE) n° 1333/2008 (additifs alimentaires) ; Règlement délégué (UE) 2019/934",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seuls les additifs et auxiliaires expressément autorisés par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2018-arbre-decision',
+        versionLabel: 'Version OIV 2018',
+        adoptionYear: 2018,
+        extractedText: "Mise à jour de l'arbre de décision pour l'évaluation toxicologique.",
+        prescriptions: ["Évaluation selon l'arbre de décision OIV.", "Données toxicologiques."],
+        limitsAndDoses: "Selon arbre de décision.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-567a-2016',
+    officialReference: 'OIV-OENO 567A-2016',
+    title: "Distinction entre les additifs et les auxiliaires technologiques — Partie 1",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Général',
+    adoptionDate: '01/01/2016',
+    adoptionYear: 2016,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3212/download/pdf',
+    summary: "Établit la distinction entre les additifs et les auxiliaires technologiques dans les produits vitivinicoles (partie 1).",
+    oenologicalObjectives: [
+      "Clarifier la distinction entre additifs et auxiliaires technologiques.",
+      "Harmoniser la classification au niveau international."
+    ],
+    prescriptions: [
+      "Les additifs sont des substances ajoutées intentionnellement pour un but technologique et qui restent dans le produit fini.",
+      "Les auxiliaires technologiques sont des substances utilisées pour un but technologique pendant le traitement et qui ne restent pas dans le produit fini (ou à des niveaux résiduels non significatifs).",
+      "La distinction est fondamentale pour l'étiquetage (liste des ingrédients) et la réglementation.",
+      "Les substances doivent être conformes au Codex œnologique international."
+    ],
+    limitsAndDoses: "Selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe I et II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seuls les additifs et auxiliaires expressément autorisés par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2016-distinction-partie1',
+        versionLabel: 'Version OIV 2016',
+        adoptionYear: 2016,
+        extractedText: "Distinction entre additifs et auxiliaires technologiques - partie 1.",
+        prescriptions: ["Additifs vs auxiliaires.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-578-2017',
+    officialReference: 'OIV-OENO 578-2017',
+    title: "Monographie des fibres végétales sélectives",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2017',
+    adoptionYear: 2017,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3161/download/pdf',
+    summary: "Établit la monographie des fibres végétales sélectives utilisées comme auxiliaires technologiques.",
+    oenologicalObjectives: [
+      "Encadrer l'emploi des fibres végétales sélectives.",
+      "Améliorer la clarification et la stabilisation."
+    ],
+    prescriptions: [
+      "Les fibres végétales sélectives sont autorisées comme auxiliaires technologiques dans les conditions fixées par le code des pratiques œnologiques.",
+      "Les fibres doivent être conformes au Codex œnologique international.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seules les fibres expressément autorisées par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2017-fibres-selectives',
+        versionLabel: 'Version OIV 2017',
+        adoptionYear: 2017,
+        extractedText: "Monographie des fibres végétales sélectives.",
+        prescriptions: ["Fibres autorisées.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-580-2017',
+    officialReference: 'OIV-OENO 580-2017',
+    title: "Traitement des moûts au carbonate de potassium",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Moûts',
+    adoptionDate: '01/01/2017',
+    adoptionYear: 2017,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3153/download/pdf',
+    summary: "Autorise le traitement des moûts au carbonate de potassium pour la désacidification.",
+    oenologicalObjectives: [
+      "Réduire l'acidité des moûts.",
+      "Améliorer l'équilibre sensoriel."
+    ],
+    prescriptions: [
+      "Le traitement au carbonate de potassium est autorisé dans les conditions fixées par le code des pratiques œnologiques.",
+      "Le carbonate de potassium doit être conforme au Codex œnologique international.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seul le carbonate de potassium expressément autorisé par l'UE est licite."
+    },
+    versions: [
+      {
+        id: 'v2017-carbonate-potassium',
+        versionLabel: 'Version OIV 2017',
+        adoptionYear: 2017,
+        extractedText: "Traitement des moûts au carbonate de potassium.",
+        prescriptions: ["Carbonate de potassium autorisé.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-445-2015',
+    officialReference: 'OIV-OENO 445-2015',
+    title: "Traitement des moûts au glutathion",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Moûts',
+    adoptionDate: '01/01/2015',
+    adoptionYear: 2015,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3225/download/pdf',
+    summary: "Autorise le traitement des moûts au glutathion pour la protection contre l'oxydation.",
+    oenologicalObjectives: [
+      "Protéger les moûts contre l'oxydation.",
+      "Préserver les arômes."
+    ],
+    prescriptions: [
+      "Le traitement au glutathion est autorisé dans les conditions fixées par le code des pratiques œnologiques.",
+      "Le glutathion doit être conforme au Codex œnologique international.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seul le glutathion expressément autorisé par l'UE est licite."
+    },
+    versions: [
+      {
+        id: 'v2015-glutathion-mouts',
+        versionLabel: 'Version OIV 2015',
+        adoptionYear: 2015,
+        extractedText: "Traitement des moûts au glutathion.",
+        prescriptions: ["Glutathion autorisé.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-446-2015',
+    officialReference: 'OIV-OENO 446-2015',
+    title: "Traitement des vins au glutathion",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2015',
+    adoptionYear: 2015,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3226/download/pdf',
+    summary: "Autorise le traitement des vins au glutathion pour la protection contre l'oxydation.",
+    oenologicalObjectives: [
+      "Protéger les vins contre l'oxydation.",
+      "Préserver les arômes."
+    ],
+    prescriptions: [
+      "Le traitement au glutathion est autorisé dans les conditions fixées par le code des pratiques œnologiques.",
+      "Le glutathion doit être conforme au Codex œnologique international.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seul le glutathion expressément autorisé par l'UE est licite."
+    },
+    versions: [
+      {
+        id: 'v2015-glutathion-vins',
+        versionLabel: 'Version OIV 2015',
+        adoptionYear: 2015,
+        extractedText: "Traitement des vins au glutathion.",
+        prescriptions: ["Glutathion autorisé.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
+  {
+    id: 'oiv-oeno-531-2015',
+    officialReference: 'OIV-OENO 531-2015',
+    title: "Activateurs de fermentation malolactique",
+    family: 'pratiques',
+    domain: 'Pratiques œnologiques',
+    category: 'Vins',
+    adoptionDate: '01/01/2015',
+    adoptionYear: 2015,
+    language: 'fr',
+    status: 'en_vigueur',
+    officialUrl: 'https://www.oiv.int/fr/node/3227/download/pdf',
+    summary: "Autorise l'emploi des activateurs de fermentation malolactique comme auxiliaires technologiques.",
+    oenologicalObjectives: [
+      "Faciliter la fermentation malolactique.",
+      "Améliorer la stabilité microbiologique."
+    ],
+    prescriptions: [
+      "Les activateurs de fermentation malolactique sont autorisés comme auxiliaires technologiques dans les conditions fixées par le code des pratiques œnologiques.",
+      "Les activateurs doivent être conformes au Codex œnologique international.",
+      "L'emploi doit être tracé et compatible avec le statut UE."
+    ],
+    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    euRegulation: {
+      euStatus: 'encadre_specifique',
+      primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
+      prevalenceRule: "Le droit de l'UE prime sur les recommandations de l'OIV.",
+      euLimitsAndConditions: "Seuls les activateurs expressément autorisés par l'UE sont licites."
+    },
+    versions: [
+      {
+        id: 'v2015-activateurs-fml',
+        versionLabel: 'Version OIV 2015',
+        adoptionYear: 2015,
+        extractedText: "Activateurs de fermentation malolactique.",
+        prescriptions: ["Activateurs autorisés.", "Conformité au Codex."],
+        limitsAndDoses: "Selon code des pratiques.",
+        isCurrent: true
+      }
+    ],
+    relatedDocuments: [],
+    lastCheckedDate: '2026-11-16'
+  },
 ];
 
 /**
@@ -3244,7 +3546,7 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.11',
+  version: '2026.12',
   updatedAt: '2026-11-16',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
@@ -3258,7 +3560,7 @@ export const FAMILIES_META: { id: string; label: string; count: number; desc: st
   {
     id: 'pratiques',
     label: 'Code des pratiques œnologiques',
-    count: 35,
+    count: 42,
     desc: 'Traitements, procédés de vinification, autorisations pour moûts et vins.'
   },
   {
