@@ -757,7 +757,8 @@ export const OIV_CORPUS: OivDocument[] = [
       "L'absence de résidus dans le vin fini doit pouvoir être démontrée par une analyse ou une justification technique.",
       "L'emploi doit être compatible avec le statut UE (annexe II du Règlement 2019/934)."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et les conditions d'emploi précisées par l'OIV.",
+    substanceName: "Proteines de lait et d oeuf",
+    limitsAndDoses: "COEI-1-LAIECR + COEI-1-OEUALB : lait ecreme conforme a la reglementation alimentaire (allergene potentiel) ; albumine d oeuf : humidite <= 10 % ; cendres <= 6,5 % ; N > 12 % ; metaux lourds (en Pb) < 10 mg/kg ; As < 3 mg/kg ; Pb < 5 mg/kg ; Hg < 1 mg/kg. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement (UE) n° 1169/2011, annexe II ; Règlement délégué (UE) 2019/934",
@@ -801,7 +802,8 @@ export const OIV_CORPUS: OivDocument[] = [
       "L'absence de résidus doit être démontrée par une analyse ou une justification technique.",
       "L'emploi doit être compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques.",
+    substanceName: "Colle de poisson (ichtyocolle)",
+    limitsAndDoses: "COEI-1-COLPOI : residu sec >= 1 % ; cendres < 2 % ; N > 14 % ; Fe < 100 mg/kg ; As < 3 mg/kg ; Pb < 5 mg/kg ; Hg < 1 mg/kg ; stockage < 10 degres C. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement (UE) n° 1169/2011, annexe II ; Règlement délégué (UE) 2019/934",
@@ -1162,7 +1164,8 @@ export const OIV_CORPUS: OivDocument[] = [
       "Les doses et conditions sont celles fixées par le code des pratiques œnologiques.",
       "L'emploi doit être compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Preparations enzymatiques",
+    limitsAndDoses: "COEI-1-PRENZY : Pb < 5 mg/kg ; Hg < 0,5 mg/kg ; As < 3 mg/kg ; Cd < 0,5 mg/kg ; coliformes < 30 UFC/g ; Salmonella absent sur 25 g ; E. coli absent sur 25 g. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -1302,7 +1305,8 @@ export const OIV_CORPUS: OivDocument[] = [
       "Les protéines de pois et de pomme de terre restent autorisées dans les conditions fixées.",
       "La déclaration allergène (gluten) est liée à la présence de résidus détectables dans le produit fini."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Matieres proteiques d origine vegetale (pois, pomme de terre)",
+    limitsAndDoses: "COEI-1-PROVEG : N > 10 % (env. 65 % proteines) ; cendres < 8 % ; humidite < 12 % ; Fe < 150 mg/kg (pois/pomme de terre < 300 mg/kg) ; Cr < 10 mg/kg ; Cu < 35 mg/kg ; Zn < 50 mg/kg (pois <= 150 mg/kg) ; Pb < 5 mg/kg ; Hg < 1 mg/kg ; As < 3 mg/kg ; Cd < 1 mg/kg ; aflatoxines < 4 microg/kg ; ochratoxine A < 5 microg/kg ; glycoalcaloides (pomme de terre) < 300 mg/kg. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement (UE) n° 1169/2011, annexe II (gluten) ; Règlement délégué (UE) 2019/934",
@@ -1440,7 +1444,8 @@ export const OIV_CORPUS: OivDocument[] = [
       "L'emploi doit être justifié par un objectif technique (fermentation, stabilisation, clarification).",
       "Les doses et conditions sont celles fixées par le code des pratiques œnologiques."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Levures selectionnees non-Saccharomyces",
+    limitsAndDoses: "COEI-1-NOSACC : Pb < 2 mg/kg ; Hg < 1 mg/kg ; As < 3 mg/kg ; Cd < 1 mg/kg ; moisissures < 10^3 UFC/g ; coliformes < 10^2 UFC/g ; Salmonella absent sur 25 g ; E. coli absent sur 1 g. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -2819,7 +2824,9 @@ export const OIV_CORPUS: OivDocument[] = [
       "La cellulose doit être conforme au Codex œnologique international.",
       "L'emploi doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Cellulose en poudre",
+    chemicalFormula: "Cellulose",
+    limitsAndDoses: "COEI-1-CELLUL : pH 5,0-7,5 ; humidite <= 8 % ; amidon (pas de coloration bleue a l iode) ; cendres <= 2 % ; Fe < 100 mg/kg ; Pb < 5 mg/kg ; Hg < 1 mg/kg ; Cd < 1 mg/kg ; As < 2 mg/kg ; Ca < 500 mg/kg ; solubles dans l eau <= 0,25 %. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -2865,7 +2872,8 @@ export const OIV_CORPUS: OivDocument[] = [
       "Les fibres doivent être conformes au Codex œnologique international.",
       "L'emploi doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Fibres vegetales selectives",
+    limitsAndDoses: "COEI-1-FIBVEG : NDF >= 90 % ; humidite <= 8 % ; cendres < 1 % ; solubles <= 3 % ; Fe < 100 mg/kg ; Cu < 25 mg/kg ; Pb < 5 mg/kg ; Hg < 1 mg/kg ; As < 1 mg/kg ; Cd < 1 mg/kg ; adsorption boscalid KF >= 1000 mg/kg ; OTA KF >= 1200 mg/kg. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -2912,7 +2920,8 @@ export const OIV_CORPUS: OivDocument[] = [
       "Les extraits doivent être conformes au Codex œnologique international.",
       "L'emploi doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Mannoproteines de levures",
+    limitsAndDoses: "COEI-1-MANPRO : cendres < 8 % ; N 5-75 g/kg ; polysaccharides (equiv. mannose) > 600 g/kg ; mannose >= 70 % des polysaccharides ; Pb < 5 mg/kg ; Hg < 0,15 mg/kg ; As < 1 mg/kg ; Cd < 0,5 mg/kg ; DM insoluble <= 1 %. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -2959,7 +2968,8 @@ export const OIV_CORPUS: OivDocument[] = [
       "Les tanins doivent être conformes au Codex œnologique international.",
       "L'emploi doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Tanins oenologiques",
+    limitsAndDoses: "COEI-1-TANINS : phenols totaux > 65 % ; matieres insolubles < 2 % ; cendres < 4 % ; perte a la desiccation < 10 % ; Fe < 50 mg/kg (chataignier <= 200 mg/kg) ; Pb < 5 mg/kg ; Hg < 1 mg/kg ; As < 3 mg/kg. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -3057,7 +3067,8 @@ export const OIV_CORPUS: OivDocument[] = [
       "L'emploi doit être tracé et conforme au Codex œnologique international.",
       "Le lait écrémé contient des protéines (caséine) à potentiel allergénique."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Lait ecreme",
+    limitsAndDoses: "COEI-1-LAIECR : lait ecreme de vache conforme a la reglementation alimentaire. Peut provoquer des reactions allergiques (proteines residuelles). Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement (UE) n° 1169/2011, annexe II (lait) ; Règlement délégué (UE) 2019/934",
@@ -3559,7 +3570,8 @@ export const OIV_CORPUS: OivDocument[] = [
       "Les fibres doivent être conformes au Codex œnologique international.",
       "L'emploi doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Fibres vegetales selectives",
+    limitsAndDoses: "COEI-1-FIBVEG : NDF >= 90 % ; humidite <= 8 % ; cendres < 1 % ; solubles <= 3 % ; Fe < 100 mg/kg ; Cu < 25 mg/kg ; Pb < 5 mg/kg ; Hg < 1 mg/kg ; As < 1 mg/kg ; Cd < 1 mg/kg. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -3606,7 +3618,10 @@ export const OIV_CORPUS: OivDocument[] = [
       "Le carbonate de potassium doit être conforme au Codex œnologique international.",
       "L'emploi doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Carbonate de potassium",
+    chemicalFormula: "K2CO3",
+    casNumber: "584-08-7",
+    limitsAndDoses: "COEI-1-POTCAR : K2CO3 >= 98 % ; Fe < 10 mg/kg ; Pb < 5 mg/kg ; Hg < 1 mg/kg ; As < 3 mg/kg ; Cd < 1 mg/kg ; Na < 1 %. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -3651,7 +3666,10 @@ export const OIV_CORPUS: OivDocument[] = [
       "Le glutathion doit être conforme au Codex œnologique international.",
       "L'emploi doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Glutathion (GSH)",
+    chemicalFormula: "C10H17N3O6S",
+    casNumber: "70-18-8",
+    limitsAndDoses: "COEI-1-GLUTAT : GSH >= 98 % ; humidite <= 0,5 % ; Pb < 2 mg/kg ; Hg < 1 mg/kg ; As < 3 mg/kg ; Cd < 1 mg/kg ; stockage 2-8 degres C. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -3697,7 +3715,10 @@ export const OIV_CORPUS: OivDocument[] = [
       "Le glutathion doit être conforme au Codex œnologique international.",
       "L'emploi doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    substanceName: "Glutathion (GSH)",
+    chemicalFormula: "C10H17N3O6S",
+    casNumber: "70-18-8",
+    limitsAndDoses: "COEI-1-GLUTAT : GSH >= 98 % ; humidite <= 0,5 % ; Pb < 2 mg/kg ; Hg < 1 mg/kg ; As < 3 mg/kg ; Cd < 1 mg/kg. Dose d emploi selon le code des pratiques.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
