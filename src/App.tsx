@@ -1,14 +1,14 @@
-import { useState, useMemo, useEffect, useRef } from 'react';
+import { useState, useMemo, useEffect, useRef, lazy, Suspense } from 'react';
 import { Header } from './components/Header';
-import { HomeExplorer } from './components/HomeExplorer';
-import { DocumentDetail } from './components/DocumentDetail';
-import { VersionComparator } from './components/VersionComparator';
-import { EuRegulatoryView } from './components/EuRegulatoryView';
-import { VeilleUpdatesView } from './components/VeilleUpdatesView';
-import { DossierExportView } from './components/DossierExportView';
-import { TreatmentSimulator } from './components/TreatmentSimulator';
-import { ProblemSolverView } from './components/ProblemSolverView';
-import { UserGuideView } from './components/UserGuideView';
+const HomeExplorer = lazy(() => import('./components/HomeExplorer').then(m => ({ default: m.HomeExplorer })));
+const DocumentDetail = lazy(() => import('./components/DocumentDetail').then(m => ({ default: m.DocumentDetail })));
+const VersionComparator = lazy(() => import('./components/VersionComparator').then(m => ({ default: m.VersionComparator })));
+const EuRegulatoryView = lazy(() => import('./components/EuRegulatoryView').then(m => ({ default: m.EuRegulatoryView })));
+const VeilleUpdatesView = lazy(() => import('./components/VeilleUpdatesView').then(m => ({ default: m.VeilleUpdatesView })));
+const DossierExportView = lazy(() => import('./components/DossierExportView').then(m => ({ default: m.DossierExportView })));
+const TreatmentSimulator = lazy(() => import('./components/TreatmentSimulator').then(m => ({ default: m.TreatmentSimulator })));
+const ProblemSolverView = lazy(() => import('./components/ProblemSolverView').then(m => ({ default: m.ProblemSolverView })));
+const UserGuideView = lazy(() => import('./components/UserGuideView').then(m => ({ default: m.UserGuideView })));
 import { OivDocument, FilterState, OivFamily, UserNote, DossierItem } from './types/oiv';
 import { 
   getAllCorpusDocuments, 
@@ -182,6 +182,7 @@ export default function App() {
 
       {/* Main Content Area */}
       <main id="main" tabIndex={-1} className="flex-1 pb-16">
+        <Suspense fallback={<div className="flex items-center justify-center py-20 text-muted">Chargement…</div>}>
         {missingDocId ? (
           <PageContainer>
             <div className="rounded-xl border border-line bg-white p-10 text-center space-y-3">
@@ -291,6 +292,7 @@ export default function App() {
             )}
           </>
         )}
+        </Suspense>
       </main>
 
       {/* Footer */}
