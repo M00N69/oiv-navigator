@@ -13,7 +13,7 @@ export const OIV_CORPUS: OivDocument[] = [
     language: 'fr',
     status: 'adopte',
     officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
-    pdfUrl: 'https://www.oiv.int/public/medias/resolutions/OIV-OENO-738-2025.pdf',
+    pdfUrl: 'https://www.oiv.int/fr/ce-que-nous-faisons/normes?search_title_body=OIV-OENO%20738&type%5Bresolutions%5D=resolutions',
     summary: 'Autorisation et encadrement du traitement des moûts de raisins par adjonction d\'acide fumarique en vue d\'inhiber ou de retarder le développement précoce des bactéries lactiques et prévenir les altérations fermentaires.',
     oenologicalObjectives: [
       'Contrôler et inhiber la flore bactérienne lactique indigène dans les moûts.',
@@ -108,7 +108,7 @@ export const OIV_CORPUS: OivDocument[] = [
     language: 'fr',
     status: 'en_vigueur',
     officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
-    pdfUrl: 'https://www.oiv.int/public/medias/resolutions/OIV-OENO-581A-2021.pdf',
+    pdfUrl: 'https://www.oiv.int/fr/ce-que-nous-faisons/normes?search_title_body=OIV-OENO%20581A&type%5Bresolutions%5D=resolutions',
     summary: 'Prescriptions pour l\'addition d\'acide fumarique dans les vins afin d\'inhiber ou d\'arrêter la fermentation malolactique et de stabiliser les vins sur le plan microbiologique.',
     oenologicalObjectives: [
       'Inhiber la fermentation malolactique lorsque la conservation de l\'acide malique est recherchée (vins blancs vifs, rosés, vins de base effervescents).',
@@ -171,7 +171,7 @@ export const OIV_CORPUS: OivDocument[] = [
     language: 'fr',
     status: 'en_vigueur',
     officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
-    pdfUrl: 'https://www.oiv.int/public/medias/resolutions/OIV-OENO-684A-2022.pdf',
+    pdfUrl: 'https://www.oiv.int/fr/ce-que-nous-faisons/normes?search_title_body=OIV-OENO%20684A&type%5Bresolutions%5D=resolutions',
     summary: 'Encadrement de l\'addition de dicarbonate de diméthyle (DMDC / Velcorin) pour la stabilisation microbiologique à froid des vins spéciaux contenant des sucres résiduels.',
     oenologicalObjectives: [
       'Inactiver les levures résiduelles (notamment Brettanomyces et Saccharomyces) avant conditionnement.',
@@ -233,7 +233,7 @@ export const OIV_CORPUS: OivDocument[] = [
     language: 'fr',
     status: 'en_vigueur',
     officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
-    pdfUrl: 'https://www.oiv.int/public/medias/resolutions/OIV-OENO-650-2021.pdf',
+    pdfUrl: 'https://www.oiv.int/fr/ce-que-nous-faisons/normes?search_title_body=OIV-OENO%20650&type%5Bresolutions%5D=resolutions',
     summary: 'Emploi du polyaspartate de potassium (A-5D K / KPA) comme colloïde protecteur inhibiteur de la cristallisation du bitartrate de potassium.',
     oenologicalObjectives: [
       'Empêcher les précipitations de tartrate dans les vins blancs, rosés et rouges.',
@@ -286,7 +286,7 @@ export const OIV_CORPUS: OivDocument[] = [
     language: 'fr',
     status: 'en_vigueur',
     officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
-    pdfUrl: 'https://www.oiv.int/public/medias/resolutions/OIV-OENO-366-2009.pdf',
+    pdfUrl: 'https://www.oiv.int/fr/ce-que-nous-faisons/normes?search_title_body=OIV-OENO%20366&type%5Bresolutions%5D=resolutions',
     summary: 'Utilisation de la carboxyméthylcellulose sodique (CMC / E466) pour inhiber la nucléation et la croissance des cristaux de bitartrate de potassium dans les vins blancs et effervescents.',
     oenologicalObjectives: [
       'Inhiber la précipitation tartrique à froid sans passage par la stabilisation par le froid classique.',
@@ -339,7 +339,7 @@ export const OIV_CORPUS: OivDocument[] = [
     language: 'fr',
     status: 'en_vigueur',
     officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
-    pdfUrl: 'https://www.oiv.int/public/medias/resolutions/OIV-OENO-583-2017.pdf',
+    pdfUrl: 'https://www.oiv.int/fr/ce-que-nous-faisons/normes?search_title_body=OIV-OENO%20583&type%5Bresolutions%5D=resolutions',
     summary: 'Remplacement des ions potassium (K+) et calcium (Ca2+) par des protons (H+) via passage sur résines sulfoniques cationiques en vue de corriger le pH ou de stabiliser les vins.',
     oenologicalObjectives: [
       'Abaisser le pH des moûts et vins issus de vendanges surmûries ou en déficit d\'acidité naturelle.',
@@ -392,7 +392,7 @@ export const OIV_CORPUS: OivDocument[] = [
     language: 'fr',
     status: 'en_vigueur',
     officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
-    pdfUrl: 'https://www.oiv.int/public/medias/resolutions/OIV-OENO-494-2017.pdf',
+    pdfUrl: 'https://www.oiv.int/fr/ce-que-nous-faisons/normes?search_title_body=OIV-OENO%20494&type%5Bresolutions%5D=resolutions',
     summary: 'Adjonction d\'isolats de protéines végétales (Pisum sativum et Solanum tuberosum) pour la clarification, l\'élimination des composés phénoliques oxydés et la débourbage.',
     oenologicalObjectives: [
       'Clarification rapide des moûts et des vins.',
@@ -499,7 +499,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2018,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/recueil-des-methodes-internationales-danalyse-des-vins-et-des-mouts',
+    officialUrl: 'https://www.oiv.int/fr/standards/compendium-of-international-methods-of-wine-and-must-analysis',
     summary: 'Méthode d\'analyse de référence de Type IV pour la séparation et la quantification de l\'acide fumarique dans les moûts et les vins par HPLC avec détection spectrophotométrique UV à 210 nm.',
     oenologicalObjectives: [
       'Contrôler le respect du plafond de 600 mg/L imposé par le Code des pratiques œnologiques.',
@@ -551,7 +551,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2023,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: 'Règles et recommandations pour la transmission des informations nutritionnelles et de la liste des ingrédients des vins via des moyens électroniques (QR code / e-labels).',
     oenologicalObjectives: [
       'Harmoniser les mentions obligatoires et facultatives à l\'échelle mondiale.',
@@ -596,7 +596,7 @@ export const OIV_CORPUS: OivDocument[] = [
     language: 'fr',
     status: 'en_vigueur',
     officialUrl: 'https://www.oiv.int/fr/standards/code-international-des-pratiques-oenologiques',
-    pdfUrl: 'https://www.oiv.int/public/medias/resolutions/OIV-OENO-674A-2022.pdf',
+    pdfUrl: 'https://www.oiv.int/fr/ce-que-nous-faisons/normes?search_title_body=OIV-OENO%20674A&type%5Bresolutions%5D=resolutions',
     summary: 'Adjonction de levures inactivées enrichies naturellement en glutathion réduit (GSH) pour protéger les arômes variétaux sensibles (thiols volatils, terpènes) contre l\'oxydation prématurée.',
     oenologicalObjectives: [
       'Protéger les arômes des vins blancs et rosés lors de l\'élevage et du stockage.',
@@ -641,7 +641,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Encadre la déclaration obligatoire des substances allergènes présentes dans les vins, notamment les sulfites, les protéines de lait et d'œuf et la gélatine de poisson, conformément au droit de l'Union européenne.",
     oenologicalObjectives: [
       "Garantir l'information du consommateur sur les allergènes présents dans le vin.",
@@ -911,7 +911,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2024,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Encadre la traçabilité des produits vitivinicoles, de la vigne à la mise en marché, au moyen de registres et d'identifiants de lot, pour garantir l'authenticité et la sécurité.",
     oenologicalObjectives: [
       "Garantir l'authenticité et la traçabilité des vins.",
@@ -1694,7 +1694,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8091',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'étiquetage des vins tranquilles et mousseux selon le droit de l'Union européenne (Règlements 1308/2013, 2019/33, 1169/2011) et les pratiques françaises (DGCCRF).",
     oenologicalObjectives: [
       "Garantir l'information du consommateur sur les vins.",
@@ -1742,7 +1742,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8080',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles de dénomination de vente des vins (AOP, IGP, catégorie de produit) selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Garantir la dénomination correcte des vins sur l'étiquette.",
@@ -1786,7 +1786,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=21861',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'indication de provenance sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Garantir l'information du consommateur sur l'origine des raisins et du vin.",
@@ -1831,7 +1831,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=41544',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles de déclaration nutritionnelle des vins selon le droit de l'Union européenne (obligatoire depuis le 8 décembre 2023).",
     oenologicalObjectives: [
       "Informer le consommateur sur la valeur énergétique et la composition du vin.",
@@ -1876,7 +1876,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=41543',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles de la liste des ingrédients des vins selon le droit de l'Union européenne (obligatoire depuis le 8 décembre 2023).",
     oenologicalObjectives: [
       "Informer le consommateur sur la composition du vin.",
@@ -1921,7 +1921,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8075',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'indication du titre alcoométrique volumique acquis sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Informer le consommateur sur la teneur en alcool du vin.",
@@ -1966,7 +1966,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8076',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'indication du volume nominal sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Informer le consommateur sur le volume du produit.",
@@ -2011,7 +2011,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8077',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'indication du numéro de lot sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Permettre l'identification et la traçabilité des lots de vin.",
@@ -2056,7 +2056,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8081',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'indication du millésime sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Informer le consommateur sur l'année de récolte.",
@@ -2101,7 +2101,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8082',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'indication du cépage sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Informer le consommateur sur la variété de vigne utilisée.",
@@ -2146,7 +2146,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8083',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'usage des mentions traditionnelles sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Encadrer l'usage des mentions traditionnelles sur les vins.",
@@ -2190,7 +2190,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8087',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'étiquetage des vins biologiques selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Encadrer l'usage de la mention « vin biologique ».",
@@ -2234,7 +2234,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8088',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'usage des distinctions et médailles sur l'étiquetage des vins selon le droit de l'Union européenne.",
     oenologicalObjectives: [
       "Encadrer l'usage des distinctions et médailles sur les vins.",
@@ -2278,7 +2278,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8069',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'indication de l'identité de l'embouteilleur et de l'importateur sur les vins.",
     oenologicalObjectives: ["Identifier l'embouteilleur ou l'importateur.", "Garantir la traçabilité."],
     prescriptions: [
@@ -2309,7 +2309,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=21862',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'usage du symbole communautaire sur les vins AOP/IGP selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Identifier les vins AOP/IGP par le symbole communautaire.", "Encadrer l'usage du symbole."],
     prescriptions: [
@@ -2340,7 +2340,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8089',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'usage des unités géographiques plus grandes ou plus petites que l'IG sur les vins.",
     oenologicalObjectives: ["Encadrer l'usage des unités géographiques complémentaires.", "Garantir la conformité avec le cahier des charges."],
     prescriptions: [
@@ -2370,7 +2370,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8071',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'indication des participants à la commercialisation sur les vins.",
     oenologicalObjectives: ["Identifier les participants à la commercialisation.", "Garantir la traçabilité."],
     prescriptions: [
@@ -2400,7 +2400,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8072',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'usage du nom d'exploitation viticole sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'usage du nom d'exploitation viticole.", "Garantir la conformité avec le cahier des charges."],
     prescriptions: [
@@ -2430,7 +2430,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8073',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles de la mention « mise en bouteille à la propriété » sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'usage de la mention « mise en bouteille à la propriété ».", "Garantir la véracité de la mention."],
     prescriptions: [
@@ -2460,7 +2460,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8084',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'indication de la méthode de production sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'usage des mentions de méthode de production.", "Garantir la conformité."],
     prescriptions: [
@@ -2490,7 +2490,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8085',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'usage des mentions de couleur sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'usage des mentions de couleur.", "Garantir la conformité."],
     prescriptions: [
@@ -2521,7 +2521,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8086',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'indication de la teneur en sucre sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'indication de la teneur en sucre.", "Garantir la conformité."],
     prescriptions: [
@@ -2552,7 +2552,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8078',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'usage du logo point vert (Adelphe) sur les vins selon le droit de l'Union européenne.",
     oenologicalObjectives: ["Encadrer l'usage du logo point vert.", "Garantir la conformité avec la réglementation sur les emballages."],
     prescriptions: [
@@ -2582,7 +2582,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2026,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/standards/norme-internationale-pour-letiquetage-des-vins?ref=8074',
+    officialUrl: 'https://www.oiv.int/fr/standards/international-standard-for-the-labelling-of-wines',
     summary: "Synthèse professionnelle des règles d'usage du nom de l'imprimeur sur les étiquettes de vins.",
     oenologicalObjectives: ["Clarifier le statut du nom de l'imprimeur.", "Garantir la conformité."],
     prescriptions: [
@@ -3258,7 +3258,7 @@ export const OIV_CORPUS: OivDocument[] = [
     adoptionYear: 2018,
     language: 'fr',
     status: 'en_vigueur',
-    officialUrl: 'https://www.oiv.int/fr/node/3148/download/pdf',
+    officialUrl: 'https://www.oiv.int/fr/ce-que-nous-faisons/normes?search_title_body=627-2018&type%5Bresolutions%5D=resolutions',
     summary: "Met à jour l'arbre de décision de l'OIV pour l'évaluation toxicologique des auxiliaires technologiques et des additifs utilisés dans les produits de la vigne.",
     oenologicalObjectives: [
       "Évaluer la sécurité toxicologique des auxiliaires technologiques et des additifs.",
@@ -3559,13 +3559,13 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.12',
-  updatedAt: '2026-11-16',
+  version: '2026.13',
+  updatedAt: '2026-11-17',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
     month: 'long',
     year: 'numeric'
-  }).format(new Date('2026-11-16')),
+  }).format(new Date('2026-11-17')),
   source: 'OIV (oiv.int) et EUR-Lex — Règlement délégué (UE) 2019/934'
 } as const;
 
@@ -3674,7 +3674,7 @@ export const OFFICIAL_LIVE_SOURCES: import('../types/oiv').OfficialSourceRepo[] 
     name: 'OIV — Recueil des méthodes internationales d\'analyse',
     organization: 'OIV',
     description: 'Méthodes de référence officielles de Type I à IV pour les laboratoires d\'analyse accrédités (HPLC, CPG, spectrophotométrie).',
-    directUrl: 'https://www.oiv.int/fr/standards/recueil-des-methodes-internationales-danalyse-des-vins-et-des-mouts',
+    directUrl: 'https://www.oiv.int/fr/standards/compendium-of-international-methods-of-wine-and-must-analysis',
     updateFrequency: 'Actualisation annuelle',
     lastVerifiedDate: 'Novembre 2026',
     isLiveMonitoring: true,
