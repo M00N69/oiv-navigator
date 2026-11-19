@@ -857,7 +857,7 @@ export const OIV_CORPUS: OivDocument[] = [
       "L'acidification doit être justifiée par l'acidité naturelle du moût ou du vin et tracée dans le registre de chai.",
       "Les pratiques d'acidification sont soumises à la primauté du droit de l'UE."
     ],
-    limitsAndDoses: "Acides autorisés et doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    limitsAndDoses: "Acidification des vins selon les feuilles de pratique Â« Acidification Â» / Â« Chemical acidification Â» du Code international des pratiques Å“nologiques (acides tartrique, malique, citrique, fumarique...). Limites : annexe II du RÃ¨glement (UE) 2019/934.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -904,7 +904,7 @@ export const OIV_CORPUS: OivDocument[] = [
       "Chaque traitement doit être tracé et compatible avec le statut UE.",
       "L'emploi d'auxiliaires technologiques doit respecter les conditions fixées par l'OIV."
     ],
-    limitsAndDoses: "Doses et conditions selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    limitsAndDoses: "Stabilisation tartrique selon les feuilles de pratique Â« Tartrate stabilisation by electrodialysis Â», Â« Tartrate stabilisation by treatment with cation exchangers Â», Â« Cold stabilisation treatment Â», Â« Treatment with metatartaric acid Â», Â« Treatment with Cellulose gums - Carboxymethylcellulose Â» et Â« Treatment with potassium polyaspartate Â» du Code international des pratiques Å“nologiques. Limites : annexe II du RÃ¨glement (UE) 2019/934.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -1017,7 +1017,10 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-tracabilite-vins-2024', officialReference: 'OIV - Traçabilité des vins', title: 'Traçabilité des vins', relationType: 'cite', evidence: 'La traçabilité est un prérequis du plan HACCP.' },
+      { id: 'oiv-secsan-627-2018', officialReference: 'OIV-SECSAN 627-2018', title: 'Arbre de décision pour l évaluation toxicologique', relationType: 'cite', evidence: 'Évaluation de la sécurité sanitaire des intrants.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1136,7 +1139,7 @@ export const OIV_CORPUS: OivDocument[] = [
       "Les traitements doivent être tracés et compatibles avec le droit de l'UE.",
       "Les doses et conditions sont celles fixées par le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934."
     ],
-    limitsAndDoses: "Selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    limitsAndDoses: "DÃ©sacidification autorisÃ©e selon les feuilles de pratique Â« De-acidification Â» (physique, chimique, microbiologique) et Â« Treatment with potassium carbonate Â» du Code international des pratiques Å“nologiques. Limites et conditions : annexe II du RÃ¨glement (UE) 2019/934.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -1278,7 +1281,7 @@ export const OIV_CORPUS: OivDocument[] = [
       "Chaque traitement doit être tracé et compatible avec le statut UE.",
       "Les auxiliaires doivent être conformes au Codex œnologique international."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    limitsAndDoses: "Stabilisation microbiologique selon les feuilles de pratique Â« Pasteurisation Â», Â« Treatment with dimethyl dicarbonate - DMDC Â», Â« lysozyme treatment Â», Â« Treatment with sorbic acid Â» et Â« Sulphiting Â» du Code international des pratiques Å“nologiques. Limites : annexe II du RÃ¨glement (UE) 2019/934.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -1421,7 +1424,7 @@ export const OIV_CORPUS: OivDocument[] = [
       "La SMF doit être conforme au Codex œnologique international.",
       "Le traitement doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    limitsAndDoses: "Silice mÃ©soporeuse fonctionnalisÃ©e (SMF) selon la feuille de pratique correspondante du Code international des pratiques Å“nologiques. Dans l UE, l usage est soumis Ã  l autorisation expresse (annexes du RÃ¨glement (UE) 2019/934).",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -2810,7 +2813,7 @@ export const OIV_CORPUS: OivDocument[] = [
       "Les membranes et matériaux doivent être conformes au Codex œnologique international.",
       "La filtration tangentielle (ultrafiltration/microfiltration) est une technique membranaire couramment utilisée pour la clarification et la stabilisation."
     ],
-    limitsAndDoses: "Selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    limitsAndDoses: "Techniques membranaires (microfiltration, ultrafiltration, nanofiltration, osmose inverse, Ã©lectromembranes) selon la feuille de pratique Â« Application of membrane techniques Â» du Code international des pratiques Å“nologiques. Seules les techniques et membranes expressÃ©ment autorisÃ©es par l UE sont licites (annexe II du RÃ¨glement (UE) 2019/934).",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -3146,7 +3149,7 @@ export const OIV_CORPUS: OivDocument[] = [
       "La technique membranaire doit être conforme au Codex œnologique international.",
       "L'emploi doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    limitsAndDoses: "Traitement membranaire couplÃ© Ã  l adsorption (charbon actif ou billes styrÃ¨ne-divinylbenzÃ¨ne) pour rÃ©duire les phÃ©nols volatils, selon la feuille de pratique Â« Treatment of wines using a membrane technology coupled with activated carbon to reduce excess 4-ethylphenol and 4-ethylguaiacol Â» du Code international des pratiques Å“nologiques. Conditions : annexe II du RÃ¨glement (UE) 2019/934.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -3568,7 +3571,7 @@ export const OIV_CORPUS: OivDocument[] = [
       "La distinction est fondamentale pour l'étiquetage (liste des ingrédients) et la réglementation.",
       "Les substances doivent être conformes au Codex œnologique international."
     ],
-    limitsAndDoses: "Selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    limitsAndDoses: "Distinction additif / auxiliaire technologique : le statut de chaque substance est prÃ©cisÃ© par les monographies COEI et les feuilles de pratique du Code international des pratiques Å“nologiques. Dans l UE, seules les substances et usages expressÃ©ment autorisÃ©s (annexes du RÃ¨glement (UE) 2019/934) sont licites.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe I et II",
@@ -3808,7 +3811,7 @@ export const OIV_CORPUS: OivDocument[] = [
       "Les activateurs doivent être conformes au Codex œnologique international.",
       "L'emploi doit être tracé et compatible avec le statut UE."
     ],
-    limitsAndDoses: "Doses selon le code des pratiques œnologiques et l'annexe II du Règlement (UE) 2019/934.",
+    limitsAndDoses: "Activateurs de fermentation malolactique selon la feuille de pratique Â« Malolactic fermentation activators Â» du Code international des pratiques Å“nologiques. Doses et conditions : annexe II du RÃ¨glement (UE) 2019/934.",
     euRegulation: {
       euStatus: 'encadre_specifique',
       primaryReference: "Règlement délégué (UE) 2019/934, annexe II",
@@ -3843,13 +3846,13 @@ export const OIV_CORPUS: OivDocument[] = [
  * data change, then run `npm run corpus:check`.
  */
 export const CORPUS_META = {
-  version: '2026.14',
-  updatedAt: '2026-11-17',
+  version: '2026.15',
+  updatedAt: '2026-11-19',
   updatedAtLabel: new Intl.DateTimeFormat('fr-FR', {
     day: 'numeric',
     month: 'long',
     year: 'numeric'
-  }).format(new Date('2026-11-17')),
+  }).format(new Date('2026-11-19')),
   source: 'OIV (oiv.int) et EUR-Lex — Règlement délégué (UE) 2019/934'
 } as const;
 
