@@ -9,6 +9,7 @@ const DossierExportView = lazy(() => import('./components/DossierExportView').th
 const TreatmentSimulator = lazy(() => import('./components/TreatmentSimulator').then(m => ({ default: m.TreatmentSimulator })));
 const ProblemSolverView = lazy(() => import('./components/ProblemSolverView').then(m => ({ default: m.ProblemSolverView })));
 const UserGuideView = lazy(() => import('./components/UserGuideView').then(m => ({ default: m.UserGuideView })));
+const GlossaryView = lazy(() => import('./components/GlossaryView').then(m => ({ default: m.GlossaryView })));
 import { OivDocument, FilterState, OivFamily, UserNote, DossierItem } from './types/oiv';
 import { 
   getAllCorpusDocuments, 
@@ -280,6 +281,13 @@ export default function App() {
               />
             )}
 
+            {currentTab === 'glossary' && (
+              <GlossaryView
+                documents={allDocs}
+                onSelectDoc={handleSelectDoc}
+              />
+            )}
+
             {currentTab === 'dossier' && (
               <DossierExportView
                 dossierItems={dossierItems}
@@ -324,6 +332,9 @@ export default function App() {
               </button>
               <button onClick={() => handleTabChange('guide')} className="text-left font-semibold hover:text-brand cursor-pointer">
                 Guide explicatif
+              </button>
+              <button onClick={() => handleTabChange('glossary')} className="text-left font-semibold hover:text-brand cursor-pointer">
+                Glossaire
               </button>
               <button onClick={() => handleTabChange('dossier')} className="text-left hover:text-ink cursor-pointer">
                 Registre &amp; export

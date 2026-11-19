@@ -26,6 +26,7 @@ const SLUG_TO_TAB: Record<string, string> = {
   veille: 'veille',
   guide: 'guide',
   dossier: 'dossier',
+  glossaire: 'glossary',
 };
 
 const TAB_TO_SLUG: Record<string, string> = {
@@ -38,6 +39,7 @@ const TAB_TO_SLUG: Record<string, string> = {
   veille: 'veille',
   guide: 'guide',
   dossier: 'dossier',
+  glossary: 'glossaire',
 };
 
 export function parseHash(hash: string): HashRoute {

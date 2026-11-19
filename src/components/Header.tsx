@@ -11,6 +11,7 @@ import {
   HelpCircle,
   FileText,
   Bookmark,
+  Library,
 } from 'lucide-react';
 import { Logo } from './Logo';
 
@@ -35,6 +36,7 @@ const NAV_ITEMS: NavItem[] = [
   { id: 'regulatory', label: 'Cadre UE', icon: Scale },
   { id: 'comparator', label: 'Comparateur', icon: GitCompare },
   { id: 'veille', label: 'Veille', icon: BookOpen },
+  { id: 'glossary', label: 'Glossaire', icon: Library },
   { id: 'guide', label: 'Guide', icon: HelpCircle },
 ];
 
