@@ -731,7 +731,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-oeno-secsan-520-2014', officialReference: 'OIV-OENO-SECSAN 520-2014 (mis à jour par OIV-SECSAN 710-2022)', title: 'Protéines de lait et d\'œuf comme auxiliaires technologiques (collage) — conditions et déclaration', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-geatine-poisson-2024', officialReference: 'OIV-OENO 681-2022', title: 'Cellulose en poudre : usage comme auxiliaire technologique', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-581b-2024', officialReference: 'OIV-OENO 581B-2024', title: 'Traitement des vins à l\'acide fumarique pour l\'acidification', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -776,7 +780,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-sulfites-vins-2024', officialReference: 'OIV — Pratiques œnologiques : dioxyde de soufre (SO2)', title: 'Sulfites dans les vins : limites maximales et conditions d\'emploi', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-geatine-poisson-2024', officialReference: 'OIV-OENO 681-2022', title: 'Cellulose en poudre : usage comme auxiliaire technologique', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-581b-2024', officialReference: 'OIV-OENO 581B-2024', title: 'Traitement des vins à l\'acide fumarique pour l\'acidification', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -867,7 +875,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-sulfites-vins-2024', officialReference: 'OIV — Pratiques œnologiques : dioxyde de soufre (SO2)', title: 'Sulfites dans les vins : limites maximales et conditions d\'emploi', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-secsan-520-2014', officialReference: 'OIV-OENO-SECSAN 520-2014 (mis à jour par OIV-SECSAN 710-2022)', title: 'Protéines de lait et d\'œuf comme auxiliaires technologiques (collage) — conditions et déclaration', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-geatine-poisson-2024', officialReference: 'OIV-OENO 681-2022', title: 'Cellulose en poudre : usage comme auxiliaire technologique', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -957,7 +969,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-eco-687-2023', officialReference: 'OIV-ECO 687-2023', title: 'Mise à jour de la norme internationale pour l\'étiquetage des vins : communication dématérialisée (e-labels)', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Sulfites dans les vins', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-eco-676-2024', officialReference: 'OIV-ECO 676-2024', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1138,7 +1154,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-sulfites-vins-2024', officialReference: 'OIV — Pratiques œnologiques : dioxyde de soufre (SO2)', title: 'Sulfites dans les vins : limites maximales et conditions d\'emploi', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-secsan-520-2014', officialReference: 'OIV-OENO-SECSAN 520-2014 (mis à jour par OIV-SECSAN 710-2022)', title: 'Protéines de lait et d\'œuf comme auxiliaires technologiques (collage) — conditions et déclaration', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-geatine-poisson-2024', officialReference: 'OIV-OENO 681-2022', title: 'Cellulose en poudre : usage comme auxiliaire technologique', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1372,7 +1392,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-sulfites-vins-2024', officialReference: 'OIV — Pratiques œnologiques : dioxyde de soufre (SO2)', title: 'Sulfites dans les vins : limites maximales et conditions d\'emploi', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-secsan-520-2014', officialReference: 'OIV-OENO-SECSAN 520-2014 (mis à jour par OIV-SECSAN 710-2022)', title: 'Protéines de lait et d\'œuf comme auxiliaires technologiques (collage) — conditions et déclaration', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-geatine-poisson-2024', officialReference: 'OIV-OENO 681-2022', title: 'Cellulose en poudre : usage comme auxiliaire technologique', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1509,7 +1533,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-sulfites-vins-2024', officialReference: 'OIV — Pratiques œnologiques : dioxyde de soufre (SO2)', title: 'Sulfites dans les vins : limites maximales et conditions d\'emploi', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-secsan-520-2014', officialReference: 'OIV-OENO-SECSAN 520-2014 (mis à jour par OIV-SECSAN 710-2022)', title: 'Protéines de lait et d\'œuf comme auxiliaires technologiques (collage) — conditions et déclaration', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-geatine-poisson-2024', officialReference: 'OIV-OENO 681-2022', title: 'Cellulose en poudre : usage comme auxiliaire technologique', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -1737,7 +1765,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-eco-687-2023', officialReference: 'OIV-ECO 687-2023', title: 'Mise à jour de la norme internationale pour l\'étiquetage des vins : communication dématérialisée (e-labels)', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-427-2010', officialReference: 'OIV-OENO 427-2010 (mis à jour par OIV-SECSAN 709-2022)', title: 'Sulfites dans les vins', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-eco-676-2024', officialReference: 'OIV-ECO 676-2024', title: 'Mise à jour de la Norme internationale pour l', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3132,7 +3164,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-sulfites-vins-2024', officialReference: 'OIV — Pratiques œnologiques : dioxyde de soufre (SO2)', title: 'Sulfites dans les vins : limites maximales et conditions d\'emploi', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-secsan-520-2014', officialReference: 'OIV-OENO-SECSAN 520-2014 (mis à jour par OIV-SECSAN 710-2022)', title: 'Protéines de lait et d\'œuf comme auxiliaires technologiques (collage) — conditions et déclaration', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-geatine-poisson-2024', officialReference: 'OIV-OENO 681-2022', title: 'Cellulose en poudre : usage comme auxiliaire technologique', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3178,7 +3214,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-sulfites-vins-2024', officialReference: 'OIV — Pratiques œnologiques : dioxyde de soufre (SO2)', title: 'Sulfites dans les vins : limites maximales et conditions d\'emploi', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-secsan-520-2014', officialReference: 'OIV-OENO-SECSAN 520-2014 (mis à jour par OIV-SECSAN 710-2022)', title: 'Protéines de lait et d\'œuf comme auxiliaires technologiques (collage) — conditions et déclaration', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-geatine-poisson-2024', officialReference: 'OIV-OENO 681-2022', title: 'Cellulose en poudre : usage comme auxiliaire technologique', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3498,7 +3538,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-secsan-701-2022', officialReference: 'OIV-SECSAN 701-2022', title: 'Mise à jour de la limite de cadmium dans le vin', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-secsan-721-2025', officialReference: 'OIV-SECSAN 721-2025', title: 'Révision de la limite maximale d', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-738-2025', officialReference: 'OIV-OENO 738-2025', title: 'Traitement des moûts par l\'acide fumarique pour le contrôle microbiologique', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
   {
@@ -3782,7 +3826,11 @@ export const OIV_CORPUS: OivDocument[] = [
         isCurrent: true
       }
     ],
-    relatedDocuments: [],
+    relatedDocuments: [
+      { id: 'oiv-sulfites-vins-2024', officialReference: 'OIV — Pratiques œnologiques : dioxyde de soufre (SO2)', title: 'Sulfites dans les vins : limites maximales et conditions d\'emploi', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-oeno-secsan-520-2014', officialReference: 'OIV-OENO-SECSAN 520-2014 (mis à jour par OIV-SECSAN 710-2022)', title: 'Protéines de lait et d\'œuf comme auxiliaires technologiques (collage) — conditions et déclaration', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' },
+      { id: 'oiv-geatine-poisson-2024', officialReference: 'OIV-OENO 681-2022', title: 'Cellulose en poudre : usage comme auxiliaire technologique', relationType: 'cite', evidence: 'Fiche de la meme famille documentaire.' }
+    ],
     lastCheckedDate: '2026-11-16'
   },
 ];
