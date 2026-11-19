@@ -60,6 +60,35 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
     window.print();
   };
 
+  // Smooth-scroll to a section without touching the hash (hash routing is in use).
+  const scrollToSection = (id: string) => {
+    window.document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  // Short "key limit" excerpt for the at-a-glance block.
+  const keyLimit = (() => {
+    const txt = document.limitsAndDoses || '';
+    const firstSentence = txt.split(/(?<=\.)\s/)[0] ?? txt;
+    return firstSentence.length > 140 ? firstSentence.slice(0, 137) + '…' : firstSentence;
+  })();
+
+  const euStatusLabel =
+    document.euRegulation.euStatus === 'autorise_ue' ? 'Autorisé UE' :
+    document.euRegulation.euStatus === 'encadre_specifique' ? 'Encadré UE' :
+    document.euRegulation.euStatus === 'divergence_oiv_ue' ? 'Divergence UE' :
+    'Référence / analyse';
+
+  const sections: { id: string; label: string }[] = [
+    { id: 'resume', label: 'Résumé' },
+    { id: 'validite', label: 'Validité' },
+    { id: 'ue', label: 'Cadre UE' },
+    { id: 'objectifs-doses', label: 'Objectifs & Doses' },
+    { id: 'prescriptions', label: 'Prescriptions' },
+    { id: 'lies', label: 'Documents liés' },
+    ...(document.versions.length > 1 ? [{ id: 'versions', label: 'Versions' }] : []),
+    { id: 'notes', label: 'Notes' },
+  ];
+
   return (
     <PageContainer className="space-y-8">
       {/* Top action rail */}
@@ -109,7 +138,7 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
       </div>
 
       {/* Main Document Header */}
-      <div className="bg-white border border-line rounded-xl p-6 sm:p-8 shadow-xs">
+      <div id="resume" className="scroll-mt-32 bg-white border border-line rounded-xl p-6 sm:p-8 shadow-xs">
         {/* Unboxed Metadata Strip */}
         <div className="flex items-center gap-3 text-xs text-muted mb-3 flex-wrap">
           <span className="font-mono font-bold text-brand text-sm tracking-tight">
@@ -203,8 +232,48 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
         </div>
       </div>
 
+      {/* At-a-glance key facts */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 no-print">
+        <div className="bg-white border border-line rounded-lg p-3.5">
+          <span className="block text-[11px] uppercase tracking-wide text-muted font-semibold mb-1">Référence</span>
+          <span className="font-mono text-sm font-bold text-brand leading-tight block">{document.officialReference}</span>
+        </div>
+        <div className="bg-white border border-line rounded-lg p-3.5">
+          <span className="block text-[11px] uppercase tracking-wide text-muted font-semibold mb-1">Substance</span>
+          <span className="text-sm font-medium text-ink leading-tight block">{document.substanceName || '—'}</span>
+        </div>
+        <div className="bg-white border border-line rounded-lg p-3.5">
+          <span className="block text-[11px] uppercase tracking-wide text-muted font-semibold mb-1">Dose / limite clé</span>
+          <span className="text-xs text-ink leading-snug block">{keyLimit || '—'}</span>
+        </div>
+        <div className="bg-white border border-line rounded-lg p-3.5">
+          <span className="block text-[11px] uppercase tracking-wide text-muted font-semibold mb-1">Statut UE</span>
+          <span className="text-sm font-semibold text-ink leading-tight block">{euStatusLabel}</span>
+        </div>
+      </div>
+
+      {/* Sticky section sommaire */}
+      <nav
+        aria-label="Sommaire de la fiche"
+        className="sticky top-16 z-30 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-2 bg-surface/95 backdrop-blur-md border-b border-line no-print"
+      >
+        <div className="flex items-center gap-1.5 overflow-x-auto">
+          <span className="shrink-0 text-[11px] uppercase tracking-wide font-semibold text-muted mr-1">Sommaire</span>
+          {sections.map((s) => (
+            <button
+              key={s.id}
+              type="button"
+              onClick={() => scrollToSection(s.id)}
+              className="shrink-0 px-2.5 py-1 text-xs font-medium text-ink-soft bg-white border border-line rounded-full hover:border-brand hover:text-brand transition-colors cursor-pointer whitespace-nowrap"
+            >
+              {s.label}
+            </button>
+          ))}
+        </div>
+      </nav>
+
       {/* Explicit Validity & Update Tracking Diagnostic Card */}
-      <div className="bg-white border border-line rounded-xl p-5 shadow-xs space-y-3">
+      <div id="validite" className="scroll-mt-32 bg-white border border-line rounded-xl p-5 shadow-xs space-y-3">
         <div className="flex items-center justify-between gap-4 flex-wrap pb-2 border-b border-line-soft">
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
@@ -259,7 +328,7 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
       </div>
 
       {/* Critical Section: Articulation Réglementaire Européenne (Règle 2019/934 & C/2025/1829) */}
-      <div className="bg-surface-muted border border-line-warm rounded-xl p-6 sm:p-7 shadow-xs">
+      <div id="ue" className="scroll-mt-32 bg-surface-muted border border-line-warm rounded-xl p-6 sm:p-7 shadow-xs">
         <div className="flex items-start gap-3.5">
           <div className="p-2 bg-brand/10 text-brand rounded-lg shrink-0 mt-0.5">
             <ShieldAlert className="w-5 h-5 text-brand" />
@@ -327,7 +396,7 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
       </div>
 
       {/* Grid: Objectifs & Prescriptions Techniques OIV */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div id="objectifs-doses" className="scroll-mt-32 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Objectifs oenologiques */}
         <div className="bg-white border border-line rounded-xl p-6 shadow-xs space-y-3">
           <h2 className="text-base font-bold font-editorial text-ink flex items-center gap-2">
@@ -361,7 +430,7 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
       </div>
 
       {/* Prescriptions officielles détaillées */}
-      <div className="bg-white border border-line rounded-xl p-6 sm:p-7 shadow-xs space-y-4">
+      <div id="prescriptions" className="scroll-mt-32 bg-white border border-line rounded-xl p-6 sm:p-7 shadow-xs space-y-4">
         <h2 className="text-base sm:text-lg font-bold font-editorial text-ink">
           Prescriptions & Conditions d'Application
         </h2>
@@ -378,13 +447,17 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
       </div>
 
       {/* Relations documentaires & Codex associé */}
-      {document.relatedDocuments.length > 0 && (
-        <div className="bg-white border border-line rounded-xl p-6 shadow-xs space-y-4">
-          <h2 className="text-base font-bold font-editorial text-ink flex items-center gap-2">
-            <Layers className="w-4 h-4 text-brand" />
-            Documents Liés & Références Associées
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div id="lies" className="scroll-mt-32 bg-white border border-line rounded-xl p-6 shadow-xs space-y-4">
+        <h2 className="text-base font-bold font-editorial text-ink flex items-center gap-2">
+          <Layers className="w-4 h-4 text-brand" />
+          Documents Liés & Références Associées
+        </h2>
+        {document.relatedDocuments.length === 0 ? (
+          <p className="text-sm text-muted italic">
+            Aucun document lié n'est répertorié pour cette fiche. Consultez le corpus par famille ou par domaine pour explorer les textes voisins.
+          </p>
+        ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {document.relatedDocuments.map((rel) => {
               const matchedDoc = allDocuments.find(d => d.id === rel.id || d.officialReference === rel.officialReference);
               return (
@@ -412,12 +485,12 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
               );
             })}
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
       {/* Historique des versions du document */}
       {document.versions.length > 1 && (
-        <div className="bg-white border border-line rounded-xl p-6 shadow-xs space-y-4">
+        <div id="versions" className="scroll-mt-32 bg-white border border-line rounded-xl p-6 shadow-xs space-y-4">
           <div className="flex items-center justify-between gap-4">
             <h2 className="text-base font-bold font-editorial text-ink flex items-center gap-2">
               <GitCompare className="w-4 h-4 text-brand" />
@@ -462,7 +535,7 @@ export const DocumentDetail: React.FC<DocumentDetailProps> = ({
       )}
 
       {/* Notes techniques personnelles de l'utilisateur (Persistance locale) */}
-      <div className="bg-white border border-line rounded-xl p-6 shadow-xs space-y-3 no-print">
+      <div id="notes" className="scroll-mt-32 bg-white border border-line rounded-xl p-6 shadow-xs space-y-3 no-print">
         <div className="flex items-center justify-between">
           <h2 className="text-base font-bold font-editorial text-ink flex items-center gap-2">
             <Edit3 className="w-4 h-4 text-brand" />
