@@ -26,13 +26,14 @@ OIV Navigator est une application web autonome (100 % frontend, sans backend ni 
 
 | Vue | Description |
 | --- | --- |
-| **Explorateur** | Recherche instantanée par référence officielle (`OIV-OENO 738-2025`), substance, CAS ou mot-clé, avec surlignage des résultats et facettes (famille documentaire, domaine, catégorie, statut UE, année). |
-| **Fiche documentaire** | Résumé, objectifs œnologiques, prescriptions, plafonds et doses, article réglementaire UE correspondant, liens vers les textes officiels, notes personnelles. |
+| **Explorateur** | Recherche instantanée par référence officielle (`OIV-OENO 738-2025`), substance, CAS ou mot-clé, avec surlignage des résultats, historique de recherche, suggestions de substances et facettes (famille documentaire, domaine, catégorie, statut UE, année). |
+| **Fiche documentaire** | Bloc « En bref » (référence, substance, dose/limite clé, statut UE), sommaire sticky pour naviguer entre les sections, objectifs œnologiques, prescriptions, plafonds et doses, article réglementaire UE correspondant, documents liés, liens vers les textes officiels, notes personnelles. |
 | **Simulateur de chai** | Calcul de la dose appliquée (mg/L, g/hL) selon la substance, la matrice (moût, blanc, rouge, rosé, effervescent, doux) et le volume de la cuve, avec contrôle du plafond réglementaire. |
 | **Guide par objectif** | Six problèmes œnologiques courants (microbiologie, tartrique, clarification, oxydation/SO₂, acidité) et les fiches à mobiliser pour les traiter. |
 | **Comparateur de versions** | Comparaison côte à côte de deux versions d'une même résolution (prescriptions, doses, évolutions). |
 | **Règlements UE** | Vue transversale du statut européen des pratiques et des textes de référence. |
 | **Veille** | Chronologie des publications, accès direct aux dépôts officiels, import/export JSON du corpus. |
+| **Glossaire** | Définitions des termes clés (CCP, PRPo, HACCP, COEI, allergène, AOP/IGP, TAV...) avec liens vers les fiches documentaires correspondantes. |
 | **Registre & export** | Compilation des fiches retenues, notes et contexte, export imprimable / PDF. |
 
 Persistance locale via `localStorage` : favoris, notes, dossier technique et fiches importées restent sur le poste de l'utilisateur. Aucun compte, aucun serveur, aucune donnée envoyée à un tiers.
