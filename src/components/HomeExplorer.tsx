@@ -109,6 +109,7 @@ export const HomeExplorer: React.FC<HomeExplorerProps> = ({
           totalMatches={totalMatches}
           onToggleFilters={() => setShowMobileFilters(!showMobileFilters)}
           showFiltersToggle={true}
+          documents={documents}
         />
 
         {/* Segmented Family Filter Tabs Bar */}
